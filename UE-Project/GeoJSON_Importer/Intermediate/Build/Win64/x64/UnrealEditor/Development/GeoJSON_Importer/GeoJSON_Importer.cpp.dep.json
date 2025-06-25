@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\renderstation2\\documents\\unreal projects\\geojson_importer\\source\\geojson_importer\\geojson_importer.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\renderstation2\\documents\\unreal projects\\geojson_importer\\intermediate\\build\\win64\\x64\\geojson_importereditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\renderstation2\\documents\\unreal projects\\geojson_importer\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\geojson_importer\\definitions.geojson_importer.h",
+            "c:\\users\\renderstation2\\documents\\unreal projects\\geojson_importer\\source\\geojson_importer\\geojson_importer.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

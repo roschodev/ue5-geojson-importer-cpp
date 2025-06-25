@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-GeoJSON_Importer.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\RenderStation2\Documents\Unreal Projects\GeoJSON_Importer\Intermediate\Build\Win64\x64\GeoJSON_ImporterEditor\Development\Engine\SharedPCH.Engine.Cpp20.h.obj"
+"C:\Users\RenderStation2\Documents\Unreal Projects\GeoJSON_Importer\Intermediate\Build\Win64\x64\UnrealEditor\Development\GeoJSON_Importer\GeoJSON_Importer.cpp.obj"
+"C:\Users\RenderStation2\Documents\Unreal Projects\GeoJSON_Importer\Intermediate\Build\Win64\x64\UnrealEditor\Development\GeoJSON_Importer\Default.rc2.res"
+/OUT:"C:\Users\RenderStation2\Documents\Unreal Projects\GeoJSON_Importer\Intermediate\Build\Win64\x64\UnrealEditor\Development\GeoJSON_Importer\UnrealEditor-GeoJSON_Importer.lib"

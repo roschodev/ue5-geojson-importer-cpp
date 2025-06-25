@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "GeoJSON_Importer",
+			"Path": "..\\Source\\GeoJSON_Importer.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "GeoJSON_ImporterEditor",
+			"Path": "..\\Source\\GeoJSON_ImporterEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

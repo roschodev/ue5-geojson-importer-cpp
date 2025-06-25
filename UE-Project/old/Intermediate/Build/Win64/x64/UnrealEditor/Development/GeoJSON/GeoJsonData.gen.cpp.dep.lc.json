@@ -1,0 +1,22 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\github\\ue_tool_geojsonimporter\\geojson\\intermediate\\build\\win64\\unrealeditor\\inc\\geojson\\uht\\geojsondata.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\github\\ue_tool_geojsonimporter\\geojson\\intermediate\\build\\win64\\x64\\geojsoneditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "e:\\github\\ue_tool_geojsonimporter\\geojson\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\geojson\\definitions.geojson.h",
+            "e:\\github\\ue_tool_geojsonimporter\\geojson\\source\\geojson\\geojsondata.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\coreuobject\\public\\uobject\\noexporttypes.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\coreuobject\\public\\uobject\\propertyaccessutil.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\coreuobject\\public\\serialization\\testundeclaredscriptstructobjectreferences.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\core\\public\\math\\unitconversion.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\core\\public\\math\\unitconversion.inl",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\core\\public\\internationalization\\polyglottextdata.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\coreuobject\\public\\assetregistry\\arfilter.h",
+            "e:\\github\\ue_tool_geojsonimporter\\geojson\\intermediate\\build\\win64\\unrealeditor\\inc\\geojson\\uht\\geojsondata.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

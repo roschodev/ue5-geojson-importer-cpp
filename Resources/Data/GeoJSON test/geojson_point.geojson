@@ -1,0 +1,5 @@
+{
+    "type": "Point",
+    "name":"Point-Name",
+    "coordinates": [102.0, 0.5]
+  }

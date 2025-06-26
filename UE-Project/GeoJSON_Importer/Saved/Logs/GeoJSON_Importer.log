@@ -2071,3 +2071,1345 @@ GeoJSON_Manager
 [2025.06.26-11.21.45:177][652]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 13303.183594
 [2025.06.26-11.21.46:177][655]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
 [2025.06.26-11.21.46:177][655]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 13303.849609, Update Interval: 309.199493
+[2025.06.26-11.26.00:071][914]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.06.26-11.26.03:659][343]LogLiveCoding: Display:    Creating library E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_13.lib and object E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_13.exp
+[2025.06.26-11.26.03:939][349]LogUObjectHash: Compacting FUObjectHashTables data took   1.50ms
+[2025.06.26-11.26.04:273][350]Display: Reload/Re-instancing Complete: No object changes detected
+[2025.06.26-11.26.04:273][350]LogLiveCoding: Display: Live coding succeeded
+[2025.06.26-11.26.06:020][517]LogTemp: FeatureCollection Type: FeatureCollection
+[2025.06.26-11.26.06:020][517]LogTemp: FeatureCollection Description: 
+[2025.06.26-11.26.06:020][517]LogTemp: FeatureCollection Name: FeatureCollection_JSON_Test
+[2025.06.26-11.26.06:020][517]LogTemp: FeatureCollection CRS Type: name
+[2025.06.26-11.26.06:020][517]LogTemp: Feature Type: Feature
+[2025.06.26-11.26.06:020][517]LogTemp: Geometry: {
+	"type": "MultiLineString",
+	"coordinates": [
+		[
+			[ 102, 0.5 ],
+			[ 103, 1 ]
+		],
+		[
+			[ 104, 0.5 ],
+			[ 105, 1.5 ]
+		]
+	]
+}
+[2025.06.26-11.26.06:020][517]LogTemp: Feature Type: Feature
+[2025.06.26-11.26.06:020][517]LogTemp: Geometry: {
+	"type": "MultiPoint",
+	"coordinates": [
+		[ 102, 0.5 ],
+		[ 103.5, 1.5 ],
+		[ 104, 0.5 ]
+	]
+}
+[2025.06.26-11.26.06:020][517]LogTemp: Feature Type: Feature
+[2025.06.26-11.26.06:020][517]LogTemp: Geometry: {
+	"type": "MultiPolygon",
+	"coordinates": [
+		[
+			[
+				[ 100, 0 ],
+				[ 101, 0 ],
+				[ 101, 1 ],
+				[ 100, 1 ],
+				[ 100, 0 ]
+			],
+			[
+				[ 100, 0 ],
+				[ 101, 0 ],
+				[ 101, 1 ],
+				[ 100, 1 ],
+				[ 100, 0 ]
+			]
+		],
+		[
+			[
+				[ 102, 0 ],
+				[ 103, 0 ],
+				[ 103, 1 ],
+				[ 102, 1 ],
+				[ 102, 0 ]
+			]
+		]
+	]
+}
+[2025.06.26-11.26.06:020][517]LogTemp: Feature Type: Feature
+[2025.06.26-11.26.06:020][517]LogTemp: Geometry: {
+	"type": "GeometryCollection",
+	"geometries": [
+		{
+			"type": "Point",
+			"coordinates": [ 102, 0.5 ]
+		},
+		{
+			"type": "LineString",
+			"coordinates": [
+				[ 102, 0.5 ],
+				[ 103, 1 ]
+			]
+		},
+		{
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[ 100, 0 ],
+					[ 101, 0 ],
+					[ 101, 1 ],
+					[ 100, 1 ],
+					[ 100, 0 ]
+				]
+			]
+		}
+	]
+}
+[2025.06.26-11.27.43:236][264]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 13661.243164
+[2025.06.26-11.27.44:236][267]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.06.26-11.27.44:236][267]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 13661.910156, Update Interval: 355.023041
+[2025.06.26-11.28.02:627][327]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.06.26-11.28.08:751][ 37]LogLiveCoding: Display:    Creating library E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_14.lib and object E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_14.exp
+[2025.06.26-11.28.08:918][ 44]LogClass: UPackage /Script/GeoJSON_Importer Reload.
+[2025.06.26-11.28.08:918][ 44]LogClass: UClass GeoJSON_FeatureCollection Reload.
+[2025.06.26-11.28.08:918][ 44]LogClass: Could not find existing class GeoJSON_FeatureCollection in package /Script/GeoJSON_Importer for reload, assuming new or modified class
+[2025.06.26-11.28.08:918][ 44]LogClass: Function LogData is new or belongs to a modified class.
+[2025.06.26-11.28.08:937][ 44]Re-instancing GeoJSON_FeatureCollection after reload.
+[2025.06.26-11.28.09:077][ 44]LogUObjectHash: Compacting FUObjectHashTables data took   1.43ms
+[2025.06.26-11.28.09:491][ 45]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed, 2 scriptstructs unchanged, 10 scriptstructs remapped
+[2025.06.26-11.28.09:491][ 45]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2025.06.26-11.29.05:270][695]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.06.26-11.29.09:665][798]LogLiveCoding: Display:    Creating library E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_15.lib and object E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_15.exp
+[2025.06.26-11.29.10:009][799]LogClass: UPackage /Script/GeoJSON_Importer Reload.
+[2025.06.26-11.29.10:009][799]LogClass: UClass GeoJSON_FeatureCollection Reload.
+[2025.06.26-11.29.10:009][799]LogClass: Could not find existing class GeoJSON_FeatureCollection in package /Script/GeoJSON_Importer for reload, assuming new or modified class
+[2025.06.26-11.29.10:009][799]LogClass: Function LogData is new or belongs to a modified class.
+[2025.06.26-11.29.10:025][799]Re-instancing GeoJSON_FeatureCollection after reload.
+[2025.06.26-11.29.10:164][799]LogUObjectHash: Compacting FUObjectHashTables data took   1.85ms
+[2025.06.26-11.29.10:567][800]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed, 2 scriptstructs unchanged, 10 scriptstructs remapped
+[2025.06.26-11.29.10:567][800]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2025.06.26-11.34.35:511][289]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 14073.530273
+[2025.06.26-11.34.36:510][292]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.06.26-11.34.36:510][292]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 14074.196289, Update Interval: 342.617279
+[2025.06.26-11.36.49:196][690]LogEOSSDK: LogEOSAuth: Refreshing authentication session. AccessTokenExpired: No RefreshRequired: Yes VerifyRequired: No UserId: e1e...34d
+[2025.06.26-11.36.49:196][690]LogEOSSDK: LogEOSAuth: Refresh authentication session. AuthState: 1 AccessExpires: 99.78 RefreshExpires: 1.554e+07
+[2025.06.26-11.36.50:196][693]LogEOSSDK: LogEOSAuth: UpdateUserAuthToken: User ClientId: xyz...459 AccountId: e1e...34d Access[Expires: 2025.06.26-13.36.49 Remaining: 7200.84] Refresh[Expires: 2025-12-23T07:39:35.966Z Remaining: 15537766.97] State: Valid
+[2025.06.26-11.41.01:891][448]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 14459.881836
+[2025.06.26-11.41.02:890][451]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.06.26-11.41.02:890][451]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 14460.548828, Update Interval: 343.651855
+[2025.06.26-11.41.59:208][619]LogDerivedDataCache: C:/Users/Rob Work/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:01.091 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 1273 files in 1996 folders with total size 76 MiB.
+[2025.06.26-11.42.32:544][458]LogTemp: Warning: FeatureCollectionGeoJSONData is null or invalid.
+[2025.06.26-11.42.37:991][104]LogTemp: Warning: FeatureCollectionGeoJSONData is null or invalid.
+[2025.06.26-11.42.43:933][806]Cmd: DELETE
+[2025.06.26-11.42.43:934][806]Cmd: ACTOR DELETE
+[2025.06.26-11.42.43:934][806]LogEditorActor: Actor GeoJSON_FeatureCollection2 is referenced by GeoJSON_Manager.
+[2025.06.26-11.42.45:073][806]LogSlate: Window 'Message' being destroyed
+[2025.06.26-11.42.45:091][806]Message dialog closed, result: Yes, title: Message, text: Actor GeoJSON_FeatureCollection2 is referenced by other Actors/Objects.
+Do you really want to delete it? This will break references.
+
+Reference List:
+
+GeoJSON_Manager
+[2025.06.26-11.42.45:093][806]LogEditorActor: Deleted Actor: GeoJSON_FeatureCollection
+[2025.06.26-11.42.45:172][806]LogUObjectHash: Compacting FUObjectHashTables data took   1.35ms
+[2025.06.26-11.42.45:178][806]LogEditorActor: Deleted 1 Actors (0.088 secs)
+[2025.06.26-11.42.45:834][879]Cmd: DELETE
+[2025.06.26-11.42.45:834][879]Cmd: ACTOR DELETE
+[2025.06.26-11.42.45:835][879]LogEditorActor: Actor GeoJSON_MultiLineString2 is referenced by GeoJSON_Manager.
+[2025.06.26-11.42.46:863][879]LogSlate: Window 'Message' being destroyed
+[2025.06.26-11.42.46:879][879]Message dialog closed, result: Yes, title: Message, text: Actor GeoJSON_MultiLineString2 is referenced by other Actors/Objects.
+Do you really want to delete it? This will break references.
+
+Reference List:
+
+GeoJSON_Manager
+[2025.06.26-11.42.46:879][879]LogEditorActor: Deleted Actor: GeoJSON_MultiLineString
+[2025.06.26-11.42.46:895][879]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2025.06.26-11.42.46:903][879]LogEditorActor: Deleted 1 Actors (0.025 secs)
+[2025.06.26-11.42.47:621][960]Cmd: DELETE
+[2025.06.26-11.42.47:621][960]Cmd: ACTOR DELETE
+[2025.06.26-11.42.47:622][960]LogEditorActor: Actor GeoJSON_MultiPoint2 is referenced by GeoJSON_Manager.
+[2025.06.26-11.42.48:364][960]LogSlate: Window 'Message' being destroyed
+[2025.06.26-11.42.48:368][960]Message dialog closed, result: Yes, title: Message, text: Actor GeoJSON_MultiPoint2 is referenced by other Actors/Objects.
+Do you really want to delete it? This will break references.
+
+Reference List:
+
+GeoJSON_Manager
+[2025.06.26-11.42.48:369][960]LogEditorActor: Deleted Actor: GeoJSON_MultiPoint
+[2025.06.26-11.42.48:381][960]LogUObjectHash: Compacting FUObjectHashTables data took   0.40ms
+[2025.06.26-11.42.48:385][960]LogEditorActor: Deleted 1 Actors (0.018 secs)
+[2025.06.26-11.42.51:215][293]LogTemp: Successfully loaded GeoJSON from: E:\Projects\Unreal Engine\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_featurecollection.geojson
+[2025.06.26-11.42.51:215][293]LogTemp: JSON deserialization successful.
+[2025.06.26-11.42.51:217][293]LogTemp: GeoJSON Type: FeatureCollection
+[2025.06.26-11.42.51:222][293]LogTemp: Successfully loaded GeoJSON from: E:\Projects\Unreal Engine\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multipoint.geojson
+[2025.06.26-11.42.51:222][293]LogTemp: JSON deserialization successful.
+[2025.06.26-11.42.51:222][293]LogTemp: GeoJSON Type: MultiPoint
+[2025.06.26-11.42.51:227][293]LogTemp: Successfully loaded GeoJSON from: E:\Projects\Unreal Engine\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multiLinestring.geojson
+[2025.06.26-11.42.51:227][293]LogTemp: JSON deserialization successful.
+[2025.06.26-11.42.51:227][293]LogTemp: GeoJSON Type: MultiLineString
+[2025.06.26-11.42.53:591][573]LogTemp: FeatureCollection Type: FeatureCollection
+[2025.06.26-11.42.53:591][573]LogTemp: FeatureCollection Description: 
+[2025.06.26-11.42.53:591][573]LogTemp: FeatureCollection Name: FeatureCollection_JSON_Test
+[2025.06.26-11.42.53:591][573]LogTemp: FeatureCollection CRS Type: name
+[2025.06.26-11.42.53:591][573]LogTemp: Feature Type: Feature
+[2025.06.26-11.42.53:591][573]LogTemp: Geometry: {
+	"type": "MultiLineString",
+	"coordinates": [
+		[
+			[ 102, 0.5 ],
+			[ 103, 1 ]
+		],
+		[
+			[ 104, 0.5 ],
+			[ 105, 1.5 ]
+		]
+	]
+}
+[2025.06.26-11.42.53:591][573]LogTemp: Feature Type: Feature
+[2025.06.26-11.42.53:591][573]LogTemp: Geometry: {
+	"type": "MultiPoint",
+	"coordinates": [
+		[ 102, 0.5 ],
+		[ 103.5, 1.5 ],
+		[ 104, 0.5 ]
+	]
+}
+[2025.06.26-11.42.53:591][573]LogTemp: Feature Type: Feature
+[2025.06.26-11.42.53:591][573]LogTemp: Geometry: {
+	"type": "MultiPolygon",
+	"coordinates": [
+		[
+			[
+				[ 100, 0 ],
+				[ 101, 0 ],
+				[ 101, 1 ],
+				[ 100, 1 ],
+				[ 100, 0 ]
+			],
+			[
+				[ 100, 0 ],
+				[ 101, 0 ],
+				[ 101, 1 ],
+				[ 100, 1 ],
+				[ 100, 0 ]
+			]
+		],
+		[
+			[
+				[ 102, 0 ],
+				[ 103, 0 ],
+				[ 103, 1 ],
+				[ 102, 1 ],
+				[ 102, 0 ]
+			]
+		]
+	]
+}
+[2025.06.26-11.42.53:591][573]LogTemp: Feature Type: Feature
+[2025.06.26-11.42.53:591][573]LogTemp: Geometry: {
+	"type": "GeometryCollection",
+	"geometries": [
+		{
+			"type": "Point",
+			"coordinates": [ 102, 0.5 ]
+		},
+		{
+			"type": "LineString",
+			"coordinates": [
+				[ 102, 0.5 ],
+				[ 103, 1 ]
+			]
+		},
+		{
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[ 100, 0 ],
+					[ 101, 0 ],
+					[ 101, 1 ],
+					[ 100, 1 ],
+					[ 100, 0 ]
+				]
+			]
+		}
+	]
+}
+[2025.06.26-11.42.57:072][990]LogTemp: FeatureCollection Type: FeatureCollection
+[2025.06.26-11.42.57:072][990]LogTemp: FeatureCollection Description: 
+[2025.06.26-11.42.57:072][990]LogTemp: FeatureCollection Name: FeatureCollection_JSON_Test
+[2025.06.26-11.42.57:072][990]LogTemp: FeatureCollection CRS Type: name
+[2025.06.26-11.42.57:072][990]LogTemp: Feature Type: Feature
+[2025.06.26-11.42.57:072][990]LogTemp: Geometry: {
+	"type": "MultiLineString",
+	"coordinates": [
+		[
+			[ 102, 0.5 ],
+			[ 103, 1 ]
+		],
+		[
+			[ 104, 0.5 ],
+			[ 105, 1.5 ]
+		]
+	]
+}
+[2025.06.26-11.42.57:072][990]LogTemp: Feature Type: Feature
+[2025.06.26-11.42.57:072][990]LogTemp: Geometry: {
+	"type": "MultiPoint",
+	"coordinates": [
+		[ 102, 0.5 ],
+		[ 103.5, 1.5 ],
+		[ 104, 0.5 ]
+	]
+}
+[2025.06.26-11.42.57:072][990]LogTemp: Feature Type: Feature
+[2025.06.26-11.42.57:072][990]LogTemp: Geometry: {
+	"type": "MultiPolygon",
+	"coordinates": [
+		[
+			[
+				[ 100, 0 ],
+				[ 101, 0 ],
+				[ 101, 1 ],
+				[ 100, 1 ],
+				[ 100, 0 ]
+			],
+			[
+				[ 100, 0 ],
+				[ 101, 0 ],
+				[ 101, 1 ],
+				[ 100, 1 ],
+				[ 100, 0 ]
+			]
+		],
+		[
+			[
+				[ 102, 0 ],
+				[ 103, 0 ],
+				[ 103, 1 ],
+				[ 102, 1 ],
+				[ 102, 0 ]
+			]
+		]
+	]
+}
+[2025.06.26-11.42.57:072][990]LogTemp: Feature Type: Feature
+[2025.06.26-11.42.57:072][990]LogTemp: Geometry: {
+	"type": "GeometryCollection",
+	"geometries": [
+		{
+			"type": "Point",
+			"coordinates": [ 102, 0.5 ]
+		},
+		{
+			"type": "LineString",
+			"coordinates": [
+				[ 102, 0.5 ],
+				[ 103, 1 ]
+			]
+		},
+		{
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[ 100, 0 ],
+					[ 101, 0 ],
+					[ 101, 1 ],
+					[ 100, 1 ],
+					[ 100, 0 ]
+				]
+			]
+		}
+	]
+}
+[2025.06.26-11.43.34:869][ 62]LogUObjectHash: Compacting FUObjectHashTables data took   0.38ms
+[2025.06.26-11.43.34:879][ 62]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Project/Levels/M_Testing_Auto3
+[2025.06.26-11.43.34:879][ 62]LogSavePackage: Moving 'E:/Projects/Unreal Engine/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Saved/M_Testing_Auto39A5792364DD778D20A9EDABAEBDDAC1A.tmp' to 'E:/Projects/Unreal Engine/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Saved/Autosaves/Game/Project/Levels/M_Testing_Auto3.umap'
+[2025.06.26-11.43.34:880][ 62]LogAssetRegistry: Warning: ScanPathsSynchronous: E:/Projects/Unreal Engine/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Saved/Autosaves/Game/Project/Levels/M_Testing_Auto3.umap is in the /Temp path, will not scan.
+[2025.06.26-11.43.34:880][ 62]LogAssetRegistry: Warning: ScanPathsSynchronous: /Temp/__ExternalActors__/Autosaves/Game/Project/Levels/M_Testing_Auto3 is in the /Temp path, will not scan.
+[2025.06.26-11.43.34:880][ 62]LogAssetRegistry: Warning: ScanPathsSynchronous: /Temp/__ExternalObjects__/Autosaves/Game/Project/Levels/M_Testing_Auto3 is in the /Temp path, will not scan.
+[2025.06.26-11.43.34:880][ 62]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Project/Levels/M_Testing' took 0.020
+[2025.06.26-11.43.34:880][ 62]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.020
+[2025.06.26-11.47.34:488][958]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 14852.708984
+[2025.06.26-11.47.35:487][961]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.06.26-11.47.35:488][961]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 14853.375977, Update Interval: 309.805603
+[2025.06.26-11.50.12:998][659]LogViewport: Scene viewport resized to 1935x1252, mode Windowed.
+[2025.06.26-11.52.26:011][276]Running C:/Program Files/Epic Games/UE_5.3/Engine/Build/BatchFiles/Build.bat  -projectfiles -project="E:/Projects/Unreal Engine/ue5-geojson-importer/UE-Project/GeoJSON_Importer/GeoJSON_Importer.uproject" -game -rocket -progress
+[2025.06.26-11.52.26:118][276]Using bundled DotNet SDK version: 6.0.302
+[2025.06.26-11.52.26:118][276]Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" -projectfiles -project="E:/Projects/Unreal Engine/ue5-geojson-importer/UE-Project/GeoJSON_Importer/GeoJSON_Importer.uproject" -game -rocket -progress
+[2025.06.26-11.52.26:420][276]Log file: C:\Users\Rob Work\AppData\Local\UnrealBuildTool\Log_GPF.txt
+[2025.06.26-11.52.26:621][276]
+[2025.06.26-11.52.26:621][276]Generating VisualStudio project files:
+[2025.06.26-11.52.26:621][276]Discovering modules, targets and source code for project...
+[2025.06.26-11.52.27:827][276]Binding IntelliSense data...
+[2025.06.26-11.52.41:890][276]Binding IntelliSense data... 75%
+[2025.06.26-11.52.41:890][276]Binding IntelliSense data... 100%
+[2025.06.26-11.52.41:890][276]Creating common properties file...
+[2025.06.26-11.52.41:890][276]Creating common properties file... 0%
+[2025.06.26-11.52.41:890][276]Writing project files...
+[2025.06.26-11.52.43:099][276]Writing project files... 100%
+[2025.06.26-11.52.43:099][276]
+[2025.06.26-11.52.43:099][276]Generating QueryTargets data for editor...
+[2025.06.26-11.52.43:308][276]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.06.26-11.52.44:071][276]LogSlate: Window 'Add C++ Class' being destroyed
+[2025.06.26-11.52.48:382][377]LogLiveCoding: Display:    Creating library E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_16.lib and object E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_16.exp
+[2025.06.26-11.52.48:693][378]LogClass: UPackage /Script/GeoJSON_Importer Reload.
+[2025.06.26-11.52.48:693][378]LogClass: Could not find existing class Entry_Point in package /Script/GeoJSON_Importer for reload, assuming new or modified class
+[2025.06.26-11.52.48:794][378]LogUObjectHash: Compacting FUObjectHashTables data took   1.07ms
+[2025.06.26-11.52.49:234][379]Display: Reload/Re-instancing Complete: 1 package changed, 1 class new, 1 class unchanged, 2 scriptstructs unchanged, 1 function remapped, 10 scriptstructs remapped
+[2025.06.26-11.52.49:234][379]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2025.06.26-11.53.31:929][508]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 15210.518555
+[2025.06.26-11.53.32:604][511]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.06.26-11.53.32:604][511]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 15211.186523, Update Interval: 301.499695
+[2025.06.26-11.53.43:920][581]Running C:/Program Files/Epic Games/UE_5.3/Engine/Build/BatchFiles/Build.bat  -projectfiles -project="E:/Projects/Unreal Engine/ue5-geojson-importer/UE-Project/GeoJSON_Importer/GeoJSON_Importer.uproject" -game -rocket -progress
+[2025.06.26-11.53.44:022][581]Using bundled DotNet SDK version: 6.0.302
+[2025.06.26-11.53.44:022][581]Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" -projectfiles -project="E:/Projects/Unreal Engine/ue5-geojson-importer/UE-Project/GeoJSON_Importer/GeoJSON_Importer.uproject" -game -rocket -progress
+[2025.06.26-11.53.44:325][581]Log file: C:\Users\Rob Work\AppData\Local\UnrealBuildTool\Log_GPF.txt
+[2025.06.26-11.53.44:527][581]
+[2025.06.26-11.53.44:527][581]Generating VisualStudio project files:
+[2025.06.26-11.53.44:527][581]Discovering modules, targets and source code for project...
+[2025.06.26-11.53.45:431][581]Binding IntelliSense data...
+[2025.06.26-11.53.47:847][581]Binding IntelliSense data... 100%
+[2025.06.26-11.53.47:847][581]Creating common properties file...
+[2025.06.26-11.53.47:847][581]Creating common properties file... 0%
+[2025.06.26-11.53.47:847][581]Writing project files...
+[2025.06.26-11.53.48:957][581]Writing project files... 100%
+[2025.06.26-11.53.48:957][581]
+[2025.06.26-11.53.48:957][581]Generating QueryTargets data for editor...
+[2025.06.26-11.53.49:163][581]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.06.26-11.53.49:260][581]LogSlate: Window 'Add C++ Class' being destroyed
+[2025.06.26-11.53.53:611][ 47]LogLiveCoding: Display:    Creating library E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_17.lib and object E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_17.exp
+[2025.06.26-11.53.53:749][ 53]LogClass: UPackage /Script/GeoJSON_Importer Reload.
+[2025.06.26-11.53.53:749][ 53]LogClass: Could not find existing class Entry_LineString in package /Script/GeoJSON_Importer for reload, assuming new or modified class
+[2025.06.26-11.53.53:851][ 53]LogUObjectHash: Compacting FUObjectHashTables data took   1.09ms
+[2025.06.26-11.53.54:159][ 54]Display: Reload/Re-instancing Complete: 1 package changed, 1 class new, 10 scriptstructs remapped
+[2025.06.26-11.53.54:159][ 54]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2025.06.26-11.59.12:611][101]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 15551.181641
+[2025.06.26-11.59.13:610][104]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.06.26-11.59.13:610][104]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 15551.847656, Update Interval: 354.938812
+[2025.06.26-12.05.47:953][249]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 15946.488281
+[2025.06.26-12.05.48:953][252]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.06.26-12.05.48:953][252]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 15947.154297, Update Interval: 322.888885
+[2025.06.26-12.12.05:591][551]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 16324.099609
+[2025.06.26-12.12.06:590][554]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.06.26-12.12.06:590][554]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 16324.766602, Update Interval: 337.872864
+[2025.06.26-12.18.39:605][957]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 16718.287109
+[2025.06.26-12.18.40:605][960]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.06.26-12.18.40:605][960]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 16718.953125, Update Interval: 325.525696
+[2025.06.26-12.20.28:997][413]LogViewport: Scene viewport resized to 1935x813, mode Windowed.
+[2025.06.26-12.20.30:183][554]LogTemp: FeatureCollection Type: FeatureCollection
+[2025.06.26-12.20.30:183][554]LogTemp: FeatureCollection Description: 
+[2025.06.26-12.20.30:183][554]LogTemp: FeatureCollection Name: FeatureCollection_JSON_Test
+[2025.06.26-12.20.30:183][554]LogTemp: FeatureCollection CRS Type: name
+[2025.06.26-12.20.30:183][554]LogTemp: Feature Type: Feature
+[2025.06.26-12.20.30:183][554]LogTemp: Geometry: {
+	"type": "MultiLineString",
+	"coordinates": [
+		[
+			[ 102, 0.5 ],
+			[ 103, 1 ]
+		],
+		[
+			[ 104, 0.5 ],
+			[ 105, 1.5 ]
+		]
+	]
+}
+[2025.06.26-12.20.30:183][554]LogTemp: Feature Type: Feature
+[2025.06.26-12.20.30:183][554]LogTemp: Geometry: {
+	"type": "MultiPoint",
+	"coordinates": [
+		[ 102, 0.5 ],
+		[ 103.5, 1.5 ],
+		[ 104, 0.5 ]
+	]
+}
+[2025.06.26-12.20.30:183][554]LogTemp: Feature Type: Feature
+[2025.06.26-12.20.30:183][554]LogTemp: Geometry: {
+	"type": "MultiPolygon",
+	"coordinates": [
+		[
+			[
+				[ 100, 0 ],
+				[ 101, 0 ],
+				[ 101, 1 ],
+				[ 100, 1 ],
+				[ 100, 0 ]
+			],
+			[
+				[ 100, 0 ],
+				[ 101, 0 ],
+				[ 101, 1 ],
+				[ 100, 1 ],
+				[ 100, 0 ]
+			]
+		],
+		[
+			[
+				[ 102, 0 ],
+				[ 103, 0 ],
+				[ 103, 1 ],
+				[ 102, 1 ],
+				[ 102, 0 ]
+			]
+		]
+	]
+}
+[2025.06.26-12.20.30:183][554]LogTemp: Feature Type: Feature
+[2025.06.26-12.20.30:183][554]LogTemp: Geometry: {
+	"type": "GeometryCollection",
+	"geometries": [
+		{
+			"type": "Point",
+			"coordinates": [ 102, 0.5 ]
+		},
+		{
+			"type": "LineString",
+			"coordinates": [
+				[ 102, 0.5 ],
+				[ 103, 1 ]
+			]
+		},
+		{
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[ 100, 0 ],
+					[ 101, 0 ],
+					[ 101, 1 ],
+					[ 100, 1 ],
+					[ 100, 0 ]
+				]
+			]
+		}
+	]
+}
+[2025.06.26-12.24.54:860][867]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 17092.496094
+[2025.06.26-12.24.55:860][870]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.06.26-12.24.55:860][870]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 17093.164062, Update Interval: 348.650787
+[2025.06.26-12.26.52:790][303]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.06.26-12.26.57:731][319]LogLiveCoding: Display:    Creating library E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_18.lib and object E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_18.exp
+[2025.06.26-12.26.57:898][320]LogClass: UPackage /Script/GeoJSON_Importer Reload.
+[2025.06.26-12.26.57:898][320]LogClass: UClass Entry_LineString Reload.
+[2025.06.26-12.26.57:898][320]LogClass: Could not find existing class Entry_LineString in package /Script/GeoJSON_Importer for reload, assuming new or modified class
+[2025.06.26-12.26.57:905][320]Re-instancing Entry_LineString after reload.
+[2025.06.26-12.26.58:029][320]LogUObjectHash: Compacting FUObjectHashTables data took   1.49ms
+[2025.06.26-12.26.58:441][321]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed, 10 scriptstructs remapped
+[2025.06.26-12.26.58:441][321]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2025.06.26-12.27.07:676][364]Cmd: DELETE
+[2025.06.26-12.27.07:676][364]Cmd: ACTOR DELETE
+[2025.06.26-12.27.07:677][364]LogEditorActor: Actor GeoJSON_FeatureCollection3 is referenced by GeoJSON_Manager.
+[2025.06.26-12.27.08:510][364]LogSlate: Window 'Message' being destroyed
+[2025.06.26-12.27.08:515][364]Message dialog closed, result: Yes, title: Message, text: Actor GeoJSON_FeatureCollection3 is referenced by other Actors/Objects.
+Do you really want to delete it? This will break references.
+
+Reference List:
+
+GeoJSON_Manager
+[2025.06.26-12.27.08:515][364]LogEditorActor: Deleted Actor: GeoJSON_FeatureCollection
+[2025.06.26-12.27.08:596][364]LogUObjectHash: Compacting FUObjectHashTables data took   1.83ms
+[2025.06.26-12.27.08:607][364]LogEditorActor: Deleted 1 Actors (0.093 secs)
+[2025.06.26-12.27.09:136][422]Cmd: DELETE
+[2025.06.26-12.27.09:136][422]Cmd: ACTOR DELETE
+[2025.06.26-12.27.09:136][422]LogEditorActor: Actor GeoJSON_MultiLineString3 is referenced by GeoJSON_Manager.
+[2025.06.26-12.27.10:024][422]LogSlate: Window 'Message' being destroyed
+[2025.06.26-12.27.10:042][422]Message dialog closed, result: Yes, title: Message, text: Actor GeoJSON_MultiLineString3 is referenced by other Actors/Objects.
+Do you really want to delete it? This will break references.
+
+Reference List:
+
+GeoJSON_Manager
+[2025.06.26-12.27.10:043][422]LogEditorActor: Deleted Actor: GeoJSON_MultiLineString
+[2025.06.26-12.27.10:073][422]LogUObjectHash: Compacting FUObjectHashTables data took   0.91ms
+[2025.06.26-12.27.10:087][422]LogEditorActor: Deleted 1 Actors (0.045 secs)
+[2025.06.26-12.27.10:738][493]Cmd: DELETE
+[2025.06.26-12.27.10:738][493]Cmd: ACTOR DELETE
+[2025.06.26-12.27.10:739][493]LogEditorActor: Actor GeoJSON_MultiPoint3 is referenced by GeoJSON_Manager.
+[2025.06.26-12.27.11:467][493]LogSlate: Window 'Message' being destroyed
+[2025.06.26-12.27.11:484][493]Message dialog closed, result: Yes, title: Message, text: Actor GeoJSON_MultiPoint3 is referenced by other Actors/Objects.
+Do you really want to delete it? This will break references.
+
+Reference List:
+
+GeoJSON_Manager
+[2025.06.26-12.27.11:485][493]LogEditorActor: Deleted Actor: GeoJSON_MultiPoint
+[2025.06.26-12.27.11:496][493]LogUObjectHash: Compacting FUObjectHashTables data took   0.34ms
+[2025.06.26-12.27.11:502][493]LogEditorActor: Deleted 1 Actors (0.018 secs)
+[2025.06.26-12.27.16:655][100]LogTemp: Successfully loaded GeoJSON from: E:\Projects\Unreal Engine\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_featurecollection.geojson
+[2025.06.26-12.27.16:655][100]LogTemp: JSON deserialization successful.
+[2025.06.26-12.27.16:655][100]LogTemp: GeoJSON Type: FeatureCollection
+[2025.06.26-12.27.16:656][100]LogTemp: Successfully loaded GeoJSON from: E:\Projects\Unreal Engine\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multipoint.geojson
+[2025.06.26-12.27.16:656][100]LogTemp: JSON deserialization successful.
+[2025.06.26-12.27.16:656][100]LogTemp: GeoJSON Type: MultiPoint
+[2025.06.26-12.27.16:656][100]LogTemp: Successfully loaded GeoJSON from: E:\Projects\Unreal Engine\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multiLinestring.geojson
+[2025.06.26-12.27.16:656][100]LogTemp: JSON deserialization successful.
+[2025.06.26-12.27.16:656][100]LogTemp: GeoJSON Type: MultiLineString
+[2025.06.26-12.27.21:687][698]LogTemp: FeatureCollection Type: FeatureCollection
+[2025.06.26-12.27.21:687][698]LogTemp: FeatureCollection Description: 
+[2025.06.26-12.27.21:687][698]LogTemp: FeatureCollection Name: FeatureCollection_JSON_Test
+[2025.06.26-12.27.21:687][698]LogTemp: FeatureCollection CRS Type: name
+[2025.06.26-12.27.21:687][698]LogTemp: Feature Type: Feature
+[2025.06.26-12.27.21:687][698]LogTemp: Geometry: {
+	"type": "MultiLineString",
+	"coordinates": [
+		[
+			[ 102, 0.5 ],
+			[ 103, 1 ]
+		],
+		[
+			[ 104, 0.5 ],
+			[ 105, 1.5 ]
+		]
+	]
+}
+[2025.06.26-12.27.21:687][698]LogTemp: Feature Type: Feature
+[2025.06.26-12.27.21:687][698]LogTemp: Geometry: {
+	"type": "MultiPoint",
+	"coordinates": [
+		[ 102, 0.5 ],
+		[ 103.5, 1.5 ],
+		[ 104, 0.5 ]
+	]
+}
+[2025.06.26-12.27.21:687][698]LogTemp: Feature Type: Feature
+[2025.06.26-12.27.21:687][698]LogTemp: Geometry: {
+	"type": "MultiPolygon",
+	"coordinates": [
+		[
+			[
+				[ 100, 0 ],
+				[ 101, 0 ],
+				[ 101, 1 ],
+				[ 100, 1 ],
+				[ 100, 0 ]
+			],
+			[
+				[ 100, 0 ],
+				[ 101, 0 ],
+				[ 101, 1 ],
+				[ 100, 1 ],
+				[ 100, 0 ]
+			]
+		],
+		[
+			[
+				[ 102, 0 ],
+				[ 103, 0 ],
+				[ 103, 1 ],
+				[ 102, 1 ],
+				[ 102, 0 ]
+			]
+		]
+	]
+}
+[2025.06.26-12.27.21:687][698]LogTemp: Feature Type: Feature
+[2025.06.26-12.27.21:687][698]LogTemp: Geometry: {
+	"type": "GeometryCollection",
+	"geometries": [
+		{
+			"type": "Point",
+			"coordinates": [ 102, 0.5 ]
+		},
+		{
+			"type": "LineString",
+			"coordinates": [
+				[ 102, 0.5 ],
+				[ 103, 1 ]
+			]
+		},
+		{
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[ 100, 0 ],
+					[ 101, 0 ],
+					[ 101, 1 ],
+					[ 100, 1 ],
+					[ 100, 0 ]
+				]
+			]
+		}
+	]
+}
+[2025.06.26-12.27.49:948][156]LogUObjectHash: Compacting FUObjectHashTables data took   1.40ms
+[2025.06.26-12.27.49:960][156]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Project/Levels/M_Testing_Auto4
+[2025.06.26-12.27.49:960][156]LogSavePackage: Moving 'E:/Projects/Unreal Engine/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Saved/M_Testing_Auto43DF6406443592C7D0D684C9151F074D1.tmp' to 'E:/Projects/Unreal Engine/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Saved/Autosaves/Game/Project/Levels/M_Testing_Auto4.umap'
+[2025.06.26-12.27.49:960][156]LogAssetRegistry: Warning: ScanPathsSynchronous: E:/Projects/Unreal Engine/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Saved/Autosaves/Game/Project/Levels/M_Testing_Auto4.umap is in the /Temp path, will not scan.
+[2025.06.26-12.27.49:960][156]LogAssetRegistry: Warning: ScanPathsSynchronous: /Temp/__ExternalActors__/Autosaves/Game/Project/Levels/M_Testing_Auto4 is in the /Temp path, will not scan.
+[2025.06.26-12.27.49:960][156]LogAssetRegistry: Warning: ScanPathsSynchronous: /Temp/__ExternalObjects__/Autosaves/Game/Project/Levels/M_Testing_Auto4 is in the /Temp path, will not scan.
+[2025.06.26-12.27.49:960][156]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Project/Levels/M_Testing' took 0.026
+[2025.06.26-12.27.49:960][156]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.026
+[2025.06.26-12.31.29:578][816]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 17486.412109
+[2025.06.26-12.31.30:579][819]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.06.26-12.31.30:579][819]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 17487.078125, Update Interval: 315.906860
+[2025.06.26-12.36.47:587][764]LogViewport: Scene viewport resized to 1935x844, mode Windowed.
+[2025.06.26-12.36.49:076][768]LogViewport: Scene viewport resized to 1935x813, mode Windowed.
+[2025.06.26-12.37.40:935][924]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 17857.808594
+[2025.06.26-12.37.41:934][927]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.06.26-12.37.41:934][927]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 17858.476562, Update Interval: 351.157562
+[2025.06.26-12.39.11:856][196]LogViewport: Scene viewport resized to 958x809, mode Windowed.
+[2025.06.26-12.39.13:827][360]LogViewport: Scene viewport resized to 959x809, mode Windowed.
+[2025.06.26-12.39.13:855][360]LogViewport: Scene viewport resized to 965x809, mode Windowed.
+[2025.06.26-12.39.13:882][360]LogViewport: Scene viewport resized to 979x809, mode Windowed.
+[2025.06.26-12.39.13:911][360]LogViewport: Scene viewport resized to 992x809, mode Windowed.
+[2025.06.26-12.39.13:938][360]LogViewport: Scene viewport resized to 1009x809, mode Windowed.
+[2025.06.26-12.39.13:974][360]LogViewport: Scene viewport resized to 1017x809, mode Windowed.
+[2025.06.26-12.39.44:329][198]LogViewport: Scene viewport resized to 1016x809, mode Windowed.
+[2025.06.26-12.39.44:346][200]LogViewport: Scene viewport resized to 1011x809, mode Windowed.
+[2025.06.26-12.39.44:361][201]LogViewport: Scene viewport resized to 1006x809, mode Windowed.
+[2025.06.26-12.39.44:379][202]LogViewport: Scene viewport resized to 999x809, mode Windowed.
+[2025.06.26-12.39.44:396][203]LogViewport: Scene viewport resized to 993x809, mode Windowed.
+[2025.06.26-12.39.44:413][204]LogViewport: Scene viewport resized to 985x809, mode Windowed.
+[2025.06.26-12.39.44:433][205]LogViewport: Scene viewport resized to 974x809, mode Windowed.
+[2025.06.26-12.39.44:452][206]LogViewport: Scene viewport resized to 961x809, mode Windowed.
+[2025.06.26-12.39.44:469][207]LogViewport: Scene viewport resized to 955x809, mode Windowed.
+[2025.06.26-12.39.44:485][208]LogViewport: Scene viewport resized to 944x809, mode Windowed.
+[2025.06.26-12.39.44:504][209]LogViewport: Scene viewport resized to 933x809, mode Windowed.
+[2025.06.26-12.39.44:521][210]LogViewport: Scene viewport resized to 926x809, mode Windowed.
+[2025.06.26-12.39.44:538][211]LogViewport: Scene viewport resized to 924x809, mode Windowed.
+[2025.06.26-12.39.44:557][212]LogViewport: Scene viewport resized to 917x809, mode Windowed.
+[2025.06.26-12.39.44:574][213]LogViewport: Scene viewport resized to 916x809, mode Windowed.
+[2025.06.26-12.39.44:593][214]LogViewport: Scene viewport resized to 913x809, mode Windowed.
+[2025.06.26-12.39.44:610][215]LogViewport: Scene viewport resized to 910x809, mode Windowed.
+[2025.06.26-12.39.44:627][216]LogViewport: Scene viewport resized to 906x809, mode Windowed.
+[2025.06.26-12.39.44:645][217]LogViewport: Scene viewport resized to 904x809, mode Windowed.
+[2025.06.26-12.39.44:663][218]LogViewport: Scene viewport resized to 900x809, mode Windowed.
+[2025.06.26-12.39.44:679][219]LogViewport: Scene viewport resized to 898x809, mode Windowed.
+[2025.06.26-12.39.44:697][220]LogViewport: Scene viewport resized to 896x809, mode Windowed.
+[2025.06.26-12.39.44:720][222]LogViewport: Scene viewport resized to 894x809, mode Windowed.
+[2025.06.26-12.39.44:741][224]LogViewport: Scene viewport resized to 892x809, mode Windowed.
+[2025.06.26-12.39.44:752][225]LogViewport: Scene viewport resized to 891x809, mode Windowed.
+[2025.06.26-12.39.44:770][226]LogViewport: Scene viewport resized to 887x809, mode Windowed.
+[2025.06.26-12.39.44:785][227]LogViewport: Scene viewport resized to 886x809, mode Windowed.
+[2025.06.26-12.39.44:800][228]LogViewport: Scene viewport resized to 883x809, mode Windowed.
+[2025.06.26-12.39.44:818][229]LogViewport: Scene viewport resized to 882x809, mode Windowed.
+[2025.06.26-12.39.44:835][230]LogViewport: Scene viewport resized to 879x809, mode Windowed.
+[2025.06.26-12.39.44:852][231]LogViewport: Scene viewport resized to 877x809, mode Windowed.
+[2025.06.26-12.39.44:870][232]LogViewport: Scene viewport resized to 872x809, mode Windowed.
+[2025.06.26-12.39.44:885][233]LogViewport: Scene viewport resized to 870x809, mode Windowed.
+[2025.06.26-12.39.44:902][234]LogViewport: Scene viewport resized to 866x809, mode Windowed.
+[2025.06.26-12.39.44:919][235]LogViewport: Scene viewport resized to 865x809, mode Windowed.
+[2025.06.26-12.39.44:936][236]LogViewport: Scene viewport resized to 861x809, mode Windowed.
+[2025.06.26-12.39.44:958][238]LogViewport: Scene viewport resized to 859x809, mode Windowed.
+[2025.06.26-12.39.44:969][239]LogViewport: Scene viewport resized to 856x809, mode Windowed.
+[2025.06.26-12.39.44:990][240]LogViewport: Scene viewport resized to 854x809, mode Windowed.
+[2025.06.26-12.39.45:006][241]LogViewport: Scene viewport resized to 850x809, mode Windowed.
+[2025.06.26-12.39.45:021][242]LogViewport: Scene viewport resized to 849x809, mode Windowed.
+[2025.06.26-12.39.45:037][243]LogViewport: Scene viewport resized to 845x809, mode Windowed.
+[2025.06.26-12.39.45:061][245]LogViewport: Scene viewport resized to 841x809, mode Windowed.
+[2025.06.26-12.39.45:070][246]LogViewport: Scene viewport resized to 840x809, mode Windowed.
+[2025.06.26-12.39.45:087][247]LogViewport: Scene viewport resized to 837x809, mode Windowed.
+[2025.06.26-12.39.45:112][249]LogViewport: Scene viewport resized to 832x809, mode Windowed.
+[2025.06.26-12.39.45:137][252]LogViewport: Scene viewport resized to 829x809, mode Windowed.
+[2025.06.26-12.39.45:146][253]LogViewport: Scene viewport resized to 828x809, mode Windowed.
+[2025.06.26-12.39.45:167][254]LogViewport: Scene viewport resized to 821x809, mode Windowed.
+[2025.06.26-12.39.45:183][255]LogViewport: Scene viewport resized to 820x809, mode Windowed.
+[2025.06.26-12.39.45:199][256]LogViewport: Scene viewport resized to 818x809, mode Windowed.
+[2025.06.26-12.39.45:217][257]LogViewport: Scene viewport resized to 817x809, mode Windowed.
+[2025.06.26-12.40.39:613][563]LogUObjectHash: Compacting FUObjectHashTables data took   0.89ms
+[2025.06.26-12.40.40:671][563]LogSlate: Window 'Save Content' being destroyed
+[2025.06.26-12.40.40:678][563]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.06.26-12.40.40:724][563]LogUObjectHash: Compacting FUObjectHashTables data took   0.39ms
+[2025.06.26-12.40.40:731][563]LogSavePackage: Moving output files for package: /Game/Project/Levels/M_Testing
+[2025.06.26-12.40.40:731][563]LogSavePackage: Moving 'E:/Projects/Unreal Engine/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Saved/M_Testing3AD625A54E1F7652515BCB82B4C0E8D1.tmp' to 'E:/Projects/Unreal Engine/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Content/Project/Levels/M_Testing.umap'
+[2025.06.26-12.40.40:735][563]LogFileHelpers: Saving map 'M_Testing' took 0.034
+[2025.06.26-12.40.40:741][563]LogFileHelpers: InternalPromptForCheckoutAndSave took 62 ms (total: 163 ms)
+[2025.06.26-12.40.40:741][563]LogStall: Shutdown...
+[2025.06.26-12.40.40:746][563]LogStall: Shutdown complete.
+[2025.06.26-12.40.40:761][563]LogSlate: Window 'ConceptPlan' being destroyed
+[2025.06.26-12.40.40:782][563]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2025.06.26-12.40.40:782][563]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.06.26-12.40.40:808][563]LogSlate: Window 'GeoJSON_Importer - Unreal Editor' being destroyed
+[2025.06.26-12.40.40:808][563]LogWindowsTextInputMethodSystem: Activated input method: English (United States) - (Keyboard).
+[2025.06.26-12.40.40:859][563]AssetCheck: New page: Asset Save: M_Testing
+[2025.06.26-12.40.40:859][563]LogContentValidation: Display: Validating /Script/Engine.World /Game/Project/Levels/M_Testing.M_Testing
+[2025.06.26-12.40.40:860][564]Cmd: QUIT_EDITOR
+[2025.06.26-12.40.40:860][564]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2025.06.26-12.40.40:862][564]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2025.06.26-12.40.40:862][564]LogStaticMesh: Abandoning remaining async distance field tasks for shutdown
+[2025.06.26-12.40.40:862][564]LogStaticMesh: Abandoning remaining async card representation tasks for shutdown
+[2025.06.26-12.40.40:862][564]LogWorld: UWorld::CleanupWorld for M_Testing, bSessionEnded=true, bCleanupResources=true
+[2025.06.26-12.40.40:862][564]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.06.26-12.40.40:865][564]LogLevelSequenceEditor: LevelSequenceEditor subsystem deinitialized.
+[2025.06.26-12.40.41:072][564]LogAudio: Display: Beginning Audio Device Manager Shutdown (Module: AudioMixerXAudio2)...
+[2025.06.26-12.40.41:072][564]LogAudio: Display: Destroying 1 Remaining Audio Device(s)...
+[2025.06.26-12.40.41:072][564]LogAudio: Display: Audio Device unregistered from world 'M_Testing'.
+[2025.06.26-12.40.41:072][564]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 1
+[2025.06.26-12.40.41:072][564]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=1
+[2025.06.26-12.40.41:074][564]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=1
+[2025.06.26-12.40.41:080][564]LogAudio: Display: Audio Device Manager Shutdown
+[2025.06.26-12.40.41:084][564]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2025.06.26-12.40.41:084][564]LogExit: Preparing to exit.
+[2025.06.26-12.40.41:100][564]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
+[2025.06.26-12.40.41:111][564]LogPython: Display: Object '/Engine/PythonTypes.add_controls_for_selected_options' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.26-12.40.41:111][564]LogPython: Display: Object '/Engine/PythonTypes.add_controls_for_selected' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.26-12.40.41:112][564]LogPython: Display: Object '/Engine/PythonTypes.add_null_above_selected' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.26-12.40.41:112][564]LogPython: Display: Object '/Engine/PythonTypes.align_translation_rotation' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.26-12.40.41:112][564]LogPython: Display: Object '/Engine/PythonTypes.align_translation_all' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.26-12.40.41:112][564]LogPython: Display: Object '/Engine/PythonTypes.align_translation_x' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.26-12.40.41:112][564]LogPython: Display: Object '/Engine/PythonTypes.align_translation_y' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.26-12.40.41:112][564]LogPython: Display: Object '/Engine/PythonTypes.align_translation_z' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.26-12.40.41:112][564]LogPython: Display: Object '/Engine/PythonTypes.align_rotation' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.26-12.40.41:112][564]LogPython: Display: Object '/Engine/PythonTypes.align_scale' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.26-12.40.41:113][564]LogPython: Display: Object '/Engine/PythonTypes.search_replace_name_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.26-12.40.41:113][564]LogPython: Display: Object '/Engine/PythonTypes.search_replace_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.26-12.40.41:113][564]LogPython: Display: Object '/Engine/PythonTypes.add_prefix_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.26-12.40.41:113][564]LogPython: Display: Object '/Engine/PythonTypes.add_prefix_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.26-12.40.41:113][564]LogPython: Display: Object '/Engine/PythonTypes.add_suffix_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.26-12.40.41:113][564]LogPython: Display: Object '/Engine/PythonTypes.add_suffix_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.26-12.40.41:113][564]LogPython: Display: Object '/Engine/PythonTypes.do_rename_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.26-12.40.41:113][564]LogPython: Display: Object '/Engine/PythonTypes.do_rename_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.26-12.40.41:113][564]LogPython: Display: Object '/Engine/PythonTypes.set_bone_reference_pose' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.26-12.40.41:113][564]LogPython: Display: Object '/Engine/PythonTypes.ControlOutputFormat' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.26-12.40.41:952][564]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2025.06.26-12.40.41:954][564]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2025.06.26-12.40.42:102][564]LogDemo: Cleaned up 0 splitscreen connections, owner deletion: enabled
+[2025.06.26-12.40.42:108][564]LogExit: Editor shut down
+[2025.06.26-12.40.42:109][564]LogExit: Transaction tracking system shut down
+[2025.06.26-12.40.42:215][564]LogExit: Object subsystem successfully closed.
+[2025.06.26-12.40.42:221][564]LogShaderCompilers: Display: ================================================
+[2025.06.26-12.40.42:221][564]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2025.06.26-12.40.42:221][564]LogShaderCompilers: Display: Total job queries 0, among them cache hits 0 (0.00%)
+[2025.06.26-12.40.42:221][564]LogShaderCompilers: Display: Tracking 0 distinct input hashes that result in 0 distinct outputs (0.00%)
+[2025.06.26-12.40.42:221][564]LogShaderCompilers: Display: RAM used: 240,00 B of 3,20 GiB budget. Usage: 0.00%
+[2025.06.26-12.40.42:221][564]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2025.06.26-12.40.42:221][564]LogShaderCompilers: Display: Shaders Compiled: 0
+[2025.06.26-12.40.42:221][564]LogShaderCompilers: Display: Jobs assigned 0, completed 0 (0%)
+[2025.06.26-12.40.42:221][564]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 0.00 s
+[2025.06.26-12.40.42:221][564]LogShaderCompilers: Display: ================================================
+[2025.06.26-12.40.42:227][564]LogShaderCompilers: Display: Shaders left to compile 0
+[2025.06.26-12.40.42:239][564]LogVirtualization: UE::Virtualization was shutdown
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (1054)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module AddContentDialog (1052)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module WidgetCarousel (1051)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module SubobjectEditor (1048)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module SceneOutliner (1046)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module StatusBar (1044)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module UnsavedAssetsTracker (1042)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (1040)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module StatsViewer (1038)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (1036)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module AutomationWorker (1034)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module PlanarCut (1032)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module FractureEngine (1030)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module CharacterAI (1028)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module WaveTableEditor (1026)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module RigVMEditor (1024)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module ResonanceAudioEditor (1022)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module GooglePADEditor (1020)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (1018)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module AndroidFileServerEditor (1016)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (1014)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (1012)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (1010)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module WebMMediaEditor (1008)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module WebMMedia (1006)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (1004)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (1002)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module SequenceRecorder (1001)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (998)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (996)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (994)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (992)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (990)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (988)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (986)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module CameraShakePreviewer (984)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module TemplateSequenceEditor (982)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (980)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module ActorSequenceEditor (978)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module EngineAssetDefinitions (976)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module TextureAlignMode (974)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module BspMode (972)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module GeometryMode (970)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module SmartSnapping (968)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module IKRigEditor (966)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module ControlRigEditor (964)
+[2025.06.26-12.40.42:263][564]LogModuleManager: Shutting down and abandoning module SessionServices (962)
+[2025.06.26-12.40.42:265][564]LogModuleManager: Shutting down and abandoning module MeshPaint (960)
+[2025.06.26-12.40.42:265][564]LogModuleManager: Shutting down and abandoning module VirtualTexturingEditor (958)
+[2025.06.26-12.40.42:265][564]LogModuleManager: Shutting down and abandoning module PlacementMode (957)
+[2025.06.26-12.40.42:265][564]LogModuleManager: Shutting down and abandoning module FoliageEdit (954)
+[2025.06.26-12.40.42:265][564]LogModuleManager: Shutting down and abandoning module LandscapeEditor (952)
+[2025.06.26-12.40.42:265][564]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (950)
+[2025.06.26-12.40.42:265][564]LogModuleManager: Shutting down and abandoning module ActorPickerMode (948)
+[2025.06.26-12.40.42:265][564]LogModuleManager: Shutting down and abandoning module ViewportSnapping (946)
+[2025.06.26-12.40.42:265][564]LogModuleManager: Shutting down and abandoning module EditorWidgets (944)
+[2025.06.26-12.40.42:265][564]LogModuleManager: Shutting down and abandoning module ViewportInteraction (942)
+[2025.06.26-12.40.42:265][564]LogModuleManager: Shutting down and abandoning module ClothPainter (940)
+[2025.06.26-12.40.42:265][564]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (939)
+[2025.06.26-12.40.42:265][564]LogModuleManager: Shutting down and abandoning module WidgetRegistration (936)
+[2025.06.26-12.40.42:265][564]LogModuleManager: Shutting down and abandoning module LogVisualizer (934)
+[2025.06.26-12.40.42:265][564]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (932)
+[2025.06.26-12.40.42:265][564]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (930)
+[2025.06.26-12.40.42:265][564]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (929)
+[2025.06.26-12.40.42:265][564]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (927)
+[2025.06.26-12.40.42:941][564]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (924)
+[2025.06.26-12.40.42:941][564]LogModuleManager: Shutting down and abandoning module MacPlatformEditor (922)
+[2025.06.26-12.40.42:941][564]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (920)
+[2025.06.26-12.40.42:941][564]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (918)
+[2025.06.26-12.40.42:941][564]LogModuleManager: Shutting down and abandoning module RenderResourceViewer (916)
+[2025.06.26-12.40.42:941][564]LogModuleManager: Shutting down and abandoning module GameplayDebuggerEditor (914)
+[2025.06.26-12.40.42:941][564]LogModuleManager: Shutting down and abandoning module AnimationSettings (912)
+[2025.06.26-12.40.42:941][564]LogModuleManager: Shutting down and abandoning module VirtualizationEditor (910)
+[2025.06.26-12.40.42:941][564]LogModuleManager: Shutting down and abandoning module CSVtoSVG (908)
+[2025.06.26-12.40.42:941][564]LogModuleManager: Shutting down and abandoning module DerivedDataEditor (906)
+[2025.06.26-12.40.42:941][564]LogModuleManager: Shutting down and abandoning module EditorConfig (904)
+[2025.06.26-12.40.42:941][564]LogModuleManager: Shutting down and abandoning module EditorFramework (902)
+[2025.06.26-12.40.42:941][564]LogModuleManager: Shutting down and abandoning module StaticMeshEditor (900)
+[2025.06.26-12.40.42:941][564]LogModuleManager: Shutting down and abandoning module TraceInsights (898)
+[2025.06.26-12.40.42:942][564]MemoryProfiler: Shutdown
+[2025.06.26-12.40.42:942][564]NetworkingProfiler: Shutdown
+[2025.06.26-12.40.42:942][564]LoadingProfiler: Shutdown
+[2025.06.26-12.40.42:942][564]TimingProfiler: Shutdown
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module TraceServices (897)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module TraceAnalysis (896)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module EditorInteractiveToolsFramework (892)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module InteractiveToolsFramework (891)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module InputBindingEditor (888)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module MergeActors (886)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (884)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module LocalizationService (883)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module HardwareTargeting (880)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (878)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module UndoHistory (876)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module XmlParser (874)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module Blutility (872)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (870)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (869)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (866)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module InternationalizationSettings (865)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module SettingsEditor (862)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module ProjectLauncher (860)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module SessionFrontend (858)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module ProfilerClient (856)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module DeviceManager (854)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module AutomationController (852)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module AutomationWindow (850)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module Layers (848)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (846)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module DetailCustomizations (844)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module PackagesDialog (842)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module AnimationBlueprintEditor (840)
+[2025.06.26-12.40.42:942][564]LogModuleManager: Shutting down and abandoning module Persona (838)
+[2025.06.26-12.40.42:943][564]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (837)
+[2025.06.26-12.40.42:943][564]LogModuleManager: Shutting down and abandoning module Kismet (834)
+[2025.06.26-12.40.42:950][564]LogModuleManager: Shutting down and abandoning module KismetWidgets (833)
+[2025.06.26-12.40.42:950][564]LogModuleManager: Shutting down and abandoning module GraphEditor (830)
+[2025.06.26-12.40.42:950][564]LogModuleManager: Shutting down and abandoning module StructViewer (828)
+[2025.06.26-12.40.42:950][564]LogModuleManager: Shutting down and abandoning module ClassViewer (826)
+[2025.06.26-12.40.42:952][564]LogModuleManager: Shutting down and abandoning module UncontrolledChangelists (824)
+[2025.06.26-12.40.42:952][564]LogModuleManager: Shutting down and abandoning module SourceControlWindowExtender (822)
+[2025.06.26-12.40.42:952][564]LogModuleManager: Shutting down and abandoning module SourceControlWindows (820)
+[2025.06.26-12.40.42:952][564]LogModuleManager: Shutting down and abandoning module OutputLog (818)
+[2025.06.26-12.40.42:953][564]LogModuleManager: Shutting down and abandoning module Documentation (816)
+[2025.06.26-12.40.42:953][564]LogModuleManager: Shutting down and abandoning module SparseVolumeTexture (814)
+[2025.06.26-12.40.42:953][564]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (812)
+[2025.06.26-12.40.42:953][564]LogModuleManager: Shutting down and abandoning module MovieScene (810)
+[2025.06.26-12.40.42:953][564]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (808)
+[2025.06.26-12.40.42:953][564]LogModuleManager: Shutting down and abandoning module BinkAudioDecoder (806)
+[2025.06.26-12.40.42:953][564]LogModuleManager: Shutting down and abandoning module AudioMixerXAudio2 (804)
+[2025.06.26-12.40.42:953][564]LogModuleManager: Shutting down and abandoning module AudioMixer (803)
+[2025.06.26-12.40.42:953][564]LogModuleManager: Shutting down and abandoning module AudioMixerCore (802)
+[2025.06.26-12.40.42:953][564]LogModuleManager: Shutting down and abandoning module LauncherPlatform (798)
+[2025.06.26-12.40.42:953][564]LogModuleManager: Shutting down and abandoning module AnalyticsET (796)
+[2025.06.26-12.40.42:953][564]LogModuleManager: Shutting down and abandoning module PortalServices (794)
+[2025.06.26-12.40.42:953][564]LogModuleManager: Shutting down and abandoning module PortalRpc (792)
+[2025.06.26-12.40.42:953][564]LogModuleManager: Shutting down and abandoning module MessagingRpc (790)
+[2025.06.26-12.40.42:953][564]LogModuleManager: Shutting down and abandoning module AIModule (788)
+[2025.06.26-12.40.42:953][564]LogModuleManager: Shutting down and abandoning module GameplayDebugger (787)
+[2025.06.26-12.40.42:953][564]LogModuleManager: Shutting down and abandoning module AITestSuite (785)
+[2025.06.26-12.40.42:953][564]LogModuleManager: Shutting down and abandoning module NavigationSystem (783)
+[2025.06.26-12.40.42:953][564]LogModuleManager: Shutting down and abandoning module LevelInstanceEditor (780)
+[2025.06.26-12.40.42:953][564]LogModuleManager: Shutting down and abandoning module TypedElementRuntime (778)
+[2025.06.26-12.40.42:953][564]LogModuleManager: Shutting down and abandoning module TypedElementFramework (776)
+[2025.06.26-12.40.42:953][564]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (774)
+[2025.06.26-12.40.42:953][564]LogModuleManager: Shutting down and abandoning module ProfilerService (772)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module ProfileVisualizer (770)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module AudioSynesthesiaEditor (768)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module CacheTrackRecorder (766)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module TakeRecorderSources (764)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module TakeTrackRecorders (762)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module TakesCore (760)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module Fab (758)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module MegascansPlugin (756)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module Bridge (754)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module ContentBrowserFileDataSource (752)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module ContentBrowserClassDataSource (750)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module ContentBrowserAssetDataSource (748)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module CollectionManager (747)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module PortableObjectFileDataSource (744)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module ObjectMixerEditor (742)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module LightMixer (740)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module ToolPresetEditor (738)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module ToolPresetAsset (736)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module StructUtilsTestSuite (734)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module StructUtilsNodes (732)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module StructUtilsEditor (730)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module StructUtilsEngine (728)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module OpenImageDenoise (726)
+[2025.06.26-12.40.43:005][564]LogOpenImageDenoise: OIDN shutting down
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module SkeletalMeshModifiers (724)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module ModelingEditorUI (722)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module GeometryProcessingAdapters (720)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module MeshModelingToolsEditorOnlyExp (718)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module MeshModelingToolsExp (716)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module MeshLODToolset (714)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module LocalizableMessageBlueprint (712)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module LocalizableMessage (710)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module ChaosUserDataPT (708)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module GeometryFlowMeshProcessingEditor (706)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module GeometryFlowMeshProcessing (704)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module GeometryFlowCore (702)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module GeometryCollectionNodes (700)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module GeometryCollectionTracks (698)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module GeometryCollectionEngine (697)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module GeometryCollectionSequencer (695)
+[2025.06.26-12.40.43:005][564]LogModuleManager: Shutting down and abandoning module GeometryCollectionEditor (692)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module DataflowNodes (690)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module DataflowEnginePlugin (688)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module DataflowEditor (686)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module FractureEditor (684)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module ChaosSolverEditor (682)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module ChaosNiagara (680)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module ChaosClothEditor (678)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module BackChannel (676)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module AutomationUtilsEditor (674)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module AutomationUtils (672)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module SynthesisEditor (670)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module OodleNetworkHandlerComponent (668)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module ResonanceAudio (666)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (664)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (662)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module ModelingOperatorsEditorOnly (660)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module ModelingOperators (658)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module ModelingComponentsEditorOnly (656)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module ModelingComponents (654)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module GeometryFramework (653)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module MeshModelingToolsEditorOnly (650)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module MeshModelingTools (648)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module InputDebuggingEditor (646)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module InputDebugging (644)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module GooglePAD (642)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module DynamicMesh (640)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module GeometryAlgorithms (638)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (636)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module GeometryCacheStreamer (634)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (632)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module AudioCapture (630)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module AudioCaptureWasapi (629)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (626)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module AssetTags (624)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module AppleImageUtilsBlueprintSupport (622)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module AppleImageUtils (620)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module AndroidPermission (618)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module ActorLayerUtilitiesEditor (616)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module ActorLayerUtilities (614)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module InterchangeEditorUtilities (612)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module InterchangeEditorPipelines (610)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module InterchangeEditor (608)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module InterchangeFbxParser (606)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module InterchangeCommonParser (604)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module InterchangeDispatcher (602)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module InterchangeExport (600)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module InterchangeMessages (598)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module GLTFCore (596)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module MediaPlateEditor (594)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module MediaPlate (592)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module MediaCompositing (590)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module ImgMedia (588)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (586)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module RiderSourceCodeAccess (584)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (582)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module UObjectPlugin (580)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (578)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module PluginUtils (576)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module GitSourceControl (574)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module N10XSourceCodeAccess (572)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module DumpGPUServices (570)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (568)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module AnimationSharingEd (566)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module TakeSequencer (564)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module TakeMovieScene (562)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module VariantManager (560)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module NiagaraEditorWidgets (558)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module DatasmithContentEditor (556)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module VariantManagerContentEditor (554)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module TemplateSequence (552)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module SequencerScriptingEditor (550)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module SequencerScripting (548)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module InterchangeTestEditor (546)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module InterchangeTests (544)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (540)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module WorldPartitionHLODUtilities (538)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module UVEditorToolsEditorOnly (536)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module UVEditorTools (534)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module UVEditor (532)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module MaterialAnalyzer (530)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (528)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module SequencerAnimTools (526)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module ModelingToolsEditorMode (524)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module PluginBrowser (522)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module EditorScriptingUtilities (520)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module EditorDebugTools (518)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module CurveEditorTools (516)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (514)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module CryptoKeys (512)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module BlueprintHeaderView (510)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module ChangelistReview (508)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module AlembicImporter (506)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module AlembicLibrary (505)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module GeometryCache (504)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (503)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (498)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (496)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module Paper2DEditor (494)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module BlendSpaceMotionAnalysis (492)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module AnimationModifierLibrary (490)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module ControlRigSpline (488)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module ACLPluginEditor (486)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module EditorTraceUtilities (484)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module TraceUtilities (482)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module MeshPaintingToolset (480)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module MeshPaintEditorMode (478)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module InputEditor (476)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module GeoJSON_Importer (474)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module StructUtils (472)
+[2025.06.26-12.40.43:006][564]LogModuleManager: Shutting down and abandoning module PythonScriptPlugin (470)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module PBIK (468)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module FullBodyIK (466)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module SoundFields (464)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module ChaosCachingEditor (462)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module TakeRecorder (461)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module ChaosCaching (458)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module EnvironmentQueryEditor (456)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module SignificanceManager (454)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module PropertyAccessEditor (452)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module Synthesis (450)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module RigVMDeveloper (448)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module RigVM (446)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (444)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module MetasoundEditor (442)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module AudioWidgets (441)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module AdvancedWidgets (440)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module MetasoundEngineTest (436)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module MetasoundEngine (434)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module WaveTable (433)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module AudioCodecEngine (431)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module MetasoundStandardNodes (428)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module MetasoundFrontend (426)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module MetasoundGenerator (424)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module MetasoundGraphCore (422)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module MsQuicRuntime (420)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (418)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (416)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module CableComponent (414)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module AudioSynesthesia (412)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module AudioAnalyzer (411)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module AudioSynesthesiaCore (408)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module InterchangePipelines (406)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module InterchangeImport (404)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module InterchangeFactoryNodes (402)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module InterchangeNodes (400)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module ImgMediaEngine (398)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module TraceDataFiltering (396)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module PropertyAccessNode (394)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module AnimationSharing (392)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module NiagaraAnimNotifies (390)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module Niagara (388)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module SignalProcessing (387)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module NiagaraEditor (385)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module NiagaraCore (382)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module GameplayCameras (380)
+[2025.06.26-12.40.43:023][564]LogModuleManager: Shutting down and abandoning module TcpMessaging (378)
+[2025.06.26-12.40.43:123][564]LogModuleManager: Shutting down and abandoning module UdpMessaging (376)
+[2025.06.26-12.40.43:223][564]LogModuleManager: Shutting down and abandoning module ActorSequence (374)
+[2025.06.26-12.40.43:223][564]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (372)
+[2025.06.26-12.40.43:223][564]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (370)
+[2025.06.26-12.40.43:223][564]LogModuleManager: Shutting down and abandoning module FacialAnimation (368)
+[2025.06.26-12.40.43:223][564]LogModuleManager: Shutting down and abandoning module DataValidation (366)
+[2025.06.26-12.40.43:223][564]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (364)
+[2025.06.26-12.40.43:223][564]LogModuleManager: Shutting down and abandoning module LevelEditor (363)
+[2025.06.26-12.40.43:225][564]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (362)
+[2025.06.26-12.40.43:225][564]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (360)
+[2025.06.26-12.40.43:225][564]LogModuleManager: Shutting down and abandoning module MainFrame (358)
+[2025.06.26-12.40.43:226][564]LogModuleManager: Shutting down and abandoning module HotReload (357)
+[2025.06.26-12.40.43:226][564]LogModuleManager: Shutting down and abandoning module ContentBrowser (353)
+[2025.06.26-12.40.43:226][564]LogModuleManager: Shutting down and abandoning module ToolMenus (352)
+[2025.06.26-12.40.43:226][564]LogModuleManager: Shutting down and abandoning module ContentBrowserData (350)
+[2025.06.26-12.40.43:226][564]LogModuleManager: Shutting down and abandoning module TreeMap (347)
+[2025.06.26-12.40.43:226][564]LogModuleManager: Shutting down and abandoning module Paper2D (344)
+[2025.06.26-12.40.43:226][564]LogModuleManager: Shutting down and abandoning module IKRigDeveloper (342)
+[2025.06.26-12.40.43:226][564]LogModuleManager: Shutting down and abandoning module IKRig (340)
+[2025.06.26-12.40.43:226][564]LogModuleManager: Shutting down and abandoning module ControlRigDeveloper (338)
+[2025.06.26-12.40.43:226][564]LogModuleManager: Shutting down and abandoning module ControlRig (336)
+[2025.06.26-12.40.43:226][564]LogModuleManager: Shutting down and abandoning module Constraints (335)
+[2025.06.26-12.40.43:226][564]LogModuleManager: Shutting down and abandoning module LevelSequence (333)
+[2025.06.26-12.40.43:226][564]LogModuleManager: Shutting down and abandoning module AnimationData (330)
+[2025.06.26-12.40.43:226][564]LogModuleManager: Shutting down and abandoning module InputBlueprintNodes (328)
+[2025.06.26-12.40.43:226][564]LogModuleManager: Shutting down and abandoning module BlueprintGraph (327)
+[2025.06.26-12.40.43:227][564]LogModuleManager: Shutting down and abandoning module EnhancedInput (324)
+[2025.06.26-12.40.43:227][564]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (322)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module WebMMoviePlayer (320)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module AndroidFileServer (318)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module NetworkReplayStreaming (316)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module PacketHandler (314)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module WorldPartitionEditor (312)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module AnimGraph (310)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module TimeManagement (308)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module AnimationDataController (306)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (304)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntimeNv (302)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module MediaAssets (300)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module Overlay (298)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module OverlayEditor (297)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module VREditor (294)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module StringTableEditor (292)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (290)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (288)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module FunctionalTesting (286)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (284)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (283)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module ScriptableEditorWidgets (280)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module UMG (278)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module UMGEditor (277)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module EditorStyle (272)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module SlateReflector (270)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module Slate (268)
+[2025.06.26-12.40.43:231][564]LogModuleManager: Shutting down and abandoning module SlateCore (266)
+[2025.06.26-12.40.43:232][564]LogModuleManager: Shutting down and abandoning module SubobjectDataInterface (264)
+[2025.06.26-12.40.43:232][564]LogModuleManager: Shutting down and abandoning module LandscapeEditorUtilities (262)
+[2025.06.26-12.40.43:232][564]LogModuleManager: Shutting down and abandoning module UnrealEd (260)
+[2025.06.26-12.40.43:232][564]LogModuleManager: Shutting down and abandoning module MRMesh (258)
+[2025.06.26-12.40.43:232][564]LogModuleManager: Shutting down and abandoning module Messaging (256)
+[2025.06.26-12.40.43:232][564]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (254)
+[2025.06.26-12.40.43:232][564]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (252)
+[2025.06.26-12.40.43:232][564]LogModuleManager: Shutting down and abandoning module LiveCoding (250)
+[2025.06.26-12.40.43:241][564]LogModuleManager: Shutting down and abandoning module Networking (248)
+[2025.06.26-12.40.43:241][564]LogModuleManager: Shutting down and abandoning module Core (246)
+[2025.06.26-12.40.43:241][564]LogModuleManager: Shutting down and abandoning module AssetDefinition (244)
+[2025.06.26-12.40.43:241][564]LogModuleManager: Shutting down and abandoning module MovieSceneTools (242)
+[2025.06.26-12.40.43:241][564]LogModuleManager: Shutting down and abandoning module CurveEditor (241)
+[2025.06.26-12.40.43:241][564]LogModuleManager: Shutting down and abandoning module Sequencer (239)
+[2025.06.26-12.40.43:241][564]LogModuleManager: Shutting down and abandoning module KismetCompiler (236)
+[2025.06.26-12.40.43:241][564]LogModuleManager: Shutting down and abandoning module MeshBuilder (234)
+[2025.06.26-12.40.43:241][564]LogModuleManager: Shutting down and abandoning module NaniteBuilder (232)
+[2025.06.26-12.40.43:241][564]LogModuleManager: Shutting down and abandoning module MeshUtilities (230)
+[2025.06.26-12.40.43:241][564]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (229)
+[2025.06.26-12.40.43:241][564]LogModuleManager: Shutting down and abandoning module StaticMeshDescription (228)
+[2025.06.26-12.40.43:241][564]LogModuleManager: Shutting down and abandoning module GeometryProcessingInterfaces (227)
+[2025.06.26-12.40.43:241][564]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (224)
+[2025.06.26-12.40.43:241][564]LogModuleManager: Shutting down and abandoning module MeshBoneReduction (223)
+[2025.06.26-12.40.43:241][564]LogModuleManager: Shutting down and abandoning module SkeletalMeshReduction (221)
+[2025.06.26-12.40.43:241][564]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (219)
+[2025.06.26-12.40.43:241][564]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (217)
+[2025.06.26-12.40.43:241][564]LogModuleManager: Shutting down and abandoning module MaterialBaking (213)
+[2025.06.26-12.40.43:241][564]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (210)
+[2025.06.26-12.40.43:252][564]LogModuleManager: Shutting down and abandoning module TelemetryUtils (207)
+[2025.06.26-12.40.43:252][564]LogModuleManager: Shutting down and abandoning module NullInstallBundleManager (204)
+[2025.06.26-12.40.43:252][564]LogModuleManager: Shutting down and abandoning module ShaderPreprocessor (202)
+[2025.06.26-12.40.43:252][564]LogModuleManager: Shutting down and abandoning module DerivedDataCache (200)
+[2025.06.26-12.40.43:256][564]LogModuleManager: Shutting down and abandoning module TargetPlatform (198)
+[2025.06.26-12.40.43:256][564]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (197)
+[2025.06.26-12.40.43:256][564]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (195)
+[2025.06.26-12.40.43:256][564]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (193)
+[2025.06.26-12.40.43:256][564]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (191)
+[2025.06.26-12.40.43:256][564]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (189)
+[2025.06.26-12.40.43:256][564]LogModuleManager: Shutting down and abandoning module AudioFormatBINK (187)
+[2025.06.26-12.40.43:256][564]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (185)
+[2025.06.26-12.40.43:256][564]LogModuleManager: Shutting down and abandoning module AudioFormatOGG (183)
+[2025.06.26-12.40.43:256][564]LogModuleManager: Shutting down and abandoning module AudioFormatOPUS (181)
+[2025.06.26-12.40.43:256][564]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (179)
+[2025.06.26-12.40.43:256][564]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (177)
+[2025.06.26-12.40.43:256][564]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (175)
+[2025.06.26-12.40.43:256][564]LogModuleManager: Shutting down and abandoning module LinuxArm64TargetPlatform (173)
+[2025.06.26-12.40.43:256][564]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (171)
+[2025.06.26-12.40.43:256][564]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (169)
+[2025.06.26-12.40.43:256][564]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (167)
+[2025.06.26-12.40.43:256][564]LogModuleManager: Shutting down and abandoning module TextureFormat (165)
+[2025.06.26-12.40.43:256][564]LogModuleManager: Shutting down and abandoning module ImageWrapper (164)
+[2025.06.26-12.40.43:256][564]LogModuleManager: Shutting down and abandoning module TextureFormatOodle (162)
+[2025.06.26-12.40.43:257][564]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (160)
+[2025.06.26-12.40.43:257][564]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (158)
+[2025.06.26-12.40.43:257][564]LogModuleManager: Shutting down and abandoning module TextureFormatETC2 (156)
+[2025.06.26-12.40.43:257][564]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (154)
+[2025.06.26-12.40.43:257][564]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (152)
+[2025.06.26-12.40.43:257][564]LogModuleManager: Shutting down and abandoning module TurnkeySupport (149)
+[2025.06.26-12.40.43:257][564]LogModuleManager: Shutting down and abandoning module InputCore (146)
+[2025.06.26-12.40.43:257][564]LogModuleManager: Shutting down and abandoning module Settings (144)
+[2025.06.26-12.40.43:257][564]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (142)
+[2025.06.26-12.40.43:257][564]LogModuleManager: Shutting down and abandoning module ChaosSolverEngine (140)
+[2025.06.26-12.40.43:257][564]LogModuleManager: Shutting down and abandoning module FieldSystemEngine (139)
+[2025.06.26-12.40.43:257][564]LogModuleManager: Shutting down and abandoning module Chaos (136)
+[2025.06.26-12.40.43:257][564]LogModuleManager: Shutting down and abandoning module GeometryCore (135)
+[2025.06.26-12.40.43:257][564]LogModuleManager: Shutting down and abandoning module WindowsPlatformFeatures (132)
+[2025.06.26-12.40.43:257][564]LogModuleManager: Shutting down and abandoning module GameplayMediaEncoder (131)
+[2025.06.26-12.40.43:257][564]LogModuleManager: Shutting down and abandoning module AVEncoder (130)
+[2025.06.26-12.40.43:257][564]LogModuleManager: Shutting down and abandoning module D3D12RHI (126)
+[2025.06.26-12.40.43:257][564]LogModuleManager: Shutting down and abandoning module ChaosCloth (124)
+[2025.06.26-12.40.43:257][564]LogModuleManager: Shutting down and abandoning module AISupportModule (122)
+[2025.06.26-12.40.43:257][564]LogModuleManager: Shutting down and abandoning module WindowsDeviceProfileSelector (120)
+[2025.06.26-12.40.43:257][564]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (118)
+[2025.06.26-12.40.43:257][564]LogModuleManager: Shutting down and abandoning module ChunkDownloader (116)
+[2025.06.26-12.40.43:257][564]LogModuleManager: Shutting down and abandoning module WmfMedia (114)
+[2025.06.26-12.40.43:258][564]LogModuleManager: Shutting down and abandoning module Media (113)
+[2025.06.26-12.40.43:260][564]LogModuleManager: Shutting down and abandoning module ExrReaderGpu (110)
+[2025.06.26-12.40.43:260][564]LogModuleManager: Shutting down and abandoning module RenderDocPlugin (108)
+[2025.06.26-12.40.43:260][564]RenderDocPlugin: plugin has been unloaded.
+[2025.06.26-12.40.43:260][564]LogModuleManager: Shutting down and abandoning module PixWinPlugin (106)
+[2025.06.26-12.40.43:260][564]LogModuleManager: Shutting down and abandoning module NiagaraVertexFactories (104)
+[2025.06.26-12.40.43:260][564]LogModuleManager: Shutting down and abandoning module NiagaraShader (102)
+[2025.06.26-12.40.43:260][564]LogModuleManager: Shutting down and abandoning module DatasmithContent (100)
+[2025.06.26-12.40.43:260][564]LogModuleManager: Shutting down and abandoning module VariantManagerContent (98)
+[2025.06.26-12.40.43:260][564]LogModuleManager: Shutting down and abandoning module GLTFExporter (96)
+[2025.06.26-12.40.43:260][564]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (94)
+[2025.06.26-12.40.43:260][564]LogModuleManager: Shutting down and abandoning module OnlineSubsystemUtils (92)
+[2025.06.26-12.40.43:260][564]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (90)
+[2025.06.26-12.40.43:262][564]LogModuleManager: Shutting down and abandoning module XMPP (85)
+[2025.06.26-12.40.43:262][564]LogModuleManager: Shutting down and abandoning module WebSockets (84)
+[2025.06.26-12.40.43:266][564]LogModuleManager: Shutting down and abandoning module HTTP (81)
+[2025.06.26-12.40.43:266][564]LogHttp: Warning: [FHttpManager::Shutdown] Unbinding delegates for 1 outstanding Http Requests:
+[2025.06.26-12.40.43:266][564]LogHttp: Warning: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B04FD5614-42C8-2382-75D4-7783B579AA9C%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=24cf18094e34de2ea4b52fa8b3d41a29%7Ce1e0183b70524b8a85c80bfb59db134d%7C9f32671b-7502-4410-93a1-87152c30bbe7&AppEnvironment=datacollector-binary&UploadType=eteventstream] refs=[1] status=Processing
+[2025.06.26-12.40.43:280][564]LogModuleManager: Shutting down and abandoning module SSL (80)
+[2025.06.26-12.40.43:280][564]LogModuleManager: Shutting down and abandoning module OnlineServicesCommonEngineUtils (76)
+[2025.06.26-12.40.43:280][564]LogModuleManager: Shutting down and abandoning module OnlineServicesCommon (74)
+[2025.06.26-12.40.43:280][564]LogModuleManager: Shutting down and abandoning module OnlineServicesInterface (72)
+[2025.06.26-12.40.43:280][564]LogModuleManager: Shutting down and abandoning module EOSShared (70)
+[2025.06.26-12.40.43:812][564]LogEOSSDK: FEOSSDKManager::Shutdown EOS_Shutdown Result=[EOS_Success]
+[2025.06.26-12.40.43:812][564]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (68)
+[2025.06.26-12.40.43:812][564]LogModuleManager: Shutting down and abandoning module ACLPlugin (66)
+[2025.06.26-12.40.43:812][564]LogModuleManager: Shutting down and abandoning module DesktopPlatform (64)
+[2025.06.26-12.40.43:812][564]LogModuleManager: Shutting down and abandoning module PythonScriptPluginPreload (62)
+[2025.06.26-12.40.43:812][564]LogModuleManager: Shutting down and abandoning module PlatformCryptoOpenSSL (60)
+[2025.06.26-12.40.43:813][564]LogModuleManager: Shutting down and abandoning module PlatformCryptoTypes (58)
+[2025.06.26-12.40.43:813][564]LogModuleManager: Shutting down and abandoning module PlatformCrypto (56)
+[2025.06.26-12.40.43:813][564]LogModuleManager: Shutting down and abandoning module PlasticSourceControl (54)
+[2025.06.26-12.40.43:813][564]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (52)
+[2025.06.26-12.40.43:813][564]LogModuleManager: Shutting down and abandoning module SourceControl (51)
+[2025.06.26-12.40.43:813][564]LogModuleManager: Shutting down and abandoning module XGEController (48)
+[2025.06.26-12.40.43:813][564]LogXGEController: Cleaning working directory: C:/Users/Rob Work/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2025.06.26-12.40.43:813][564]LogModuleManager: Shutting down and abandoning module FastBuildController (46)
+[2025.06.26-12.40.43:813][564]LogModuleManager: Shutting down and abandoning module IoStoreOnDemand (44)
+[2025.06.26-12.40.43:813][564]LogModuleManager: Shutting down and abandoning module AnimationModifiers (42)
+[2025.06.26-12.40.43:813][564]LogModuleManager: Shutting down and abandoning module AudioEditor (40)
+[2025.06.26-12.40.43:813][564]LogModuleManager: Shutting down and abandoning module PropertyEditor (39)
+[2025.06.26-12.40.43:813][564]LogModuleManager: Shutting down and abandoning module Virtualization (36)
+[2025.06.26-12.40.43:813][564]LogModuleManager: Shutting down and abandoning module MessageLog (35)
+[2025.06.26-12.40.43:813][564]LogModuleManager: Shutting down and abandoning module TextureCompressor (32)
+[2025.06.26-12.40.43:813][564]LogModuleManager: Shutting down and abandoning module OpenColorIOWrapper (31)
+[2025.06.26-12.40.43:813][564]LogModuleManager: Shutting down and abandoning module RenderCore (28)
+[2025.06.26-12.40.43:813][564]LogModuleManager: Shutting down and abandoning module Landscape (26)
+[2025.06.26-12.40.43:813][564]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
+[2025.06.26-12.40.43:814][564]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (22)
+[2025.06.26-12.40.43:814][564]LogModuleManager: Shutting down and abandoning module Renderer (20)
+[2025.06.26-12.40.43:814][564]LogModuleManager: Shutting down and abandoning module Engine (18)
+[2025.06.26-12.40.43:814][564]LogModuleManager: Shutting down and abandoning module CoreUObject (16)
+[2025.06.26-12.40.43:814][564]LogModuleManager: Shutting down and abandoning module SandboxFile (14)
+[2025.06.26-12.40.43:814][564]LogModuleManager: Shutting down and abandoning module PakFile (12)
+[2025.06.26-12.40.43:814][564]LogPakFile: Destroying PakPlatformFile
+[2025.06.26-12.40.43:814][564]LogModuleManager: Shutting down and abandoning module RSA (11)
+[2025.06.26-12.40.43:814][564]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2025.06.26-12.40.43:814][564]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2025.06.26-12.40.43:814][564]LogModuleManager: Shutting down and abandoning module CookOnTheFly (4)
+[2025.06.26-12.40.43:814][564]LogModuleManager: Shutting down and abandoning module StorageServerClient (2)
+[2025.06.26-12.40.43:940][564]LogD3D12RHI: ~FD3D12DynamicRHI
+[2025.06.26-12.40.43:973][564]LogExit: Exiting.
+[2025.06.26-12.40.43:977][564]Log file closed, 06/26/25 14:40:43

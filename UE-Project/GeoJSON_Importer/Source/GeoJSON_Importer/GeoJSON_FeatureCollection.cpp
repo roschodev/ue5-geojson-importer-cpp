@@ -103,7 +103,6 @@ ETypes AGeoJSON_FeatureCollection::ExtractGeoJSONType(TSharedPtr<FJsonObject> Js
 FFeatureCollectionData AGeoJSON_FeatureCollection::ParseJSONToStructure(TSharedPtr<FJsonObject> GeoJSONData)
 {
     
-
     FFeatureCollectionData Data;
 
     if (!GeoJSONData.IsValid())
@@ -111,7 +110,9 @@ FFeatureCollectionData AGeoJSON_FeatureCollection::ParseJSONToStructure(TSharedP
         UE_LOG(LogTemp, Warning, TEXT("GeoJSONData is null or invalid."));
         return Data;
     }
-   
+
+
+    Data.Type = ExtractGeoJSONType(GeoJSONData);
     //Get Name of GeoJSON File (Optional)
     GeoJSONData->TryGetStringField(TEXT("name"), Data.Name);
     //Get Description of GeoJSON File (Optional)
@@ -119,7 +120,7 @@ FFeatureCollectionData AGeoJSON_FeatureCollection::ParseJSONToStructure(TSharedP
     //Get CRS of GeoJSON File (Optional)
     Data.CRS = ExtractCRS(GeoJSONData);
 	//Get Type of GeoJSON File
-	Data.Type = ExtractGeoJSONType(GeoJSONData);
+	
 
 
 	//Get Features Array from GeoJSON
@@ -131,6 +132,22 @@ FFeatureCollectionData AGeoJSON_FeatureCollection::ParseJSONToStructure(TSharedP
 
             FFeature Feature;
 			Feature.Type = ExtractGeoJSONType(FeatureValue->AsObject());
+
+            if (Feature.Type == ETypes::Point && !bAllowPointType) {
+                continue;
+            }
+            else if (Feature.Type == ETypes::LineString && !bAllowLineStringType)
+            {
+                continue;
+            }
+            else if (Feature.Type == ETypes::Polygon && !bAllowPolygonType)
+            {
+                continue;
+			}
+            else if ((Feature.Type == ETypes::FeatureCollection || Feature.Type == ETypes::GeometryCollection) && !bAllowCollectionTypes)
+            {
+                continue;
+            }
 
             if (!FeatureValue.IsValid()) continue;
 
@@ -198,7 +215,7 @@ void AGeoJSON_FeatureCollection::LogData()
     Data = ParseJSONToStructure(FeatureCollectionGeoJSONData);
     
 
-	/*FString TypeString = StaticEnum<ETypes>()->GetValueAsString(Data.Type);
+	FString TypeString = StaticEnum<ETypes>()->GetValueAsString(Data.Type);
     UE_LOG(LogTemp, Log, TEXT("FeatureCollection Type: %s"), *TypeString);
 	UE_LOG(LogTemp, Log, TEXT("FeatureCollection Description: %s"), *Data.Description);
     UE_LOG(LogTemp, Log, TEXT("FeatureCollection Name: %s"), *Data.Name);
@@ -211,9 +228,10 @@ void AGeoJSON_FeatureCollection::LogData()
         {
             UE_LOG(LogTemp, Log, TEXT("Geometry: %s"), *Geometry);
         }
-    }*/
-       
+    }
     
+   
+
    
 }
 #endif

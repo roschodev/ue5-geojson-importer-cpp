@@ -74,7 +74,18 @@ public:
 	FCRS ExtractCRS(TSharedPtr<FJsonObject> JsonObject);
 
 	FFeatureCollectionData ParseJSONToStructure(TSharedPtr<FJsonObject> GeoJSONData);
-	
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Filters|Allowed Types")
+	bool bAllowPointType = true;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Filters|Allowed Types")
+	bool bAllowPolygonType = true;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Filters|Allowed Types")
+	bool bAllowLineStringType = true;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Filters|Allowed Types")
+	bool bAllowCollectionTypes = true;
 
 protected:
 	// Called when the game starts or when spawned

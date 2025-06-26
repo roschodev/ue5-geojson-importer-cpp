@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"E:\\Github\\UE_Tool_GeoJSONImporter\\GeoJSON\\Source\\GeoJSON\\GeoJSON.Build.cs",
-		"E:\\Github\\UE_Tool_GeoJSONImporter\\GeoJSON\\Source\\GeoJSON.Target.cs",
-		"E:\\Github\\UE_Tool_GeoJSONImporter\\GeoJSON\\Source\\GeoJSONEditor.Target.cs"
+		"E:\\Projects\\Unreal Engine\\ue5-geojson-importer\\UE-Project\\old\\Source\\GeoJSON\\GeoJSON.Build.cs",
+		"E:\\Projects\\Unreal Engine\\ue5-geojson-importer\\UE-Project\\old\\Source\\GeoJSON.Target.cs",
+		"E:\\Projects\\Unreal Engine\\ue5-geojson-importer\\UE-Project\\old\\Source\\GeoJSONEditor.Target.cs"
 	],
 	"EngineVersion": "5.3.2"
 }

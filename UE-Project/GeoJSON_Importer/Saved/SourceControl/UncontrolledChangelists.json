@@ -5,7 +5,8 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/Users/RenderStation2/Documents/Unreal Projects/GeoJSON_Importer/Content/BP_GeoJSONLoader.uasset"
+				"E:/Projects/Unreal Engine/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset",
+				"E:/Projects/Unreal Engine/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Content/Project/Levels/M_Testing.umap"
 			]
 		}
 	]

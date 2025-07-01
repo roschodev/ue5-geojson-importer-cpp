@@ -2696,6 +2696,22 @@
           "bin/placeholder/EpicGames.UHT.dll": {}
         }
       },
+      "MarketplaceRules/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "EpicGames.Build": "1.0.0",
+          "UE5ProgramRules": "1.0.0",
+          "UE5Rules": "1.0.0",
+          "UnrealBuildTool": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MarketplaceRules.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MarketplaceRules.dll": {}
+        }
+      },
       "UE5ProgramRules/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -8017,6 +8033,11 @@
       "path": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source\\Programs\\Shared\\EpicGames.UHT\\EpicGames.UHT.csproj",
       "msbuildProject": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source\\Programs\\Shared\\EpicGames.UHT\\EpicGames.UHT.csproj"
     },
+    "MarketplaceRules/1.0.0": {
+      "type": "project",
+      "path": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Intermediate\\Build\\BuildRulesProjects\\MarketplaceRules\\MarketplaceRules.csproj",
+      "msbuildProject": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Intermediate\\Build\\BuildRulesProjects\\MarketplaceRules\\MarketplaceRules.csproj"
+    },
     "UE5ProgramRules/1.0.0": {
       "type": "project",
       "path": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5ProgramRules\\UE5ProgramRules.csproj",
@@ -8036,29 +8057,30 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "EpicGames.Build >= 1.0.0",
+      "MarketplaceRules >= 1.0.0",
       "UE5ProgramRules >= 1.0.0",
       "UE5Rules >= 1.0.0",
       "UnrealBuildTool >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rob Work\\.nuget\\packages\\": {},
+    "C:\\Users\\RenderStation2\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\Unreal Engine\\ue5-geojson-importer\\UE-Project\\GeoJSON_Importer\\Intermediate\\Build\\BuildRulesProjects\\GeoJSON_ImporterModuleRules\\GeoJSON_ImporterModuleRules.csproj",
+      "projectUniqueName": "D:\\Development\\ue5-geojson-importer-cpp\\UE-Project\\GeoJSON_Importer\\Intermediate\\Build\\BuildRulesProjects\\GeoJSON_ImporterModuleRules\\GeoJSON_ImporterModuleRules.csproj",
       "projectName": "GeoJSON_ImporterModuleRules",
-      "projectPath": "E:\\Projects\\Unreal Engine\\ue5-geojson-importer\\UE-Project\\GeoJSON_Importer\\Intermediate\\Build\\BuildRulesProjects\\GeoJSON_ImporterModuleRules\\GeoJSON_ImporterModuleRules.csproj",
-      "packagesPath": "C:\\Users\\Rob Work\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\Unreal Engine\\ue5-geojson-importer\\UE-Project\\GeoJSON_Importer\\Intermediate\\Build\\BuildRulesProjects\\GeoJSON_ImporterModuleRules\\obj\\",
+      "projectPath": "D:\\Development\\ue5-geojson-importer-cpp\\UE-Project\\GeoJSON_Importer\\Intermediate\\Build\\BuildRulesProjects\\GeoJSON_ImporterModuleRules\\GeoJSON_ImporterModuleRules.csproj",
+      "packagesPath": "C:\\Users\\RenderStation2\\.nuget\\packages\\",
+      "outputPath": "D:\\Development\\ue5-geojson-importer-cpp\\UE-Project\\GeoJSON_Importer\\Intermediate\\Build\\BuildRulesProjects\\GeoJSON_ImporterModuleRules\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Rob Work\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\RenderStation2\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8073,6 +8095,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Intermediate\\Build\\BuildRulesProjects\\MarketplaceRules\\MarketplaceRules.csproj": {
+              "projectPath": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Intermediate\\Build\\BuildRulesProjects\\MarketplaceRules\\MarketplaceRules.csproj"
+            },
             "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5ProgramRules\\UE5ProgramRules.csproj": {
               "projectPath": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5ProgramRules\\UE5ProgramRules.csproj"
             },
@@ -8097,8 +8122,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.300"
+      }
     },
     "frameworks": {
       "net6.0": {
@@ -8119,7 +8143,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

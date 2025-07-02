@@ -134,6 +134,12 @@
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClInclude Include="..\..\Source\GeoJSON_Importer\GeoJSON_FeatureCollection.h"/>
+    <ClCompile Include="..\..\Source\GeoJSON_Importer\GeoJSON_Functions.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GeoJSON_Importer\GeoJSON_Functions.h"/>
     <None Include="..\..\Source\GeoJSON_Importer\GeoJSON_Importer.Build.cs"/>
     <ClCompile Include="..\..\Source\GeoJSON_Importer\GeoJSON_Importer.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>

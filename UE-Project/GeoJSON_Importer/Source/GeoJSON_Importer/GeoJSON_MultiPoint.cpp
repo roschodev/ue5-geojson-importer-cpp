@@ -4,6 +4,8 @@
 #include "GeoJSON_MultiPoint.h"
 #include "Json.h"
 #include "JsonUtilities.h"
+#include "Data.h"
+#include "GeoJSON_Functions.h"
 
 // Sets default values
 AGeoJSON_MultiPoint::AGeoJSON_MultiPoint()
@@ -18,27 +20,53 @@ AGeoJSON_MultiPoint::AGeoJSON_MultiPoint()
 void AGeoJSON_MultiPoint::BeginPlay()
 {
 	Super::BeginPlay();
-
-
-	
 }
 
-#if WITH_EDITOR
-void AGeoJSON_MultiPoint::LogData()
+
+FMultiPointData AGeoJSON_MultiPoint::ParseMultiPointData()
 {
-    if (!MultiPointGeoJSONData.IsValid())
+    FMultiPointData d;
+
+    d.Type = UGeoJSON_Functions::GetType(Data);
+    Data->TryGetStringField(TEXT("name"), d.Name);
+    d.CRS = UGeoJSON_Functions::GetCRS(Data);
+
+    const TArray<TSharedPtr<FJsonValue>>* CoordinatesArrayPtr;
+    if (Data->TryGetArrayField(TEXT("coordinates"), CoordinatesArrayPtr) && CoordinatesArrayPtr)
     {
-        UE_LOG(LogTemp, Warning, TEXT("FeatureCollectionGeoJSONData is null or invalid."));
-        return;
+        for (const TSharedPtr<FJsonValue>& Value : *CoordinatesArrayPtr)
+        {
+            if (Value->Type == EJson::Array)
+            {
+                const TArray<TSharedPtr<FJsonValue>>& PointArray = Value->AsArray();
+
+                if (PointArray.Num() >= 2)
+                {
+                    FPoint Point;
+
+					Point.Type = ETypes::Point;
+                    Point.Coordinates.X = PointArray[0]->AsNumber();
+                    Point.Coordinates.Y = PointArray[1]->AsNumber();
+                    d.Points.Add(Point);
+                }
+            }
+        }
+        return d;
     }
-
-    FString OutputString;
-    TSharedRef<TJsonWriter<>> Writer = TJsonWriterFactory<>::Create(&OutputString);
-    FJsonSerializer::Serialize(MultiPointGeoJSONData.ToSharedRef(), Writer);
-    UE_LOG(LogTemp, Log, TEXT("Data: %s"), *OutputString);
+    else
+    {
+        UE_LOG(LogTemp, Warning, TEXT("Missing or invalid 'coordinates' field."));
+        return d;
+    }
 }
-#endif
 
+void AGeoJSON_MultiPoint::ParseData()
+{
+    if (UGeoJSON_Functions::IsValidGeoJSON(this, Data))
+    {
+        FData = ParseMultiPointData();
+    }
+}
 
 // Called every frame
 void AGeoJSON_MultiPoint::Tick(float DeltaTime)

@@ -20,13 +20,16 @@ struct FFeature
 {
 	GENERATED_BODY()
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Data")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Data")
 	TEnumAsByte<ETypes> Type;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Data")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Data")
+	FString Name;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Data")
 	TMap<FString, FString> Properties;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Data")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Data")
 	TArray<FString> Geometry;
 };
 
@@ -39,21 +42,19 @@ struct FFeatureCollectionData
 {
 	GENERATED_BODY()
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Data")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Data")
 	TEnumAsByte<ETypes> Type;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Data")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Data")
 	FString Name;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Data")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Data")
 	FString Description;
 
-	
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Data")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Data")
 	FCRS CRS;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Data")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Data")
 	TArray<FFeature> Features;
 };
 
@@ -69,17 +70,15 @@ public:
 	AGeoJSON_FeatureCollection();
 
 	// Data in JSONObject format
-	TSharedPtr<FJsonObject> FeatureCollectionGeoJSONData;
+	TSharedPtr<FJsonObject> Data;
 
+	UFUNCTION(CallinEditor, Category = "Debug")
+	void LogData(FFeatureCollectionData d);	
 
-
-	ETypes ExtractGeoJSONType(TSharedPtr<FJsonObject> JsonObject);
 
 	void ParseData();
 
-
-	FCRS ExtractCRS(TSharedPtr<FJsonObject> JsonObject);
-	TMap<FString, FString> ExtractProperties(TSharedPtr<FJsonObject> JsonObject);
+	FString FilePath;
 
 	FFeatureCollectionData ParseJSONToStructure(TSharedPtr<FJsonObject> GeoJSONData);
 
@@ -96,7 +95,7 @@ public:
 	bool bAllowCollectionTypes = true;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	FFeatureCollectionData Data;
+	FFeatureCollectionData FData;
 
 protected:
 	// Called when the game starts or when spawned

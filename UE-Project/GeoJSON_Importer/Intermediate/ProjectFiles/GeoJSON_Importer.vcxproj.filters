@@ -52,6 +52,12 @@
     <ClInclude Include="..\..\Source\GeoJSON_Importer\GeoJSON_FeatureCollection.h">
       <Filter>Source\GeoJSON_Importer</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\GeoJSON_Importer\GeoJSON_Functions.cpp">
+      <Filter>Source\GeoJSON_Importer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GeoJSON_Importer\GeoJSON_Functions.h">
+      <Filter>Source\GeoJSON_Importer</Filter>
+    </ClInclude>
     <None Include="..\..\Source\GeoJSON_Importer\GeoJSON_Importer.Build.cs">
       <Filter>Source\GeoJSON_Importer</Filter>
     </None>

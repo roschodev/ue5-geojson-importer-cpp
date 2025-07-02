@@ -1,4 +1,4 @@
-"E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\Win64\x64\GeoJSON_ImporterEditor\Development\Core\SharedPCH.Core.Cpp20.cpp"
+"E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\Win64\x64\GeoJSON_ImporterEditor\Development\Core\SharedPCH.Core.Cpp20.cpp"
 /I "."
 /I "Runtime\Core\Public"
 /I "Runtime\Core\Internal"
@@ -10,10 +10,10 @@
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/Yc"E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\Win64\x64\GeoJSON_ImporterEditor\Development\Core\SharedPCH.Core.Cpp20.h"
-/Fp"E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\Win64\x64\GeoJSON_ImporterEditor\Development\Core\SharedPCH.Core.Cpp20.h.pch"
-/Fo"E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\Win64\x64\GeoJSON_ImporterEditor\Development\Core\SharedPCH.Core.Cpp20.h.obj"
-/sourceDependencies "E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\Win64\x64\GeoJSON_ImporterEditor\Development\Core\SharedPCH.Core.Cpp20.h.dep.json"
+/Yc"E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\Win64\x64\GeoJSON_ImporterEditor\Development\Core\SharedPCH.Core.Cpp20.h"
+/Fp"E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\Win64\x64\GeoJSON_ImporterEditor\Development\Core\SharedPCH.Core.Cpp20.h.pch"
+/Fo"E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\Win64\x64\GeoJSON_ImporterEditor\Development\Core\SharedPCH.Core.Cpp20.h.obj"
+/sourceDependencies "E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\Win64\x64\GeoJSON_ImporterEditor\Development\Core\SharedPCH.Core.Cpp20.h.dep.json"
 /Zc:inline
 /nologo
 /Oi

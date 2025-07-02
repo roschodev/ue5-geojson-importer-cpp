@@ -1,2 +1,0 @@
-// Compiler: 14.36.32548
-#include "E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Intermediate/Build/Win64/x64/GeoJSON_ImporterEditor/DebugGame/CoreUObject/SharedPCH.CoreUObject.Cpp20.h"

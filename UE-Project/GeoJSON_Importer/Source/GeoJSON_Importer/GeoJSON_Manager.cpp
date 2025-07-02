@@ -29,7 +29,7 @@ void AGeoJSON_Manager::BeginPlay()
 void AGeoJSON_Manager::OnConstruction(const FTransform& Transform)
 {
 	Super::OnConstruction(Transform);
-   
+
 }
 
 // Called every frame
@@ -72,14 +72,9 @@ void AGeoJSON_Manager::LoadGeoJSONFiles()
             case Point:
             case MultiPoint:
             {
-                UClass* MultiPointBPClass = LoadClass<AGeoJSON_MultiPoint>(
-                    nullptr,
-                    TEXT("/Game/Project/Blueprints/GeoJSON/Types/BP_GeoJSON_MultiPoint.BP_GeoJSON_MultiPoint_C")
-                );
-
                 // Create a new MultiPoint actor and set its properties
                 AGeoJSON_MultiPoint* MultiPointActor = GetWorld()->SpawnActor<AGeoJSON_MultiPoint>(
-                    MultiPointBPClass,
+                    AGeoJSON_MultiPoint::StaticClass(),
                     FVector(0, 0, 0),
                     FRotator(0, 0, 0),
                     SpawnParams
@@ -88,20 +83,16 @@ void AGeoJSON_Manager::LoadGeoJSONFiles()
                 if (MultiPointActor)
                 {
                     MultiPointActor->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
-                    MultiPointActor->MultiPointGeoJSONData = g_obj;
+					MultiPointActor->MultiPointGeoJSONData = g_obj; // Set the GeoJSON data
                 }
+                break;
 			}
             case LineString:
             case MultiLineString:
             {
-                UClass* MultiLineStringBPClass = LoadClass<AGeoJSON_MultiLineString>(
-                    nullptr,
-                    TEXT("/Game/Project/Blueprints/GeoJSON/Types/BP_GeoJSON_MultiLineString.BP_GeoJSON_MultiLineString_C")
-                );
-
                 // Create a new MultiPoint actor and set its properties
                 AGeoJSON_MultiLineString* MultiLineStringActor = GetWorld()->SpawnActor<AGeoJSON_MultiLineString>(
-                    MultiLineStringBPClass,
+                    AGeoJSON_MultiLineString::StaticClass(),
                     FVector(0, 0, 0),
                     FRotator(0, 0, 0),
                     SpawnParams
@@ -110,7 +101,7 @@ void AGeoJSON_Manager::LoadGeoJSONFiles()
                 if (MultiLineStringActor)
                 {
                     MultiLineStringActor->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
-                    MultiLineStringActor->MultiLineStringGeoJSONData = g_obj; 
+                    MultiLineStringActor->MultiLineStringGeoJSONData = g_obj; // Set the GeoJSON data
                 }
 
                 break;
@@ -128,36 +119,18 @@ void AGeoJSON_Manager::LoadGeoJSONFiles()
             case Feature:
             case FeatureCollection:
             {
-                UClass* FeatureCollectionBPClass = LoadClass<AGeoJSON_FeatureCollection>(
-                    nullptr,
-                    TEXT("/Game/Project/Blueprints/GeoJSON/Types/BP_GeoJSON_FeatureCollection.BP_GeoJSON_FeatureCollection_C")
+                AGeoJSON_FeatureCollection* FeatureCollectionActor = GetWorld()->SpawnActor<AGeoJSON_FeatureCollection>(
+                    AGeoJSON_FeatureCollection::StaticClass(),
+                    FVector(0, 0, 0),
+                    FRotator(0, 0, 0),
+                    SpawnParams
                 );
 
-                if (FeatureCollectionBPClass)
+                if (FeatureCollectionActor)
                 {
-                    AGeoJSON_FeatureCollection* FeatureCollectionActor = GetWorld()->SpawnActor<AGeoJSON_FeatureCollection>(
-                        FeatureCollectionBPClass,
-                        FVector(0, 0, 0),
-                        FRotator(0, 0, 0),
-                        SpawnParams
-                    );
-
-                    if (FeatureCollectionActor)
-                    {
-                        FeatureCollectionActor->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
-                        FeatureCollectionActor->FeatureCollectionGeoJSONData = g_obj;
-						FeatureCollectionActor->ParseData(); // Parse the GeoJSON data
-                    }
-                    else
-                    {
-                        UE_LOG(LogTemp, Error, TEXT("Failed to spawn FeatureCollectionActor from Blueprint."));
-                    }
+                    FeatureCollectionActor->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
+                    FeatureCollectionActor->FeatureCollectionGeoJSONData = g_obj; // Set the GeoJSON data
                 }
-                else
-                {
-                    UE_LOG(LogTemp, Error, TEXT("Failed to load Blueprint class for FeatureCollection."));
-                }
-
                 break;
             }
             case Unsupported:
@@ -247,9 +220,4 @@ ETypes AGeoJSON_Manager::ExtractGeoJSONType(TSharedPtr<FJsonObject> JsonObject)
         UE_LOG(LogTemp, Error, TEXT("GeoJSON does not contain a 'type' field."));
         return ETypes::Unsupported;
     }
-}
-
-void AGeoJSON_Manager::LogLine() {
-    UClass* FeatureCollectionClass = LoadClass<AActor>(nullptr, TEXT("/Game/Project/Blueprints/GeoJSON/Types/BP_Layer_FeatureCollection.BP_Layer_FeatureCollection_C"));
-    UE_LOG(LogTemp, Log, TEXT("FeatureCollectionClass: %s"), *FeatureCollectionClass->GetName());
 }

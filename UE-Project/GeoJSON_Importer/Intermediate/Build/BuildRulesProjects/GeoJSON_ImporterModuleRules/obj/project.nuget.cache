@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rzi2mRf13RY=",
+  "dgSpecHash": "mK4aQ7Xpkyg=",
   "success": true,
-  "projectFilePath": "E:\\Projecten\\ue5-geojson-importer\\UE-Project\\GeoJSON_Importer\\Intermediate\\Build\\BuildRulesProjects\\GeoJSON_ImporterModuleRules\\GeoJSON_ImporterModuleRules.csproj",
+  "projectFilePath": "E:\\Projects\\Unreal Engine\\ue5-geojson-importer\\UE-Project\\GeoJSON_Importer\\Intermediate\\Build\\BuildRulesProjects\\GeoJSON_ImporterModuleRules\\GeoJSON_ImporterModuleRules.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rob Work\\.nuget\\packages\\blake3\\0.5.1\\blake3.0.5.1.nupkg.sha512",
     "C:\\Users\\Rob Work\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",

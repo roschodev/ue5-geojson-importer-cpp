@@ -19,6 +19,22 @@ void AGeoJSON_MultiLineString::BeginPlay()
 	
 }
 
+#if WITH_EDITOR
+void AGeoJSON_MultiLineString::LogData()
+{
+    if (!MultiLineStringGeoJSONData.IsValid())
+    {
+        UE_LOG(LogTemp, Warning, TEXT("FeatureCollectionGeoJSONData is null or invalid."));
+        return;
+    }
+
+    FString OutputString;
+    TSharedRef<TJsonWriter<>> Writer = TJsonWriterFactory<>::Create(&OutputString);
+    FJsonSerializer::Serialize(MultiLineStringGeoJSONData.ToSharedRef(), Writer);
+    UE_LOG(LogTemp, Log, TEXT("Data: %s"), *OutputString);
+}
+#endif
+
 // Called every frame
 void AGeoJSON_MultiLineString::Tick(float DeltaTime)
 {

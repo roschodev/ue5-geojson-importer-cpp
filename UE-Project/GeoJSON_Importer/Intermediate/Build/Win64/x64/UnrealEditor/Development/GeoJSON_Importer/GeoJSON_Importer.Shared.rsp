@@ -256,8 +256,8 @@
 /I "Developer\PhysicsUtilities\Public"
 /I "..\Intermediate\Build\Win64\UnrealEditor\Inc\WidgetRegistration\UHT"
 /I "Developer\WidgetRegistration\Public"
-/I "E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\Win64\UnrealEditor\Inc\GeoJSON_Importer\UHT"
-/I "E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Source"
+/I "E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\Win64\UnrealEditor\Inc\GeoJSON_Importer\UHT"
+/I "E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Source"
 /external:W0
 /external:I "ThirdParty\mimalloc\include"
 /external:I "ThirdParty\LibTiff\Source\Win64"

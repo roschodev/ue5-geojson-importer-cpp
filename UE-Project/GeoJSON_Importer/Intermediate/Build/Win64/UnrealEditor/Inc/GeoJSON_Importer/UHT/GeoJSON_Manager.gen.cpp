@@ -9,20 +9,11 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeGeoJSON_Manager() {}
 // Cross Module References
-	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
-	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	GEOJSON_IMPORTER_API UClass* Z_Construct_UClass_AGeoJSON_Manager();
 	GEOJSON_IMPORTER_API UClass* Z_Construct_UClass_AGeoJSON_Manager_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_GeoJSON_Importer();
 // End Cross Module References
-	DEFINE_FUNCTION(AGeoJSON_Manager::execLogLine)
-	{
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->LogLine();
-		P_NATIVE_END;
-	}
 	DEFINE_FUNCTION(AGeoJSON_Manager::execLoadGeoJSONFiles)
 	{
 		P_FINISH;
@@ -35,7 +26,6 @@ void EmptyLinkFunctionForGeneratedCodeGeoJSON_Manager() {}
 		UClass* Class = AGeoJSON_Manager::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "LoadGeoJSONFiles", &AGeoJSON_Manager::execLoadGeoJSONFiles },
-			{ "LogLine", &AGeoJSON_Manager::execLogLine },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -63,30 +53,6 @@ void EmptyLinkFunctionForGeneratedCodeGeoJSON_Manager() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AGeoJSON_Manager_LogLine_Statics
-	{
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGeoJSON_Manager_LogLine_Statics::Function_MetaDataParams[] = {
-		{ "CallInEditor", "true" },
-		{ "Category", "Execute" },
-		{ "ModuleRelativePath", "GeoJSON_Manager.h" },
-	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AGeoJSON_Manager_LogLine_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGeoJSON_Manager, nullptr, "LogLine", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AGeoJSON_Manager_LogLine_Statics::Function_MetaDataParams), Z_Construct_UFunction_AGeoJSON_Manager_LogLine_Statics::Function_MetaDataParams) };
-	UFunction* Z_Construct_UFunction_AGeoJSON_Manager_LogLine()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AGeoJSON_Manager_LogLine_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(AGeoJSON_Manager);
 	UClass* Z_Construct_UClass_AGeoJSON_Manager_NoRegister()
 	{
@@ -104,10 +70,6 @@ void EmptyLinkFunctionForGeneratedCodeGeoJSON_Manager() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_Filepaths_MetaData[];
 #endif
 		static const UECodeGen_Private::FArrayPropertyParams NewProp_Filepaths;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_FeatureCollection_Actor_MetaData[];
-#endif
-		static const UECodeGen_Private::FClassPropertyParams NewProp_FeatureCollection_Actor;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -119,7 +81,6 @@ void EmptyLinkFunctionForGeneratedCodeGeoJSON_Manager() {}
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AGeoJSON_Manager_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_AGeoJSON_Manager_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AGeoJSON_Manager_LoadGeoJSONFiles, "LoadGeoJSONFiles" }, // 2404454822
-		{ &Z_Construct_UFunction_AGeoJSON_Manager_LogLine, "LogLine" }, // 2679397448
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AGeoJSON_Manager_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
@@ -136,17 +97,9 @@ void EmptyLinkFunctionForGeneratedCodeGeoJSON_Manager() {}
 	};
 #endif
 	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AGeoJSON_Manager_Statics::NewProp_Filepaths = { "Filepaths", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AGeoJSON_Manager, Filepaths), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AGeoJSON_Manager_Statics::NewProp_Filepaths_MetaData), Z_Construct_UClass_AGeoJSON_Manager_Statics::NewProp_Filepaths_MetaData) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGeoJSON_Manager_Statics::NewProp_FeatureCollection_Actor_MetaData[] = {
-		{ "Category", "Handlers" },
-		{ "ModuleRelativePath", "GeoJSON_Manager.h" },
-	};
-#endif
-	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AGeoJSON_Manager_Statics::NewProp_FeatureCollection_Actor = { "FeatureCollection_Actor", nullptr, (EPropertyFlags)0x0014000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AGeoJSON_Manager, FeatureCollection_Actor), Z_Construct_UClass_UClass, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AGeoJSON_Manager_Statics::NewProp_FeatureCollection_Actor_MetaData), Z_Construct_UClass_AGeoJSON_Manager_Statics::NewProp_FeatureCollection_Actor_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AGeoJSON_Manager_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGeoJSON_Manager_Statics::NewProp_Filepaths_Inner,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGeoJSON_Manager_Statics::NewProp_Filepaths,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGeoJSON_Manager_Statics::NewProp_FeatureCollection_Actor,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AGeoJSON_Manager_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AGeoJSON_Manager>::IsAbstract,
@@ -186,9 +139,9 @@ void EmptyLinkFunctionForGeneratedCodeGeoJSON_Manager() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_Manager_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AGeoJSON_Manager, AGeoJSON_Manager::StaticClass, TEXT("AGeoJSON_Manager"), &Z_Registration_Info_UClass_AGeoJSON_Manager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AGeoJSON_Manager), 221491403U) },
+		{ Z_Construct_UClass_AGeoJSON_Manager, AGeoJSON_Manager::StaticClass, TEXT("AGeoJSON_Manager"), &Z_Registration_Info_UClass_AGeoJSON_Manager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AGeoJSON_Manager), 229463677U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_Manager_h_2116599917(TEXT("/Script/GeoJSON_Importer"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_Manager_h_1302528359(TEXT("/Script/GeoJSON_Importer"),
 		Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_Manager_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_Manager_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -1,5 +1,6 @@
 {
     "type": "MultiLineString",
+    "name": "MyMultiLineStringFile",
     "coordinates": [
       [
         [102.0, 0.5],

@@ -59,8 +59,11 @@ public:
 	AGeoJSON_MultiPoint();
 
 	TSharedPtr<FJsonObject> Data;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Data")
 	FMultiPointData FData;
+
+
 	FMultiPointData ParseMultiPointData();
 	void ParseData();
 

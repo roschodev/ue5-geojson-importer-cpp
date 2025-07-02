@@ -61,7 +61,7 @@ public:
 	FMultiLineStringData ParseMultiLineStringData();
 
 	TSharedPtr<FJsonObject> Data;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Data")
 	FMultiLineStringData FData;
 
 protected:

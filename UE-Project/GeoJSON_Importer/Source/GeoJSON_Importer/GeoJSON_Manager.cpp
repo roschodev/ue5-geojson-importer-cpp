@@ -68,7 +68,7 @@ void AGeoJSON_Manager::LoadGeoJSONFiles()
 
         switch (Type)
         {
-            case Point:
+            case Point: //this still wouldnt work, need to implement Feature
             case MultiPoint:
             {
                 UClass* MultiPointBPClass = LoadClass<AGeoJSON_MultiPoint>(
@@ -89,10 +89,24 @@ void AGeoJSON_Manager::LoadGeoJSONFiles()
                     MultiPointActor->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
                     MultiPointActor->Data = g_obj;
                     MultiPointActor->ParseData();
+					g_obj->TryGetStringField(TEXT("name"), MultiPointActor->FData.Name);
+                    
+            
+                    if (g_obj->TryGetStringField(TEXT("name"), MultiPointActor->FData.Name))
+                    {
+                        FString NewLabel = TEXT("MultiPoint_") + MultiPointActor->FData.Name;
+                        MultiPointActor->SetActorLabel(NewLabel);
+                    }
+                    else
+                    {
+                        FString NewLabel = TEXT("MultiPoint");
+                        MultiPointActor->SetActorLabel(NewLabel);
+
+                    }
                 }
 				break;
 			}
-            case LineString:
+            case LineString: //this still wouldnt work, need to implement Feature
             case MultiLineString:
             {
                 UClass* MultiLineStringBPClass = LoadClass<AGeoJSON_MultiLineString>(
@@ -112,7 +126,21 @@ void AGeoJSON_Manager::LoadGeoJSONFiles()
                 {
                     MultiLineStringActor->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
                     MultiLineStringActor->Data = g_obj;
-                    //MultiLineStringActor->ParseData();
+                    MultiLineStringActor->ParseData();
+                    g_obj->TryGetStringField(TEXT("name"), MultiLineStringActor->FData.Name);
+            
+
+                    if (g_obj->TryGetStringField(TEXT("name"), MultiLineStringActor->FData.Name))
+                    {
+                        FString NewLabel = TEXT("MultiLineString_") + MultiLineStringActor->FData.Name;
+                        MultiLineStringActor->SetActorLabel(NewLabel);
+                    }
+                    else
+                    {
+                        FString NewLabel = TEXT("MultiLineString");
+                        MultiLineStringActor->SetActorLabel(NewLabel);
+
+                    }
                 }
 
                 break;
@@ -127,7 +155,10 @@ void AGeoJSON_Manager::LoadGeoJSONFiles()
             {
                 break;
             }
-            case Feature:
+            case Feature: //this still wouldnt work, need to implement Feature
+            {
+                break;
+			}
             case FeatureCollection:
             {
                 UClass* FeatureCollectionBPClass = LoadClass<AGeoJSON_FeatureCollection>(
@@ -149,7 +180,20 @@ void AGeoJSON_Manager::LoadGeoJSONFiles()
                         FeatureCollectionActor->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
                         FeatureCollectionActor->Data = g_obj;
 						FeatureCollectionActor->ParseData(); // Parse the GeoJSON data
-						FeatureCollectionActor->FilePath = FilePath; // Store the file path to prevent duplicate loading
+                        if (g_obj->TryGetStringField(TEXT("name"), FeatureCollectionActor->FData.Name)) 
+                        {
+                            FString NewLabel = TEXT("FeatureCollection_") + FeatureCollectionActor->FData.Name;
+                            FeatureCollectionActor->SetActorLabel(NewLabel);
+                        }
+                        else
+                        {
+                            FString NewLabel = TEXT("FeatureCollection");
+                            FeatureCollectionActor->SetActorLabel(NewLabel);
+
+                        }
+                      
+
+                        
                     }
                     else
                     {

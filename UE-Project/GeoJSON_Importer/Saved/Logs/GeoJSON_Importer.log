@@ -1641,3 +1641,609 @@ GeoJSON_Manager
 [2025.07.02-14.17.54:764][819]AssetCheck: New page: Asset Save: M_Testing
 [2025.07.02-14.17.54:764][819]LogContentValidation: Display: Validating /Script/Engine.World /Game/Project/Levels/M_Testing.M_Testing
 [2025.07.02-14.17.55:446][900]LogUObjectHash: Compacting FUObjectHashTables data took   0.19ms
+[2025.07.02-14.22.57:559][655]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 2070.325439
+[2025.07.02-14.22.58:560][658]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.07.02-14.22.58:560][658]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 2070.992676, Update Interval: 358.948944
+[2025.07.02-14.23.22:741][840]Cmd: DELETE
+[2025.07.02-14.23.22:741][840]Cmd: ACTOR DELETE
+[2025.07.02-14.23.22:742][840]LogEditorActor: Actor BP_GeoJSON_FeatureCollection3 is referenced by GeoJSON_Manager.
+[2025.07.02-14.23.23:509][840]LogSlate: Window 'Message' being destroyed
+[2025.07.02-14.23.23:521][840]Message dialog closed, result: Yes, title: Message, text: Actor BP_GeoJSON_FeatureCollection3 is referenced by other Actors/Objects.
+Do you really want to delete it? This will break references.
+
+Reference List:
+
+GeoJSON_Manager
+[2025.07.02-14.23.23:522][840]LogEditorActor: Deleted Actor: BP_GeoJSON_FeatureCollection_C
+[2025.07.02-14.23.23:525][840]LogUObjectHash: Compacting FUObjectHashTables data took   0.29ms
+[2025.07.02-14.23.23:527][840]LogEditorActor: Deleted 1 Actors (0.007 secs)
+[2025.07.02-14.23.24:182][914]Cmd: DELETE
+[2025.07.02-14.23.24:182][914]Cmd: ACTOR DELETE
+[2025.07.02-14.23.24:183][914]LogEditorActor: Actor BP_GeoJSON_MultiPoint3 is referenced by GeoJSON_Manager.
+[2025.07.02-14.23.25:088][914]LogSlate: Window 'Message' being destroyed
+[2025.07.02-14.23.25:100][914]Message dialog closed, result: Yes, title: Message, text: Actor BP_GeoJSON_MultiPoint3 is referenced by other Actors/Objects.
+Do you really want to delete it? This will break references.
+
+Reference List:
+
+GeoJSON_Manager
+[2025.07.02-14.23.25:100][914]LogEditorActor: Deleted Actor: BP_GeoJSON_MultiPoint_C
+[2025.07.02-14.23.25:104][914]LogUObjectHash: Compacting FUObjectHashTables data took   0.19ms
+[2025.07.02-14.23.25:105][914]LogEditorActor: Deleted 1 Actors (0.006 secs)
+[2025.07.02-14.23.26:774][111]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_featurecollection.geojson
+[2025.07.02-14.23.26:774][111]LogTemp: JSON deserialization successful.
+[2025.07.02-14.23.26:774][111]LogTemp: GeoJSON Type: FeatureCollection
+[2025.07.02-14.23.26:776][111]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.23.26:776][111]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.23.26:776][111]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.23.26:776][111]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.23.26:776][111]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multipoint.geojson
+[2025.07.02-14.23.26:776][111]LogTemp: JSON deserialization successful.
+[2025.07.02-14.23.26:776][111]LogTemp: GeoJSON Type: MultiPoint
+[2025.07.02-14.23.26:776][111]LogJson: Warning: Field crs was not found.
+[2025.07.02-14.23.26:776][111]LogJson: Error: Json Value of type 'Null' used as a 'Object'.
+[2025.07.02-14.23.26:776][111]LogTemp: Warning: Type field in CRS field not found!
+[2025.07.02-14.23.26:776][111]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multilinestring.geojson
+[2025.07.02-14.23.26:776][111]LogTemp: JSON deserialization successful.
+[2025.07.02-14.23.26:776][111]LogTemp: GeoJSON Type: MultiLineString
+[2025.07.02-14.27.54:789][660]LogUObjectHash: Compacting FUObjectHashTables data took   0.29ms
+[2025.07.02-14.27.54:799][660]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Project/Levels/M_Testing_Auto2
+[2025.07.02-14.27.54:799][660]LogSavePackage: Moving 'E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Saved/M_Testing_Auto21D62CF134212997006C9E7B25B0EF920.tmp' to 'E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Saved/Autosaves/Game/Project/Levels/M_Testing_Auto2.umap'
+[2025.07.02-14.27.54:800][660]LogAssetRegistry: Warning: ScanPathsSynchronous: E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Saved/Autosaves/Game/Project/Levels/M_Testing_Auto2.umap is in the /Temp path, will not scan.
+[2025.07.02-14.27.54:800][660]LogAssetRegistry: Warning: ScanPathsSynchronous: /Temp/__ExternalActors__/Autosaves/Game/Project/Levels/M_Testing_Auto2 is in the /Temp path, will not scan.
+[2025.07.02-14.27.54:800][660]LogAssetRegistry: Warning: ScanPathsSynchronous: /Temp/__ExternalObjects__/Autosaves/Game/Project/Levels/M_Testing_Auto2 is in the /Temp path, will not scan.
+[2025.07.02-14.27.54:800][660]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Project/Levels/M_Testing' took 0.013
+[2025.07.02-14.27.54:800][660]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.013
+[2025.07.02-14.28.26:415][ 34]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Project/Blueprints/GeoJSON/Types/BP_GeoJSON_MultiPoint.BP_GeoJSON_MultiPoint
+[2025.07.02-14.28.26:415][ 34]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.07.02-14.28.26:416][ 34]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.07.02-14.28.26:423][ 34]LogSlate: Warning: The command 'BlueprintEditorSpawnNodes.AddActorRefAction->CommandInfo' has the same default chord as 'BlueprintEditorSpawnNodes.(Class=/Script/BlueprintGraph.K2Node_Knot Key=R Shift=false Ctrl=false Alt=false)' [R]
+[2025.07.02-14.28.27:778][173]LogSlate: Window 'BP_GeoJSON_MultiPoint' being destroyed
+[2025.07.02-14.28.27:783][173]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2025.07.02-14.28.27:783][173]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.07.02-14.28.27:788][173]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Project/Blueprints/GeoJSON/Types/BP_GeoJSON_MultiPoint.BP_GeoJSON_MultiPoint
+[2025.07.02-14.28.27:788][173]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.07.02-14.28.27:789][173]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.07.02-14.28.28:262][173]LogSlate: Took 0.004453 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2025.07.02-14.28.28:267][173]LogSlate: Took 0.003311 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2025.07.02-14.29.18:595][664]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.07.02-14.29.47:446][ 76]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 2480.129150
+[2025.07.02-14.29.47:611][ 96]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.07.02-14.29.47:611][ 96]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 2480.285156, Update Interval: 335.842163
+[2025.07.02-14.29.48:140][159]LogLiveCoding: Display:    Creating library E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_4.lib and object E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_4.exp
+[2025.07.02-14.29.48:324][164]LogClass: UPackage /Script/GeoJSON_Importer Reload.
+[2025.07.02-14.29.48:324][164]LogClass: UClass GeoJSON_MultiLineString Reload.
+[2025.07.02-14.29.48:324][164]LogClass: UClass GeoJSON_MultiPoint Reload.
+[2025.07.02-14.29.48:329][164]LogClass: Could not find existing class GeoJSON_MultiLineString in package /Script/GeoJSON_Importer for reload, assuming new or modified class
+[2025.07.02-14.29.48:329][164]LogClass: Could not find existing class GeoJSON_MultiPoint in package /Script/GeoJSON_Importer for reload, assuming new or modified class
+[2025.07.02-14.29.48:339][164]Re-instancing GeoJSON_MultiLineString after reload.
+[2025.07.02-14.29.48:355][164]Re-instancing GeoJSON_MultiPoint after reload.
+[2025.07.02-14.29.48:464][164]LogUObjectHash: Compacting FUObjectHashTables data took   0.88ms
+[2025.07.02-14.29.48:930][165]Display: Reload/Re-instancing Complete: 1 package changed, 2 classes changed, 6 classes unchanged, 1 enum unchanged, 14 scriptstructs unchanged, 2 functions remapped, 14 scriptstructs remapped
+[2025.07.02-14.29.48:930][165]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2025.07.02-14.30.03:373][765]BlueprintLog: New page: Compile BP_GeoJSON_MultiPoint
+[2025.07.02-14.30.03:440][765]LogUObjectHash: Compacting FUObjectHashTables data took   1.25ms
+[2025.07.02-14.30.03:981][821]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.07.02-14.30.04:013][821]LogSavePackage: Moving output files for package: /Game/Project/Blueprints/GeoJSON/Types/BP_GeoJSON_MultiPoint
+[2025.07.02-14.30.04:013][821]LogSavePackage: Moving 'E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Saved/BP_GeoJSON_MultiPointB2404BDA4ED26088AADD2C99411B867F.tmp' to 'E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Content/Project/Blueprints/GeoJSON/Types/BP_GeoJSON_MultiPoint.uasset'
+[2025.07.02-14.30.04:019][821]LogFileHelpers: InternalPromptForCheckoutAndSave took 37 ms (total: 268 ms)
+[2025.07.02-14.30.04:020][821]AssetCheck: New page: Asset Save: BP_GeoJSON_MultiPoint
+[2025.07.02-14.30.04:020][821]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Project/Blueprints/GeoJSON/Types/BP_GeoJSON_MultiPoint.BP_GeoJSON_MultiPoint
+[2025.07.02-14.30.07:204][198]LogSlate: Window 'BP_GeoJSON_MultiPoint' being destroyed
+[2025.07.02-14.30.07:208][198]LogSlate: Window 'BP_GeoJSON_MultiPoint' being destroyed
+[2025.07.02-14.30.07:209][198]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2025.07.02-14.30.07:209][198]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.07.02-14.34.38:025][566]Cmd: DELETE
+[2025.07.02-14.34.38:025][566]Cmd: ACTOR DELETE
+[2025.07.02-14.34.38:026][566]LogEditorActor: Actor BP_GeoJSON_FeatureCollection4 is referenced by GeoJSON_Manager.
+[2025.07.02-14.34.38:786][566]LogSlate: Window 'Message' being destroyed
+[2025.07.02-14.34.38:799][566]Message dialog closed, result: Yes, title: Message, text: Actor BP_GeoJSON_FeatureCollection4 is referenced by other Actors/Objects.
+Do you really want to delete it? This will break references.
+
+Reference List:
+
+GeoJSON_Manager
+[2025.07.02-14.34.38:800][566]LogEditorActor: Deleted Actor: BP_GeoJSON_FeatureCollection_C
+[2025.07.02-14.34.38:800][566]LogEditorActor: Actor BP_GeoJSON_MultiLineString0 is referenced by GeoJSON_Manager.
+[2025.07.02-14.34.39:458][566]LogSlate: Window 'Message' being destroyed
+[2025.07.02-14.34.39:461][566]Message dialog closed, result: Yes, title: Message, text: Actor BP_GeoJSON_MultiLineString0 is referenced by other Actors/Objects.
+Do you really want to delete it? This will break references.
+
+Reference List:
+
+GeoJSON_Manager
+[2025.07.02-14.34.39:461][566]LogEditorActor: Deleted Actor: BP_GeoJSON_MultiLineString_C
+[2025.07.02-14.34.39:462][566]LogEditorActor: Actor BP_GeoJSON_MultiPoint4 is referenced by GeoJSON_Manager.
+[2025.07.02-14.34.39:681][566]LogSlate: Window 'Message' being destroyed
+[2025.07.02-14.34.39:684][566]Message dialog closed, result: Yes, title: Message, text: Actor BP_GeoJSON_MultiPoint4 is referenced by other Actors/Objects.
+Do you really want to delete it? This will break references.
+
+Reference List:
+
+GeoJSON_Manager
+[2025.07.02-14.34.39:685][566]LogEditorActor: Deleted Actor: BP_GeoJSON_MultiPoint_C
+[2025.07.02-14.34.39:726][566]LogUObjectHash: Compacting FUObjectHashTables data took   1.29ms
+[2025.07.02-14.34.39:732][566]LogEditorActor: Deleted 3 Actors (0.051 secs)
+[2025.07.02-14.34.41:954][827]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_featurecollection.geojson
+[2025.07.02-14.34.41:954][827]LogTemp: JSON deserialization successful.
+[2025.07.02-14.34.41:954][827]LogTemp: GeoJSON Type: FeatureCollection
+[2025.07.02-14.34.41:955][827]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.34.41:955][827]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.34.41:955][827]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.34.41:955][827]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.34.41:955][827]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multipoint.geojson
+[2025.07.02-14.34.41:955][827]LogTemp: JSON deserialization successful.
+[2025.07.02-14.34.41:955][827]LogTemp: GeoJSON Type: MultiPoint
+[2025.07.02-14.34.41:955][827]LogJson: Warning: Field crs was not found.
+[2025.07.02-14.34.41:955][827]LogJson: Error: Json Value of type 'Null' used as a 'Object'.
+[2025.07.02-14.34.41:955][827]LogTemp: Warning: Type field in CRS field not found!
+[2025.07.02-14.34.41:955][827]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multilinestring.geojson
+[2025.07.02-14.34.41:955][827]LogTemp: JSON deserialization successful.
+[2025.07.02-14.34.41:955][827]LogTemp: GeoJSON Type: MultiLineString
+[2025.07.02-14.34.41:955][827]LogJson: Warning: Field crs was not found.
+[2025.07.02-14.34.41:955][827]LogJson: Error: Json Value of type 'Null' used as a 'Object'.
+[2025.07.02-14.34.41:955][827]LogTemp: Warning: Type field in CRS field not found!
+[2025.07.02-14.34.46:201][324]Cmd: DELETE
+[2025.07.02-14.34.46:201][324]Cmd: ACTOR DELETE
+[2025.07.02-14.34.46:202][324]LogEditorActor: Actor BP_GeoJSON_FeatureCollection5 is referenced by GeoJSON_Manager.
+[2025.07.02-14.34.47:665][324]LogSlate: Window 'Message' being destroyed
+[2025.07.02-14.34.47:678][324]Message dialog closed, result: YesAll, title: Message, text: Actor BP_GeoJSON_FeatureCollection5 is referenced by other Actors/Objects.
+Do you really want to delete it? This will break references.
+
+Reference List:
+
+GeoJSON_Manager
+[2025.07.02-14.34.47:678][324]LogEditorActor: Deleted Actor: BP_GeoJSON_FeatureCollection_C
+[2025.07.02-14.34.47:678][324]LogEditorActor: Actor BP_GeoJSON_MultiLineString1 is referenced by GeoJSON_Manager.
+[2025.07.02-14.34.47:678][324]LogEditorActor: Deleted Actor: BP_GeoJSON_MultiLineString_C
+[2025.07.02-14.34.47:679][324]LogEditorActor: Actor BP_GeoJSON_MultiPoint5 is referenced by GeoJSON_Manager.
+[2025.07.02-14.34.47:679][324]LogEditorActor: Deleted Actor: BP_GeoJSON_MultiPoint_C
+[2025.07.02-14.34.47:689][324]LogUObjectHash: Compacting FUObjectHashTables data took   0.85ms
+[2025.07.02-14.34.47:697][324]LogEditorActor: Deleted 3 Actors (0.020 secs)
+[2025.07.02-14.34.48:610][433]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.07.02-14.35.18:581][ 28]LogLiveCoding: Display:    Creating library E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_5.lib and object E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_5.exp
+[2025.07.02-14.35.18:883][ 33]LogUObjectHash: Compacting FUObjectHashTables data took   0.89ms
+[2025.07.02-14.35.19:303][ 34]Display: Reload/Re-instancing Complete: 1 package changed, 8 classes unchanged, 1 enum unchanged, 14 scriptstructs unchanged, 2 functions remapped, 14 scriptstructs remapped
+[2025.07.02-14.35.19:303][ 34]LogLiveCoding: Display: Live coding succeeded
+[2025.07.02-14.35.27:529][896]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_featurecollection.geojson
+[2025.07.02-14.35.27:529][896]LogTemp: JSON deserialization successful.
+[2025.07.02-14.35.27:529][896]LogTemp: GeoJSON Type: FeatureCollection
+[2025.07.02-14.35.27:530][896]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.35.27:530][896]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.35.27:530][896]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.35.27:530][896]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.35.27:530][896]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multipoint.geojson
+[2025.07.02-14.35.27:530][896]LogTemp: JSON deserialization successful.
+[2025.07.02-14.35.27:530][896]LogTemp: GeoJSON Type: MultiPoint
+[2025.07.02-14.35.27:530][896]LogJson: Warning: Field crs was not found.
+[2025.07.02-14.35.27:530][896]LogJson: Error: Json Value of type 'Null' used as a 'Object'.
+[2025.07.02-14.35.27:530][896]LogTemp: Warning: Type field in CRS field not found!
+[2025.07.02-14.35.27:530][896]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multilinestring.geojson
+[2025.07.02-14.35.27:530][896]LogTemp: JSON deserialization successful.
+[2025.07.02-14.35.27:530][896]LogTemp: GeoJSON Type: MultiLineString
+[2025.07.02-14.35.27:531][896]LogJson: Warning: Field crs was not found.
+[2025.07.02-14.35.27:531][896]LogJson: Error: Json Value of type 'Null' used as a 'Object'.
+[2025.07.02-14.35.27:531][896]LogTemp: Warning: Type field in CRS field not found!
+[2025.07.02-14.35.42:554][687]Cmd: DELETE
+[2025.07.02-14.35.42:554][687]Cmd: ACTOR DELETE
+[2025.07.02-14.35.42:555][687]LogEditorActor: Actor BP_GeoJSON_MultiPoint6_ is referenced by GeoJSON_Manager.
+[2025.07.02-14.35.44:346][687]LogSlate: Window 'Message' being destroyed
+[2025.07.02-14.35.44:358][687]Message dialog closed, result: YesAll, title: Message, text: Actor BP_GeoJSON_MultiPoint6_ is referenced by other Actors/Objects.
+Do you really want to delete it? This will break references.
+
+Reference List:
+
+GeoJSON_Manager
+[2025.07.02-14.35.44:359][687]LogEditorActor: Deleted Actor: BP_GeoJSON_MultiPoint_C
+[2025.07.02-14.35.44:359][687]LogEditorActor: Actor BP_GeoJSON_FeatureCollection6_FeatureCollection_JSON_Test is referenced by GeoJSON_Manager.
+[2025.07.02-14.35.44:359][687]LogEditorActor: Deleted Actor: BP_GeoJSON_FeatureCollection_C
+[2025.07.02-14.35.44:361][687]LogEditorActor: Actor BP_GeoJSON_MultiLineString2_ is referenced by GeoJSON_Manager.
+[2025.07.02-14.35.44:361][687]LogEditorActor: Deleted Actor: BP_GeoJSON_MultiLineString_C
+[2025.07.02-14.35.44:409][687]LogUObjectHash: Compacting FUObjectHashTables data took   1.30ms
+[2025.07.02-14.35.44:411][687]LogEditorActor: Deleted 3 Actors (0.053 secs)
+[2025.07.02-14.35.46:803][968]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_featurecollection.geojson
+[2025.07.02-14.35.46:803][968]LogTemp: JSON deserialization successful.
+[2025.07.02-14.35.46:803][968]LogTemp: GeoJSON Type: FeatureCollection
+[2025.07.02-14.35.46:803][968]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.35.46:803][968]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.35.46:803][968]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.35.46:803][968]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.35.46:804][968]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multipoint.geojson
+[2025.07.02-14.35.46:804][968]LogTemp: JSON deserialization successful.
+[2025.07.02-14.35.46:804][968]LogTemp: GeoJSON Type: MultiPoint
+[2025.07.02-14.35.46:804][968]LogJson: Warning: Field crs was not found.
+[2025.07.02-14.35.46:804][968]LogJson: Error: Json Value of type 'Null' used as a 'Object'.
+[2025.07.02-14.35.46:804][968]LogTemp: Warning: Type field in CRS field not found!
+[2025.07.02-14.35.46:804][968]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multilinestring.geojson
+[2025.07.02-14.35.46:804][968]LogTemp: JSON deserialization successful.
+[2025.07.02-14.35.46:804][968]LogTemp: GeoJSON Type: MultiLineString
+[2025.07.02-14.35.46:804][968]LogJson: Warning: Field crs was not found.
+[2025.07.02-14.35.46:804][968]LogJson: Error: Json Value of type 'Null' used as a 'Object'.
+[2025.07.02-14.35.46:804][968]LogTemp: Warning: Type field in CRS field not found!
+[2025.07.02-14.36.08:353][711]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 2861.012939
+[2025.07.02-14.36.09:353][714]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.07.02-14.36.09:353][714]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 2861.679443, Update Interval: 349.471130
+[2025.07.02-14.37.46:882][162]Cmd: DELETE
+[2025.07.02-14.37.46:882][162]Cmd: ACTOR DELETE
+[2025.07.02-14.37.46:883][162]LogEditorActor: Actor BP_GeoJSON_MultiPoint7_ is referenced by GeoJSON_Manager.
+[2025.07.02-14.37.48:255][162]LogSlate: Window 'Message' being destroyed
+[2025.07.02-14.37.48:266][162]Message dialog closed, result: YesAll, title: Message, text: Actor BP_GeoJSON_MultiPoint7_ is referenced by other Actors/Objects.
+Do you really want to delete it? This will break references.
+
+Reference List:
+
+GeoJSON_Manager
+[2025.07.02-14.37.48:268][162]LogEditorActor: Deleted Actor: BP_GeoJSON_MultiPoint_C
+[2025.07.02-14.37.48:268][162]LogEditorActor: Actor BP_GeoJSON_FeatureCollection7_FeatureCollection_JSON_Test is referenced by GeoJSON_Manager.
+[2025.07.02-14.37.48:268][162]LogEditorActor: Deleted Actor: BP_GeoJSON_FeatureCollection_C
+[2025.07.02-14.37.48:269][162]LogEditorActor: Actor BP_GeoJSON_MultiLineString3_ is referenced by GeoJSON_Manager.
+[2025.07.02-14.37.48:269][162]LogEditorActor: Deleted Actor: BP_GeoJSON_MultiLineString_C
+[2025.07.02-14.37.48:300][162]LogUObjectHash: Compacting FUObjectHashTables data took   0.89ms
+[2025.07.02-14.37.48:305][162]LogEditorActor: Deleted 3 Actors (0.039 secs)
+[2025.07.02-14.37.50:391][408]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_featurecollection.geojson
+[2025.07.02-14.37.50:391][408]LogTemp: JSON deserialization successful.
+[2025.07.02-14.37.50:391][408]LogTemp: GeoJSON Type: FeatureCollection
+[2025.07.02-14.37.50:392][408]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.37.50:392][408]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.37.50:392][408]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.37.50:392][408]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.37.50:392][408]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multipoint.geojson
+[2025.07.02-14.37.50:392][408]LogTemp: JSON deserialization successful.
+[2025.07.02-14.37.50:392][408]LogTemp: GeoJSON Type: MultiPoint
+[2025.07.02-14.37.50:393][408]LogJson: Warning: Field crs was not found.
+[2025.07.02-14.37.50:393][408]LogJson: Error: Json Value of type 'Null' used as a 'Object'.
+[2025.07.02-14.37.50:393][408]LogTemp: Warning: Type field in CRS field not found!
+[2025.07.02-14.37.50:393][408]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multilinestring.geojson
+[2025.07.02-14.37.50:393][408]LogTemp: JSON deserialization successful.
+[2025.07.02-14.37.50:393][408]LogTemp: GeoJSON Type: MultiLineString
+[2025.07.02-14.37.50:393][408]LogJson: Warning: Field crs was not found.
+[2025.07.02-14.37.50:393][408]LogJson: Error: Json Value of type 'Null' used as a 'Object'.
+[2025.07.02-14.37.50:393][408]LogTemp: Warning: Type field in CRS field not found!
+[2025.07.02-14.37.52:955][709]Cmd: DELETE
+[2025.07.02-14.37.52:955][709]Cmd: ACTOR DELETE
+[2025.07.02-14.37.52:957][709]LogEditorActor: Actor BP_GeoJSON_FeatureCollection8_FeatureCollection_JSON_Test is referenced by GeoJSON_Manager.
+[2025.07.02-14.37.54:492][709]LogSlate: Window 'Message' being destroyed
+[2025.07.02-14.37.54:504][709]Message dialog closed, result: YesAll, title: Message, text: Actor BP_GeoJSON_FeatureCollection8_FeatureCollection_JSON_Test is referenced by other Actors/Objects.
+Do you really want to delete it? This will break references.
+
+Reference List:
+
+GeoJSON_Manager
+[2025.07.02-14.37.54:505][709]LogEditorActor: Deleted Actor: BP_GeoJSON_FeatureCollection_C
+[2025.07.02-14.37.54:505][709]LogEditorActor: Actor BP_GeoJSON_MultiLineString4_ is referenced by GeoJSON_Manager.
+[2025.07.02-14.37.54:505][709]LogEditorActor: Deleted Actor: BP_GeoJSON_MultiLineString_C
+[2025.07.02-14.37.54:506][709]LogEditorActor: Actor BP_GeoJSON_MultiPoint8_ is referenced by GeoJSON_Manager.
+[2025.07.02-14.37.54:506][709]LogEditorActor: Deleted Actor: BP_GeoJSON_MultiPoint_C
+[2025.07.02-14.37.54:514][709]LogUObjectHash: Compacting FUObjectHashTables data took   0.38ms
+[2025.07.02-14.37.54:521][709]LogEditorActor: Deleted 3 Actors (0.018 secs)
+[2025.07.02-14.37.55:706][850]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.07.02-14.38.23:620][198]LogLiveCoding: Display:    Creating library E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_6.lib and object E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_6.exp
+[2025.07.02-14.38.23:916][204]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
+[2025.07.02-14.38.24:311][205]Display: Reload/Re-instancing Complete: 1 package changed, 8 classes unchanged, 1 enum unchanged, 14 scriptstructs unchanged, 2 functions remapped, 14 scriptstructs remapped
+[2025.07.02-14.38.24:311][205]LogLiveCoding: Display: Live coding succeeded
+[2025.07.02-14.38.28:171][626]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_featurecollection.geojson
+[2025.07.02-14.38.28:171][626]LogTemp: JSON deserialization successful.
+[2025.07.02-14.38.28:171][626]LogTemp: GeoJSON Type: FeatureCollection
+[2025.07.02-14.38.28:172][626]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.38.28:172][626]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.38.28:172][626]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.38.28:172][626]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.38.28:172][626]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multipoint.geojson
+[2025.07.02-14.38.28:172][626]LogTemp: JSON deserialization successful.
+[2025.07.02-14.38.28:172][626]LogTemp: GeoJSON Type: MultiPoint
+[2025.07.02-14.38.28:172][626]LogJson: Warning: Field crs was not found.
+[2025.07.02-14.38.28:172][626]LogJson: Error: Json Value of type 'Null' used as a 'Object'.
+[2025.07.02-14.38.28:172][626]LogTemp: Warning: Type field in CRS field not found!
+[2025.07.02-14.38.28:172][626]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multilinestring.geojson
+[2025.07.02-14.38.28:172][626]LogTemp: JSON deserialization successful.
+[2025.07.02-14.38.28:172][626]LogTemp: GeoJSON Type: MultiLineString
+[2025.07.02-14.38.28:172][626]LogJson: Warning: Field crs was not found.
+[2025.07.02-14.38.28:172][626]LogJson: Error: Json Value of type 'Null' used as a 'Object'.
+[2025.07.02-14.38.28:172][626]LogTemp: Warning: Type field in CRS field not found!
+[2025.07.02-14.38.42:257][309]Cmd: DELETE
+[2025.07.02-14.38.42:257][309]Cmd: ACTOR DELETE
+[2025.07.02-14.38.42:258][309]LogEditorActor: Actor BP_GeoJSON_MultiPoint9_ is referenced by GeoJSON_Manager.
+[2025.07.02-14.38.44:793][309]LogSlate: Window 'Message' being destroyed
+[2025.07.02-14.38.44:807][309]Message dialog closed, result: YesAll, title: Message, text: Actor BP_GeoJSON_MultiPoint9_ is referenced by other Actors/Objects.
+Do you really want to delete it? This will break references.
+
+Reference List:
+
+GeoJSON_Manager
+[2025.07.02-14.38.44:807][309]LogEditorActor: Deleted Actor: BP_GeoJSON_MultiPoint_C
+[2025.07.02-14.38.44:807][309]LogEditorActor: Actor BP_GeoJSON_FeatureCollection9_FeatureCollection_JSON_Test is referenced by GeoJSON_Manager.
+[2025.07.02-14.38.44:807][309]LogEditorActor: Deleted Actor: BP_GeoJSON_FeatureCollection_C
+[2025.07.02-14.38.44:809][309]LogEditorActor: Actor BP_GeoJSON_MultiLineString5_ is referenced by GeoJSON_Manager.
+[2025.07.02-14.38.44:809][309]LogEditorActor: Deleted Actor: BP_GeoJSON_MultiLineString_C
+[2025.07.02-14.38.44:862][309]LogUObjectHash: Compacting FUObjectHashTables data took   1.08ms
+[2025.07.02-14.38.44:864][309]LogEditorActor: Deleted 3 Actors (0.057 secs)
+[2025.07.02-14.38.57:092][746]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_featurecollection.geojson
+[2025.07.02-14.38.57:092][746]LogTemp: JSON deserialization successful.
+[2025.07.02-14.38.57:092][746]LogTemp: GeoJSON Type: FeatureCollection
+[2025.07.02-14.38.57:093][746]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.38.57:093][746]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.38.57:093][746]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.38.57:093][746]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.38.57:093][746]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multipoint.geojson
+[2025.07.02-14.38.57:093][746]LogTemp: JSON deserialization successful.
+[2025.07.02-14.38.57:093][746]LogTemp: GeoJSON Type: MultiPoint
+[2025.07.02-14.38.57:093][746]LogJson: Warning: Field crs was not found.
+[2025.07.02-14.38.57:093][746]LogJson: Error: Json Value of type 'Null' used as a 'Object'.
+[2025.07.02-14.38.57:093][746]LogTemp: Warning: Type field in CRS field not found!
+[2025.07.02-14.38.57:093][746]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multilinestring.geojson
+[2025.07.02-14.38.57:093][746]LogTemp: JSON deserialization successful.
+[2025.07.02-14.38.57:093][746]LogTemp: GeoJSON Type: MultiLineString
+[2025.07.02-14.38.57:094][746]LogJson: Warning: Field crs was not found.
+[2025.07.02-14.38.57:094][746]LogJson: Error: Json Value of type 'Null' used as a 'Object'.
+[2025.07.02-14.38.57:094][746]LogTemp: Warning: Type field in CRS field not found!
+[2025.07.02-14.39.34:075][981]LogUObjectHash: Compacting FUObjectHashTables data took   0.87ms
+[2025.07.02-14.39.34:092][981]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Project/Levels/M_Testing_Auto3
+[2025.07.02-14.39.34:092][981]LogSavePackage: Moving 'E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Saved/M_Testing_Auto39B50F8424E932E0017A736BB062038AB.tmp' to 'E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Saved/Autosaves/Game/Project/Levels/M_Testing_Auto3.umap'
+[2025.07.02-14.39.34:092][981]LogAssetRegistry: Warning: ScanPathsSynchronous: E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Saved/Autosaves/Game/Project/Levels/M_Testing_Auto3.umap is in the /Temp path, will not scan.
+[2025.07.02-14.39.34:092][981]LogAssetRegistry: Warning: ScanPathsSynchronous: /Temp/__ExternalActors__/Autosaves/Game/Project/Levels/M_Testing_Auto3 is in the /Temp path, will not scan.
+[2025.07.02-14.39.34:092][981]LogAssetRegistry: Warning: ScanPathsSynchronous: /Temp/__ExternalObjects__/Autosaves/Game/Project/Levels/M_Testing_Auto3 is in the /Temp path, will not scan.
+[2025.07.02-14.39.34:092][981]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Project/Levels/M_Testing' took 0.049
+[2025.07.02-14.39.34:092][981]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.049
+[2025.07.02-14.39.40:531][718]LogActorFactory: Loading ActorFactory Class /Script/Engine.LevelInstance
+[2025.07.02-14.39.42:813][977]Cmd: DELETE
+[2025.07.02-14.39.42:813][977]Cmd: ACTOR DELETE
+[2025.07.02-14.39.42:814][977]LogEditorActor: Actor BP_GeoJSON_FeatureCollection10_FeatureCollection_JSON_Test is referenced by GeoJSON_Manager.
+[2025.07.02-14.39.44:486][977]LogSlate: Window 'Message' being destroyed
+[2025.07.02-14.39.44:499][977]Message dialog closed, result: YesAll, title: Message, text: Actor BP_GeoJSON_FeatureCollection10_FeatureCollection_JSON_Test is referenced by other Actors/Objects.
+Do you really want to delete it? This will break references.
+
+Reference List:
+
+GeoJSON_Manager
+[2025.07.02-14.39.44:500][977]LogEditorActor: Deleted Actor: BP_GeoJSON_FeatureCollection_C
+[2025.07.02-14.39.44:501][977]LogEditorActor: Actor BP_GeoJSON_MultiLineString6_ is referenced by GeoJSON_Manager.
+[2025.07.02-14.39.44:501][977]LogEditorActor: Deleted Actor: BP_GeoJSON_MultiLineString_C
+[2025.07.02-14.39.44:501][977]LogEditorActor: Actor BP_GeoJSON_MultiPoint10_ is referenced by GeoJSON_Manager.
+[2025.07.02-14.39.44:501][977]LogEditorActor: Deleted Actor: BP_GeoJSON_MultiPoint_C
+[2025.07.02-14.39.44:512][977]LogUObjectHash: Compacting FUObjectHashTables data took   0.83ms
+[2025.07.02-14.39.44:521][977]LogEditorActor: Deleted 3 Actors (0.023 secs)
+[2025.07.02-14.40.35:886][262]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_featurecollection.geojson
+[2025.07.02-14.40.35:887][262]LogTemp: JSON deserialization successful.
+[2025.07.02-14.40.35:887][262]LogTemp: GeoJSON Type: FeatureCollection
+[2025.07.02-14.40.35:887][262]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.40.35:887][262]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.40.35:887][262]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.40.35:887][262]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.40.35:887][262]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multipoint.geojson
+[2025.07.02-14.40.35:887][262]LogTemp: JSON deserialization successful.
+[2025.07.02-14.40.35:887][262]LogTemp: GeoJSON Type: MultiPoint
+[2025.07.02-14.40.35:887][262]LogJson: Warning: Field crs was not found.
+[2025.07.02-14.40.35:887][262]LogJson: Error: Json Value of type 'Null' used as a 'Object'.
+[2025.07.02-14.40.35:887][262]LogTemp: Warning: Type field in CRS field not found!
+[2025.07.02-14.40.35:891][262]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multilinestring.geojson
+[2025.07.02-14.40.35:891][262]LogTemp: JSON deserialization successful.
+[2025.07.02-14.40.35:891][262]LogTemp: GeoJSON Type: MultiLineString
+[2025.07.02-14.40.35:891][262]LogJson: Warning: Field crs was not found.
+[2025.07.02-14.40.35:891][262]LogJson: Error: Json Value of type 'Null' used as a 'Object'.
+[2025.07.02-14.40.35:891][262]LogTemp: Warning: Type field in CRS field not found!
+[2025.07.02-14.42.30:697][ 88]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 3243.326172
+[2025.07.02-14.42.31:698][ 91]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.07.02-14.42.31:698][ 91]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 3243.992676, Update Interval: 355.345306
+[2025.07.02-14.49.03:742][267]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 3636.370605
+[2025.07.02-14.49.05:077][271]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.07.02-14.49.05:077][271]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 3637.370361, Update Interval: 338.066956
+[2025.07.02-14.49.34:777][359]LogUObjectHash: Compacting FUObjectHashTables data took   0.68ms
+[2025.07.02-14.49.34:790][359]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Project/Levels/M_Testing_Auto4
+[2025.07.02-14.49.34:790][359]LogSavePackage: Moving 'E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Saved/M_Testing_Auto4501C788443FC4AC1F433EBA825A910DD.tmp' to 'E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Saved/Autosaves/Game/Project/Levels/M_Testing_Auto4.umap'
+[2025.07.02-14.49.34:790][359]LogAssetRegistry: Warning: ScanPathsSynchronous: E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Saved/Autosaves/Game/Project/Levels/M_Testing_Auto4.umap is in the /Temp path, will not scan.
+[2025.07.02-14.49.34:790][359]LogAssetRegistry: Warning: ScanPathsSynchronous: /Temp/__ExternalActors__/Autosaves/Game/Project/Levels/M_Testing_Auto4 is in the /Temp path, will not scan.
+[2025.07.02-14.49.34:790][359]LogAssetRegistry: Warning: ScanPathsSynchronous: /Temp/__ExternalObjects__/Autosaves/Game/Project/Levels/M_Testing_Auto4 is in the /Temp path, will not scan.
+[2025.07.02-14.49.34:792][359]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Project/Levels/M_Testing' took 0.025
+[2025.07.02-14.49.34:792][359]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.025
+[2025.07.02-14.50.17:881][489]LogDerivedDataCache: C:/Users/Rob Work/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:02.111 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 1713 files in 2665 folders with total size 148 MiB.
+[2025.07.02-14.54.41:290][870]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.07.02-14.55.08:139][518]LogLiveCoding: Display:    Creating library E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_7.lib and object E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_7.exp
+[2025.07.02-14.55.08:547][519]LogUObjectHash: Compacting FUObjectHashTables data took   1.07ms
+[2025.07.02-14.55.08:989][520]Display: Reload/Re-instancing Complete: 1 package changed, 8 classes unchanged, 1 enum unchanged, 14 scriptstructs unchanged, 2 functions remapped, 14 scriptstructs remapped
+[2025.07.02-14.55.08:989][520]LogLiveCoding: Display: Live coding succeeded
+[2025.07.02-14.55.11:326][751]Cmd: DELETE
+[2025.07.02-14.55.11:326][751]Cmd: ACTOR DELETE
+[2025.07.02-14.55.11:327][751]LogEditorActor: Actor BP_GeoJSON_MultiPoint11_ is referenced by GeoJSON_Manager.
+[2025.07.02-14.55.12:797][751]LogSlate: Window 'Message' being destroyed
+[2025.07.02-14.55.12:810][751]Message dialog closed, result: Yes, title: Message, text: Actor BP_GeoJSON_MultiPoint11_ is referenced by other Actors/Objects.
+Do you really want to delete it? This will break references.
+
+Reference List:
+
+GeoJSON_Manager
+[2025.07.02-14.55.12:811][751]LogEditorActor: Deleted Actor: BP_GeoJSON_MultiPoint_C
+[2025.07.02-14.55.12:862][751]LogUObjectHash: Compacting FUObjectHashTables data took   1.01ms
+[2025.07.02-14.55.12:870][751]LogEditorActor: Deleted 1 Actors (0.061 secs)
+[2025.07.02-14.55.13:525][826]Cmd: DELETE
+[2025.07.02-14.55.13:525][826]Cmd: ACTOR DELETE
+[2025.07.02-14.55.13:525][826]LogEditorActor: Actor BP_GeoJSON_MultiLineString7_MyMultiLineStringFile is referenced by GeoJSON_Manager.
+[2025.07.02-14.55.14:107][826]LogSlate: Window 'Message' being destroyed
+[2025.07.02-14.55.14:121][826]Message dialog closed, result: Yes, title: Message, text: Actor BP_GeoJSON_MultiLineString7_MyMultiLineStringFile is referenced by other Actors/Objects.
+Do you really want to delete it? This will break references.
+
+Reference List:
+
+GeoJSON_Manager
+[2025.07.02-14.55.14:121][826]LogEditorActor: Deleted Actor: BP_GeoJSON_MultiLineString_C
+[2025.07.02-14.55.14:152][826]LogUObjectHash: Compacting FUObjectHashTables data took   1.13ms
+[2025.07.02-14.55.14:160][826]LogEditorActor: Deleted 1 Actors (0.040 secs)
+[2025.07.02-14.55.14:884][907]Cmd: DELETE
+[2025.07.02-14.55.14:884][907]Cmd: ACTOR DELETE
+[2025.07.02-14.55.14:885][907]LogEditorActor: Actor BP_GeoJSON_FeatureCollection11_FeatureCollection_JSON_Test is referenced by GeoJSON_Manager.
+[2025.07.02-14.55.15:582][907]LogSlate: Window 'Message' being destroyed
+[2025.07.02-14.55.15:594][907]Message dialog closed, result: Yes, title: Message, text: Actor BP_GeoJSON_FeatureCollection11_FeatureCollection_JSON_Test is referenced by other Actors/Objects.
+Do you really want to delete it? This will break references.
+
+Reference List:
+
+GeoJSON_Manager
+[2025.07.02-14.55.15:594][907]LogEditorActor: Deleted Actor: BP_GeoJSON_FeatureCollection_C
+[2025.07.02-14.55.15:603][907]LogUObjectHash: Compacting FUObjectHashTables data took   0.33ms
+[2025.07.02-14.55.15:609][907]LogEditorActor: Deleted 1 Actors (0.015 secs)
+[2025.07.02-14.55.18:847][290]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_featurecollection.geojson
+[2025.07.02-14.55.18:847][290]LogTemp: JSON deserialization successful.
+[2025.07.02-14.55.18:847][290]LogTemp: GeoJSON Type: FeatureCollection
+[2025.07.02-14.55.18:849][290]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.55.18:849][290]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.55.18:849][290]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.55.18:849][290]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.55.18:849][290]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multipoint.geojson
+[2025.07.02-14.55.18:849][290]LogTemp: JSON deserialization successful.
+[2025.07.02-14.55.18:849][290]LogTemp: GeoJSON Type: MultiPoint
+[2025.07.02-14.55.18:849][290]LogJson: Warning: Field crs was not found.
+[2025.07.02-14.55.18:849][290]LogJson: Error: Json Value of type 'Null' used as a 'Object'.
+[2025.07.02-14.55.18:849][290]LogTemp: Warning: Type field in CRS field not found!
+[2025.07.02-14.55.18:850][290]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multilinestring.geojson
+[2025.07.02-14.55.18:850][290]LogTemp: JSON deserialization successful.
+[2025.07.02-14.55.18:850][290]LogTemp: GeoJSON Type: MultiLineString
+[2025.07.02-14.55.18:850][290]LogJson: Warning: Field crs was not found.
+[2025.07.02-14.55.18:850][290]LogJson: Error: Json Value of type 'Null' used as a 'Object'.
+[2025.07.02-14.55.18:850][290]LogTemp: Warning: Type field in CRS field not found!
+[2025.07.02-14.55.26:040][981]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 4018.666504
+[2025.07.02-14.55.27:040][984]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.07.02-14.55.27:040][984]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 4019.333252, Update Interval: 339.041107
+[2025.07.02-14.56.04:077][232]Cmd: DELETE
+[2025.07.02-14.56.04:077][232]Cmd: ACTOR DELETE
+[2025.07.02-14.56.04:079][232]LogEditorActor: Actor FeatureCollection_FeatureCollection_JSON_Test is referenced by GeoJSON_Manager.
+[2025.07.02-14.56.05:865][232]LogSlate: Window 'Message' being destroyed
+[2025.07.02-14.56.05:885][232]Message dialog closed, result: YesAll, title: Message, text: Actor FeatureCollection_FeatureCollection_JSON_Test is referenced by other Actors/Objects.
+Do you really want to delete it? This will break references.
+
+Reference List:
+
+GeoJSON_Manager
+[2025.07.02-14.56.05:885][232]LogEditorActor: Deleted Actor: BP_GeoJSON_FeatureCollection_C
+[2025.07.02-14.56.05:887][232]LogEditorActor: Actor MultiLineString_MyMultiLineStringFile is referenced by GeoJSON_Manager.
+[2025.07.02-14.56.05:887][232]LogEditorActor: Deleted Actor: BP_GeoJSON_MultiLineString_C
+[2025.07.02-14.56.05:887][232]LogEditorActor: Actor MultiPoint_ is referenced by GeoJSON_Manager.
+[2025.07.02-14.56.05:887][232]LogEditorActor: Deleted Actor: BP_GeoJSON_MultiPoint_C
+[2025.07.02-14.56.05:897][232]LogUObjectHash: Compacting FUObjectHashTables data took   0.39ms
+[2025.07.02-14.56.05:903][232]LogEditorActor: Deleted 3 Actors (0.019 secs)
+[2025.07.02-14.56.17:424][598]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_featurecollection.geojson
+[2025.07.02-14.56.17:424][598]LogTemp: JSON deserialization successful.
+[2025.07.02-14.56.17:424][598]LogTemp: GeoJSON Type: FeatureCollection
+[2025.07.02-14.56.17:425][598]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.56.17:425][598]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.56.17:425][598]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.56.17:425][598]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.56.17:426][598]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multipoint.geojson
+[2025.07.02-14.56.17:426][598]LogTemp: JSON deserialization successful.
+[2025.07.02-14.56.17:426][598]LogTemp: GeoJSON Type: MultiPoint
+[2025.07.02-14.56.17:426][598]LogJson: Warning: Field crs was not found.
+[2025.07.02-14.56.17:426][598]LogJson: Error: Json Value of type 'Null' used as a 'Object'.
+[2025.07.02-14.56.17:426][598]LogTemp: Warning: Type field in CRS field not found!
+[2025.07.02-14.56.17:426][598]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multilinestring.geojson
+[2025.07.02-14.56.17:426][598]LogTemp: JSON deserialization successful.
+[2025.07.02-14.56.17:426][598]LogTemp: GeoJSON Type: MultiLineString
+[2025.07.02-14.56.17:426][598]LogJson: Warning: Field crs was not found.
+[2025.07.02-14.56.17:426][598]LogJson: Error: Json Value of type 'Null' used as a 'Object'.
+[2025.07.02-14.56.17:426][598]LogTemp: Warning: Type field in CRS field not found!
+[2025.07.02-14.56.22:942][ 92]Cmd: DELETE
+[2025.07.02-14.56.22:942][ 92]Cmd: ACTOR DELETE
+[2025.07.02-14.56.22:943][ 92]LogEditorActor: Actor FeatureCollection_FeatureCollection_JSON_Test is referenced by GeoJSON_Manager.
+[2025.07.02-14.56.24:649][ 92]LogSlate: Window 'Message' being destroyed
+[2025.07.02-14.56.24:662][ 92]Message dialog closed, result: YesAll, title: Message, text: Actor FeatureCollection_FeatureCollection_JSON_Test is referenced by other Actors/Objects.
+Do you really want to delete it? This will break references.
+
+Reference List:
+
+GeoJSON_Manager
+[2025.07.02-14.56.24:662][ 92]LogEditorActor: Deleted Actor: BP_GeoJSON_FeatureCollection_C
+[2025.07.02-14.56.24:663][ 92]LogEditorActor: Actor MultiLineString_MyMultiLineStringFile is referenced by GeoJSON_Manager.
+[2025.07.02-14.56.24:663][ 92]LogEditorActor: Deleted Actor: BP_GeoJSON_MultiLineString_C
+[2025.07.02-14.56.24:664][ 92]LogEditorActor: Actor MultiPoint_ is referenced by GeoJSON_Manager.
+[2025.07.02-14.56.24:664][ 92]LogEditorActor: Deleted Actor: BP_GeoJSON_MultiPoint_C
+[2025.07.02-14.56.24:675][ 92]LogUObjectHash: Compacting FUObjectHashTables data took   0.48ms
+[2025.07.02-14.56.24:680][ 92]LogEditorActor: Deleted 3 Actors (0.019 secs)
+[2025.07.02-14.56.25:676][210]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.07.02-14.56.55:022][730]LogLiveCoding: Display:    Creating library E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_8.lib and object E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_8.exp
+[2025.07.02-14.56.55:325][736]LogUObjectHash: Compacting FUObjectHashTables data took   0.90ms
+[2025.07.02-14.56.55:732][737]Display: Reload/Re-instancing Complete: 1 package changed, 8 classes unchanged, 1 enum unchanged, 14 scriptstructs unchanged, 2 functions remapped, 14 scriptstructs remapped
+[2025.07.02-14.56.55:732][737]LogLiveCoding: Display: Live coding succeeded
+[2025.07.02-14.57.21:649][ 46]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_featurecollection.geojson
+[2025.07.02-14.57.21:649][ 46]LogTemp: JSON deserialization successful.
+[2025.07.02-14.57.21:649][ 46]LogTemp: GeoJSON Type: FeatureCollection
+[2025.07.02-14.57.21:649][ 46]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.57.21:649][ 46]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.57.21:649][ 46]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.57.21:649][ 46]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-14.57.21:650][ 46]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multipoint.geojson
+[2025.07.02-14.57.21:650][ 46]LogTemp: JSON deserialization successful.
+[2025.07.02-14.57.21:650][ 46]LogTemp: GeoJSON Type: MultiPoint
+[2025.07.02-14.57.21:650][ 46]LogJson: Warning: Field crs was not found.
+[2025.07.02-14.57.21:650][ 46]LogJson: Error: Json Value of type 'Null' used as a 'Object'.
+[2025.07.02-14.57.21:650][ 46]LogTemp: Warning: Type field in CRS field not found!
+[2025.07.02-14.57.21:650][ 46]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multilinestring.geojson
+[2025.07.02-14.57.21:650][ 46]LogTemp: JSON deserialization successful.
+[2025.07.02-14.57.21:650][ 46]LogTemp: GeoJSON Type: MultiLineString
+[2025.07.02-14.57.21:650][ 46]LogJson: Warning: Field crs was not found.
+[2025.07.02-14.57.21:650][ 46]LogJson: Error: Json Value of type 'Null' used as a 'Object'.
+[2025.07.02-14.57.21:650][ 46]LogTemp: Warning: Type field in CRS field not found!
+[2025.07.02-14.57.56:835][591]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.07.02-14.58.25:514][662]LogLiveCoding: Display:    Creating library E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_9.lib and object E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_9.exp
+[2025.07.02-14.58.26:128][663]LogUObjectHash: Compacting FUObjectHashTables data took   1.16ms
+[2025.07.02-14.58.26:551][664]Display: Reload/Re-instancing Complete: 1 package changed, 8 classes unchanged, 1 enum unchanged, 14 scriptstructs unchanged, 2 functions remapped, 14 scriptstructs remapped
+[2025.07.02-14.58.26:551][664]LogLiveCoding: Display: Live coding succeeded
+[2025.07.02-15.00.00:700][651]LogUObjectHash: Compacting FUObjectHashTables data took   1.19ms
+[2025.07.02-15.00.00:709][651]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Project/Levels/M_Testing_Auto5
+[2025.07.02-15.00.00:709][651]LogSavePackage: Moving 'E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Saved/M_Testing_Auto54A3EB8D84A7044F19349358354C7177F.tmp' to 'E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Saved/Autosaves/Game/Project/Levels/M_Testing_Auto5.umap'
+[2025.07.02-15.00.00:709][651]LogAssetRegistry: Warning: ScanPathsSynchronous: E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Saved/Autosaves/Game/Project/Levels/M_Testing_Auto5.umap is in the /Temp path, will not scan.
+[2025.07.02-15.00.00:709][651]LogAssetRegistry: Warning: ScanPathsSynchronous: /Temp/__ExternalActors__/Autosaves/Game/Project/Levels/M_Testing_Auto5 is in the /Temp path, will not scan.
+[2025.07.02-15.00.00:709][651]LogAssetRegistry: Warning: ScanPathsSynchronous: /Temp/__ExternalObjects__/Autosaves/Game/Project/Levels/M_Testing_Auto5 is in the /Temp path, will not scan.
+[2025.07.02-15.00.00:709][651]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Project/Levels/M_Testing' took 0.091
+[2025.07.02-15.00.00:709][651]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.091
+[2025.07.02-15.01.59:513][906]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 4411.920898
+[2025.07.02-15.01.59:670][925]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.07.02-15.01.59:670][925]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 4412.070801, Update Interval: 325.699646
+[2025.07.02-15.08.23:455][927]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 4795.213867
+[2025.07.02-15.08.23:605][945]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.07.02-15.08.23:605][945]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 4795.355957, Update Interval: 333.176056
+[2025.07.02-15.13.07:786][723]Cmd: DELETE
+[2025.07.02-15.13.07:786][723]Cmd: ACTOR DELETE
+[2025.07.02-15.13.07:787][723]LogEditorActor: Actor FeatureCollection is referenced by GeoJSON_Manager.
+[2025.07.02-15.13.09:262][723]LogSlate: Window 'Message' being destroyed
+[2025.07.02-15.13.09:274][723]Message dialog closed, result: YesAll, title: Message, text: Actor FeatureCollection is referenced by other Actors/Objects.
+Do you really want to delete it? This will break references.
+
+Reference List:
+
+GeoJSON_Manager
+[2025.07.02-15.13.09:275][723]LogEditorActor: Deleted Actor: BP_GeoJSON_MultiPoint_C
+[2025.07.02-15.13.09:275][723]LogEditorActor: Actor FeatureCollection_FeatureCollection_JSON_Test is referenced by GeoJSON_Manager.
+[2025.07.02-15.13.09:275][723]LogEditorActor: Deleted Actor: BP_GeoJSON_FeatureCollection_C
+[2025.07.02-15.13.09:275][723]LogEditorActor: Actor FeatureCollection_MyMultiLineStringFile is referenced by GeoJSON_Manager.
+[2025.07.02-15.13.09:276][723]LogEditorActor: Deleted Actor: BP_GeoJSON_MultiLineString_C
+[2025.07.02-15.13.09:310][723]LogUObjectHash: Compacting FUObjectHashTables data took   1.50ms
+[2025.07.02-15.13.09:322][723]LogEditorActor: Deleted 3 Actors (0.049 secs)
+[2025.07.02-15.13.10:223][829]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.07.02-15.13.37:461][258]LogLiveCoding: Display:    Creating library E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_10.lib and object E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Binaries\Win64\UnrealEditor-GeoJSON_Importer.patch_10.exp
+[2025.07.02-15.13.37:896][259]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
+[2025.07.02-15.13.38:302][260]Display: Reload/Re-instancing Complete: 1 package changed, 8 classes unchanged, 1 enum unchanged, 14 scriptstructs unchanged, 2 functions remapped, 14 scriptstructs remapped
+[2025.07.02-15.13.38:302][260]LogLiveCoding: Display: Live coding succeeded
+[2025.07.02-15.13.55:102][310]LogUObjectHash: Compacting FUObjectHashTables data took   1.01ms
+[2025.07.02-15.13.55:117][310]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Project/Levels/M_Testing_Auto6
+[2025.07.02-15.13.55:117][310]LogSavePackage: Moving 'E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Saved/M_Testing_Auto6BFF3FC864EC8DBFF4EF05383AC1941BC.tmp' to 'E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Saved/Autosaves/Game/Project/Levels/M_Testing_Auto6.umap'
+[2025.07.02-15.13.55:117][310]LogAssetRegistry: Warning: ScanPathsSynchronous: E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Saved/Autosaves/Game/Project/Levels/M_Testing_Auto6.umap is in the /Temp path, will not scan.
+[2025.07.02-15.13.55:117][310]LogAssetRegistry: Warning: ScanPathsSynchronous: /Temp/__ExternalActors__/Autosaves/Game/Project/Levels/M_Testing_Auto6 is in the /Temp path, will not scan.
+[2025.07.02-15.13.55:117][310]LogAssetRegistry: Warning: ScanPathsSynchronous: /Temp/__ExternalObjects__/Autosaves/Game/Project/Levels/M_Testing_Auto6 is in the /Temp path, will not scan.
+[2025.07.02-15.13.55:117][310]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Project/Levels/M_Testing' took 0.070
+[2025.07.02-15.13.55:117][310]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.070
+[2025.07.02-15.13.59:305][536]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_featurecollection.geojson
+[2025.07.02-15.13.59:305][536]LogTemp: JSON deserialization successful.
+[2025.07.02-15.13.59:305][536]LogTemp: GeoJSON Type: FeatureCollection
+[2025.07.02-15.13.59:305][536]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-15.13.59:306][536]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-15.13.59:306][536]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-15.13.59:306][536]LogTemp: Warning: Property 'crs' is a complex type and will be skipped.
+[2025.07.02-15.13.59:306][536]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multipoint.geojson
+[2025.07.02-15.13.59:306][536]LogTemp: JSON deserialization successful.
+[2025.07.02-15.13.59:306][536]LogTemp: GeoJSON Type: MultiPoint
+[2025.07.02-15.13.59:306][536]LogJson: Warning: Field crs was not found.
+[2025.07.02-15.13.59:306][536]LogJson: Error: Json Value of type 'Null' used as a 'Object'.
+[2025.07.02-15.13.59:306][536]LogTemp: Warning: Type field in CRS field not found!
+[2025.07.02-15.13.59:306][536]LogTemp: Successfully loaded GeoJSON from: E:\Projecten\ue5-geojson-importer\Resources\Data\GeoJSON test\geojson_multilinestring.geojson
+[2025.07.02-15.13.59:306][536]LogTemp: JSON deserialization successful.
+[2025.07.02-15.13.59:306][536]LogTemp: GeoJSON Type: MultiLineString
+[2025.07.02-15.13.59:306][536]LogJson: Warning: Field crs was not found.
+[2025.07.02-15.13.59:306][536]LogJson: Error: Json Value of type 'Null' used as a 'Object'.
+[2025.07.02-15.13.59:306][536]LogTemp: Warning: Type field in CRS field not found!

@@ -287,7 +287,7 @@ template<> GEOJSON_IMPORTER_API UScriptStruct* StaticStruct<FMultiLineStringData
 #endif
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGeoJSON_MultiLineString_Statics::NewProp_FData_MetaData[] = {
-		{ "Category", "GeoJSON_MultiLineString" },
+		{ "Category", "Data" },
 		{ "ModuleRelativePath", "GeoJSON_MultiLineString.h" },
 	};
 #endif
@@ -338,9 +338,9 @@ template<> GEOJSON_IMPORTER_API UScriptStruct* StaticStruct<FMultiLineStringData
 		{ FMultiLineStringData::StaticStruct, Z_Construct_UScriptStruct_FMultiLineStringData_Statics::NewStructOps, TEXT("MultiLineStringData"), &Z_Registration_Info_UScriptStruct_MultiLineStringData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMultiLineStringData), 3032897843U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_MultiLineString_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AGeoJSON_MultiLineString, AGeoJSON_MultiLineString::StaticClass, TEXT("AGeoJSON_MultiLineString"), &Z_Registration_Info_UClass_AGeoJSON_MultiLineString, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AGeoJSON_MultiLineString), 1625690896U) },
+		{ Z_Construct_UClass_AGeoJSON_MultiLineString, AGeoJSON_MultiLineString::StaticClass, TEXT("AGeoJSON_MultiLineString"), &Z_Registration_Info_UClass_AGeoJSON_MultiLineString, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AGeoJSON_MultiLineString), 2671080311U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_MultiLineString_h_3220134627(TEXT("/Script/GeoJSON_Importer"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_MultiLineString_h_2996995592(TEXT("/Script/GeoJSON_Importer"),
 		Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_MultiLineString_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_MultiLineString_h_Statics::ClassInfo),
 		Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_MultiLineString_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_MultiLineString_h_Statics::ScriptStructInfo),
 		nullptr, 0);

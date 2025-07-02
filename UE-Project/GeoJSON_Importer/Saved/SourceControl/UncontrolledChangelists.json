@@ -6,7 +6,8 @@
 			"description": "Default Uncontrolled Changelist",
 			"files": [
 				"E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Content/StarterContent/Props/MaterialSphere.uasset",
-				"E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Content/Project/Levels/M_Testing.umap"
+				"E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Content/Project/Levels/M_Testing.umap",
+				"E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Content/Project/Blueprints/GeoJSON/Types/BP_GeoJSON_MultiPoint.uasset"
 			]
 		}
 	]

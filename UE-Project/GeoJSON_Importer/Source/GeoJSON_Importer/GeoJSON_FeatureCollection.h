@@ -48,6 +48,8 @@ struct FFeatureCollectionData
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Data")
 	FString Description;
 
+	
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Data")
 	FCRS CRS;
 
@@ -62,18 +64,22 @@ class GEOJSON_IMPORTER_API AGeoJSON_FeatureCollection : public AActor
 	GENERATED_BODY()
 	
 public:	
+	
 	// Sets default values for this actor's properties
 	AGeoJSON_FeatureCollection();
 
+	// Data in JSONObject format
 	TSharedPtr<FJsonObject> FeatureCollectionGeoJSONData;
+
+
+
 	ETypes ExtractGeoJSONType(TSharedPtr<FJsonObject> JsonObject);
 
-	UFUNCTION(CallInEditor, Category = "Execute")
 	void ParseData();
 
-	void SpawnGrid();
 
 	FCRS ExtractCRS(TSharedPtr<FJsonObject> JsonObject);
+	TMap<FString, FString> ExtractProperties(TSharedPtr<FJsonObject> JsonObject);
 
 	FFeatureCollectionData ParseJSONToStructure(TSharedPtr<FJsonObject> GeoJSONData);
 

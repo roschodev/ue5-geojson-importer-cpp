@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GeoJSON_ImporterModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f15bb39cec3e82ea2ad852d6543682dbd8e22313")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4b6c70e62ae6ec5612cbed03654c756d5454a6e")]
 [assembly: System.Reflection.AssemblyProductAttribute("GeoJSON_ImporterModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GeoJSON_ImporterModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

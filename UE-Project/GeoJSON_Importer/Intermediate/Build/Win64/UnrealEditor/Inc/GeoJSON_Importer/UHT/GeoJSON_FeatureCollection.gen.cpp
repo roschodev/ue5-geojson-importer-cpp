@@ -239,44 +239,8 @@ template<> GEOJSON_IMPORTER_API UScriptStruct* StaticStruct<FFeatureCollectionDa
 		}
 		return Z_Registration_Info_UScriptStruct_FeatureCollectionData.InnerSingleton;
 	}
-	DEFINE_FUNCTION(AGeoJSON_FeatureCollection::execParseData)
-	{
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->ParseData();
-		P_NATIVE_END;
-	}
 	void AGeoJSON_FeatureCollection::StaticRegisterNativesAGeoJSON_FeatureCollection()
 	{
-		UClass* Class = AGeoJSON_FeatureCollection::StaticClass();
-		static const FNameNativePtrPair Funcs[] = {
-			{ "ParseData", &AGeoJSON_FeatureCollection::execParseData },
-		};
-		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-	}
-	struct Z_Construct_UFunction_AGeoJSON_FeatureCollection_ParseData_Statics
-	{
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGeoJSON_FeatureCollection_ParseData_Statics::Function_MetaDataParams[] = {
-		{ "CallInEditor", "true" },
-		{ "Category", "Execute" },
-		{ "ModuleRelativePath", "GeoJSON_FeatureCollection.h" },
-	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AGeoJSON_FeatureCollection_ParseData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGeoJSON_FeatureCollection, nullptr, "ParseData", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AGeoJSON_FeatureCollection_ParseData_Statics::Function_MetaDataParams), Z_Construct_UFunction_AGeoJSON_FeatureCollection_ParseData_Statics::Function_MetaDataParams) };
-	UFunction* Z_Construct_UFunction_AGeoJSON_FeatureCollection_ParseData()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AGeoJSON_FeatureCollection_ParseData_Statics::FuncParams);
-		}
-		return ReturnFunction;
 	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(AGeoJSON_FeatureCollection);
 	UClass* Z_Construct_UClass_AGeoJSON_FeatureCollection_NoRegister()
@@ -286,7 +250,6 @@ template<> GEOJSON_IMPORTER_API UScriptStruct* StaticStruct<FFeatureCollectionDa
 	struct Z_Construct_UClass_AGeoJSON_FeatureCollection_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
-		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -323,10 +286,6 @@ template<> GEOJSON_IMPORTER_API UScriptStruct* StaticStruct<FFeatureCollectionDa
 		(UObject* (*)())Z_Construct_UPackage__Script_GeoJSON_Importer,
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AGeoJSON_FeatureCollection_Statics::DependentSingletons) < 16);
-	const FClassFunctionLinkInfo Z_Construct_UClass_AGeoJSON_FeatureCollection_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AGeoJSON_FeatureCollection_ParseData, "ParseData" }, // 3935384815
-	};
-	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AGeoJSON_FeatureCollection_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGeoJSON_FeatureCollection_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "GeoJSON_FeatureCollection.h" },
@@ -399,11 +358,11 @@ template<> GEOJSON_IMPORTER_API UScriptStruct* StaticStruct<FFeatureCollectionDa
 		"Engine",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		FuncInfo,
+		nullptr,
 		Z_Construct_UClass_AGeoJSON_FeatureCollection_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		UE_ARRAY_COUNT(FuncInfo),
+		0,
 		UE_ARRAY_COUNT(Z_Construct_UClass_AGeoJSON_FeatureCollection_Statics::PropPointers),
 		0,
 		0x009000A4u,
@@ -434,9 +393,9 @@ template<> GEOJSON_IMPORTER_API UScriptStruct* StaticStruct<FFeatureCollectionDa
 		{ FFeatureCollectionData::StaticStruct, Z_Construct_UScriptStruct_FFeatureCollectionData_Statics::NewStructOps, TEXT("FeatureCollectionData"), &Z_Registration_Info_UScriptStruct_FeatureCollectionData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FFeatureCollectionData), 659821594U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_FeatureCollection_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AGeoJSON_FeatureCollection, AGeoJSON_FeatureCollection::StaticClass, TEXT("AGeoJSON_FeatureCollection"), &Z_Registration_Info_UClass_AGeoJSON_FeatureCollection, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AGeoJSON_FeatureCollection), 2641776910U) },
+		{ Z_Construct_UClass_AGeoJSON_FeatureCollection, AGeoJSON_FeatureCollection::StaticClass, TEXT("AGeoJSON_FeatureCollection"), &Z_Registration_Info_UClass_AGeoJSON_FeatureCollection, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AGeoJSON_FeatureCollection), 3020951327U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_FeatureCollection_h_502256138(TEXT("/Script/GeoJSON_Importer"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_FeatureCollection_h_3935099329(TEXT("/Script/GeoJSON_Importer"),
 		Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_FeatureCollection_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_FeatureCollection_h_Statics::ClassInfo),
 		Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_FeatureCollection_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_FeatureCollection_h_Statics::ScriptStructInfo),
 		nullptr, 0);

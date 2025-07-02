@@ -6,7 +6,9 @@
 #include "JsonUtilities.h"
 #include "Data.h"
 
-// Sets default values
+
+
+
 AGeoJSON_FeatureCollection::AGeoJSON_FeatureCollection()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
@@ -14,6 +16,33 @@ AGeoJSON_FeatureCollection::AGeoJSON_FeatureCollection()
 	RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 
 }
+
+void LogData(FFeatureCollectionData d) 
+{
+    FString TypeString = StaticEnum<ETypes>()->GetValueAsString(d.Type);
+    UE_LOG(LogTemp, Log, TEXT("FeatureCollection Type: %s"), *TypeString);
+    UE_LOG(LogTemp, Log, TEXT("FeatureCollection Description: %s"), *d.Description);
+    UE_LOG(LogTemp, Log, TEXT("FeatureCollection Name: %s"), *d.Name);
+    UE_LOG(LogTemp, Log, TEXT("FeatureCollection CRS Type: %s"), *d.CRS.Type.ToString());
+    for (const FFeature& Feature : d.Features)
+    {
+        FString FeatureTypeString = StaticEnum<ETypes>()->GetValueAsString(Feature.Type);
+        UE_LOG(LogTemp, Log, TEXT("Feature Type: %s"), *FeatureTypeString);
+
+        for (const auto& Property : Feature.Properties)
+        {
+            UE_LOG(LogTemp, Log, TEXT("Property: %s = %s"), *Property.Key, *Property.Value);
+        }
+     
+        for (const FString& Geometry : Feature.Geometry)
+        {
+            UE_LOG(LogTemp, Log, TEXT("Geometry: %s"), *Geometry);
+        }
+
+        
+    }
+}
+
 FCRS AGeoJSON_FeatureCollection::ExtractCRS(TSharedPtr<FJsonObject> JsonObject)
 {
     TSharedPtr<FJsonObject> CRSObject = JsonObject->GetObjectField("crs");
@@ -97,6 +126,48 @@ ETypes AGeoJSON_FeatureCollection::ExtractGeoJSONType(TSharedPtr<FJsonObject> Js
         return ETypes::Unsupported;
     }
 }
+TMap<FString, FString> AGeoJSON_FeatureCollection::ExtractProperties(TSharedPtr<FJsonObject> JsonObject)
+{
+    TMap<FString, FString> Properties;
+
+    if (JsonObject->HasField(TEXT("properties")))
+    {
+        TSharedPtr<FJsonObject> PropertiesObject = JsonObject->GetObjectField(TEXT("properties"));
+
+        for (const auto& Pair : PropertiesObject->Values)
+        {
+            const TSharedPtr<FJsonValue>& Value = Pair.Value;
+            FString ValueAsString;
+
+            switch (Value->Type)
+            {
+            case EJson::String:
+                ValueAsString = Value->AsString();
+                break;
+            case EJson::Number:
+                ValueAsString = FString::SanitizeFloat(Value->AsNumber());
+                break;
+            case EJson::Boolean:
+                ValueAsString = Value->AsBool() ? TEXT("true") : TEXT("false");
+                break;
+            case EJson::Null:
+                ValueAsString = TEXT("null");
+                break;
+            default:
+                UE_LOG(LogTemp, Warning, TEXT("Property '%s' is a complex type and will be skipped."), *Pair.Key);
+                continue;
+            }
+
+            Properties.Add(Pair.Key, ValueAsString);
+        }
+    }
+    else
+    {
+        UE_LOG(LogTemp, Warning, TEXT("No 'properties' field found in GeoJSON."));
+    }
+
+    return Properties;
+}
 FFeatureCollectionData AGeoJSON_FeatureCollection::ParseJSONToStructure(TSharedPtr<FJsonObject> GeoJSONData)
 {
     
@@ -117,7 +188,7 @@ FFeatureCollectionData AGeoJSON_FeatureCollection::ParseJSONToStructure(TSharedP
     //Get CRS of GeoJSON File (Optional)
     d.CRS = ExtractCRS(GeoJSONData);
 	//Get Type of GeoJSON File
-	
+   
 
 
 	//Get Features Array from GeoJSON
@@ -164,7 +235,14 @@ FFeatureCollectionData AGeoJSON_FeatureCollection::ParseJSONToStructure(TSharedP
 				UE_LOG(LogTemp, Warning, TEXT("No 'geometry' field found in Feature."));
             }
 
-            
+            if (FeatureObject->HasField("properties"))
+            {
+                Feature.Properties = ExtractProperties(FeatureObject);
+            }
+            else
+            {
+                UE_LOG(LogTemp, Warning, TEXT("No 'properties' field found in Feature."));
+			}
             d.Features.Add(Feature);
         }
     }
@@ -196,7 +274,6 @@ void AGeoJSON_FeatureCollection::Tick(float DeltaTime)
 void AGeoJSON_FeatureCollection::OnConstruction(const FTransform& Transform)
 {
     Super::OnConstruction(Transform);
-    ParseData();
 }
 
 
@@ -210,33 +287,11 @@ void AGeoJSON_FeatureCollection::ParseData()
     }
 
     Data = ParseJSONToStructure(FeatureCollectionGeoJSONData);
+	LogData(Data);
     
-
-	FString TypeString = StaticEnum<ETypes>()->GetValueAsString(Data.Type);
-    UE_LOG(LogTemp, Log, TEXT("FeatureCollection Type: %s"), *TypeString);
-	UE_LOG(LogTemp, Log, TEXT("FeatureCollection Description: %s"), *Data.Description);
-    UE_LOG(LogTemp, Log, TEXT("FeatureCollection Name: %s"), *Data.Name);
-	UE_LOG(LogTemp, Log, TEXT("FeatureCollection CRS Type: %s"), *Data.CRS.Type.ToString());
-    for (const FFeature& Feature : Data.Features)
-    {
-        FString FeatureTypeString = StaticEnum<ETypes>()->GetValueAsString(Feature.Type);
-        UE_LOG(LogTemp, Log, TEXT("Feature Type: %s"), *FeatureTypeString);
-        for (const FString& Geometry : Feature.Geometry)
-        {
-            UE_LOG(LogTemp, Log, TEXT("Geometry: %s"), *Geometry);
-        }
-    }
-    
-   
-
-   
 }
 #endif
 
-void AGeoJSON_FeatureCollection::SpawnGrid() 
-{
-
-}
 
 
 

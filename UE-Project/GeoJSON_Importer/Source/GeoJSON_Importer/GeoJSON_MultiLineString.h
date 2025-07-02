@@ -14,20 +14,17 @@ class GEOJSON_IMPORTER_API AGeoJSON_MultiLineString : public AActor
 public:	
 	// Sets default values for this actor's properties
 	AGeoJSON_MultiLineString();
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
+	TSharedPtr<FJsonObject> MultiLineStringGeoJSONData;
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
 public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
-	// Log GeoJSON data
-	UFUNCTION(CallInEditor)
-	void LogData();
-
-	TSharedPtr<FJsonObject> MultiLineStringGeoJSONData;
+	
 
 private:
 	// GeoJSON data

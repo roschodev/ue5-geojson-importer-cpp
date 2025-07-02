@@ -11,6 +11,7 @@
     <None Include="..\..\Source\GeoJSON_ImporterEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitignore.txt" />
     <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
@@ -58,6 +59,12 @@
       <Filter>Source\GeoJSON_Importer</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\GeoJSON_Importer\GeoJSON_Importer.h">
+      <Filter>Source\GeoJSON_Importer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GeoJSON_Importer\GeoJSON_Layer_Parent.cpp">
+      <Filter>Source\GeoJSON_Importer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GeoJSON_Importer\GeoJSON_Layer_Parent.h">
       <Filter>Source\GeoJSON_Importer</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\GeoJSON_Importer\GeoJSON_Manager.cpp">

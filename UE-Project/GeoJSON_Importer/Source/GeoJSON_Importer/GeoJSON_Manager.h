@@ -27,6 +27,15 @@ public:
 	TSharedPtr<FJsonObject> StringToJSONObject(const FString& JSONString);
 	ETypes ExtractGeoJSONType(TSharedPtr<FJsonObject> JsonObject);
 
+
+	UFUNCTION(CallInEditor, Category = "Execute")
+	void LogLine();
+
+	UPROPERTY(EditAnywhere, Category = "Handlers")
+	TSubclassOf<AActor> FeatureCollection_Actor;
+
+
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

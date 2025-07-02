@@ -17,7 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeGeoJSON_Importer_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x32CAE749,
+				0x5326FA8B,
 				0xF6B6E88C,
 				METADATA_PARAMS(0, nullptr)
 			};
@@ -25,5 +25,5 @@ void EmptyLinkFunctionForGeneratedCodeGeoJSON_Importer_init() {}
 		}
 		return Z_Registration_Info_UPackage__Script_GeoJSON_Importer.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_GeoJSON_Importer(Z_Construct_UPackage__Script_GeoJSON_Importer, TEXT("/Script/GeoJSON_Importer"), Z_Registration_Info_UPackage__Script_GeoJSON_Importer, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x32CAE749, 0xF6B6E88C));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_GeoJSON_Importer(Z_Construct_UPackage__Script_GeoJSON_Importer, TEXT("/Script/GeoJSON_Importer"), Z_Registration_Info_UPackage__Script_GeoJSON_Importer, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x5326FA8B, 0xF6B6E88C));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

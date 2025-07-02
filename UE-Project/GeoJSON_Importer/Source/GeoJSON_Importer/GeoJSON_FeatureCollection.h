@@ -69,7 +69,9 @@ public:
 	ETypes ExtractGeoJSONType(TSharedPtr<FJsonObject> JsonObject);
 
 	UFUNCTION(CallInEditor, Category = "Execute")
-	void LogData();
+	void ParseData();
+
+	void SpawnGrid();
 
 	FCRS ExtractCRS(TSharedPtr<FJsonObject> JsonObject);
 
@@ -86,6 +88,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Filters|Allowed Types")
 	bool bAllowCollectionTypes = true;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FFeatureCollectionData Data;
 
 protected:
 	// Called when the game starts or when spawned

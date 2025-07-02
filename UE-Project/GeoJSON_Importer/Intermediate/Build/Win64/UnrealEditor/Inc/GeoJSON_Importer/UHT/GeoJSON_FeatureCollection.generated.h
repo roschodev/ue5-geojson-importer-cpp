@@ -33,7 +33,7 @@ template<> GEOJSON_IMPORTER_API UScriptStruct* StaticStruct<struct FFeatureColle
 #define FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_FeatureCollection_h_62_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_FeatureCollection_h_62_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execLogData);
+	DECLARE_FUNCTION(execParseData);
 
 
 #define FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_FeatureCollection_h_62_ACCESSORS

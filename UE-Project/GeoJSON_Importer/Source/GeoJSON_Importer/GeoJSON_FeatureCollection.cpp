@@ -13,8 +13,6 @@ AGeoJSON_FeatureCollection::AGeoJSON_FeatureCollection()
 	PrimaryActorTick.bCanEverTick = true;
 	RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 
-    
-
 }
 FCRS AGeoJSON_FeatureCollection::ExtractCRS(TSharedPtr<FJsonObject> JsonObject)
 {
@@ -99,26 +97,25 @@ ETypes AGeoJSON_FeatureCollection::ExtractGeoJSONType(TSharedPtr<FJsonObject> Js
         return ETypes::Unsupported;
     }
 }
-
 FFeatureCollectionData AGeoJSON_FeatureCollection::ParseJSONToStructure(TSharedPtr<FJsonObject> GeoJSONData)
 {
     
-    FFeatureCollectionData Data;
+    FFeatureCollectionData d;
 
     if (!GeoJSONData.IsValid())
     {
         UE_LOG(LogTemp, Warning, TEXT("GeoJSONData is null or invalid."));
-        return Data;
+        return d;
     }
 
 
-    Data.Type = ExtractGeoJSONType(GeoJSONData);
+    d.Type = ExtractGeoJSONType(GeoJSONData);
     //Get Name of GeoJSON File (Optional)
-    GeoJSONData->TryGetStringField(TEXT("name"), Data.Name);
+    GeoJSONData->TryGetStringField(TEXT("name"), d.Name);
     //Get Description of GeoJSON File (Optional)
-    GeoJSONData->TryGetStringField(TEXT("description"), Data.Description);
+    GeoJSONData->TryGetStringField(TEXT("description"), d.Description);
     //Get CRS of GeoJSON File (Optional)
-    Data.CRS = ExtractCRS(GeoJSONData);
+    d.CRS = ExtractCRS(GeoJSONData);
 	//Get Type of GeoJSON File
 	
 
@@ -168,7 +165,7 @@ FFeatureCollectionData AGeoJSON_FeatureCollection::ParseJSONToStructure(TSharedP
             }
 
             
-            Data.Features.Add(Feature);
+            d.Features.Add(Feature);
         }
     }
     else
@@ -176,7 +173,7 @@ FFeatureCollectionData AGeoJSON_FeatureCollection::ParseJSONToStructure(TSharedP
         UE_LOG(LogTemp, Warning, TEXT("No 'features' array found in GeoJSON."));
     }
 
-    return Data;
+    return d;
 }
 
 
@@ -199,11 +196,12 @@ void AGeoJSON_FeatureCollection::Tick(float DeltaTime)
 void AGeoJSON_FeatureCollection::OnConstruction(const FTransform& Transform)
 {
     Super::OnConstruction(Transform);
+    ParseData();
 }
 
 
 #if WITH_EDITOR
-void AGeoJSON_FeatureCollection::LogData()
+void AGeoJSON_FeatureCollection::ParseData()
 {
     if (!FeatureCollectionGeoJSONData.IsValid())
     {
@@ -211,7 +209,6 @@ void AGeoJSON_FeatureCollection::LogData()
         return;
     }
 
-    FFeatureCollectionData Data;
     Data = ParseJSONToStructure(FeatureCollectionGeoJSONData);
     
 
@@ -235,6 +232,11 @@ void AGeoJSON_FeatureCollection::LogData()
    
 }
 #endif
+
+void AGeoJSON_FeatureCollection::SpawnGrid() 
+{
+
+}
 
 
 

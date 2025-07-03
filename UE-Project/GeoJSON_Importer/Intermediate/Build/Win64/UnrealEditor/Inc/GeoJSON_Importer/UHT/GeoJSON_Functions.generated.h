@@ -9,6 +9,9 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
+class UObject;
+struct FFeatureCollectionData;
 #ifdef GEOJSON_IMPORTER_GeoJSON_Functions_generated_h
 #error "GeoJSON_Functions.generated.h already included, missing '#pragma once' in GeoJSON_Functions.h"
 #endif
@@ -17,7 +20,11 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_Functions_h_19_SPARSE_DATA
 #define FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_Functions_h_19_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_Functions_h_19_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
-#define FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_Functions_h_19_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_Functions_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSpawnGrid);
+
+
 #define FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_Functions_h_19_ACCESSORS
 #define FID_GeoJSON_Importer_Source_GeoJSON_Importer_GeoJSON_Functions_h_19_INCLASS_NO_PURE_DECLS \
 private: \

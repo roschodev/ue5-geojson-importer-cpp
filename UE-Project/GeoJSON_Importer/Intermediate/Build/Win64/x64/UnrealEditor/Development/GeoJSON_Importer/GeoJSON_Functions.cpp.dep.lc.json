@@ -79,7 +79,15 @@
             "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\jsonutilities\\public\\jsonobjectconverter.h",
             "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\jsonutilities\\public\\jsonobjectwrapper.h",
             "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\jsonutilities\\uht\\jsonobjectwrapper.generated.h",
-            "e:\\projecten\\ue5-geojson-importer\\ue-project\\geojson_importer\\intermediate\\build\\win64\\unrealeditor\\inc\\geojson_importer\\uht\\geojson_functions.generated.h"
+            "e:\\projecten\\ue5-geojson-importer\\ue-project\\geojson_importer\\intermediate\\build\\win64\\unrealeditor\\inc\\geojson_importer\\uht\\geojson_functions.generated.h",
+            "e:\\projecten\\ue5-geojson-importer\\ue-project\\geojson_importer\\source\\geojson_importer\\geojson_featurecollection.h",
+            "e:\\projecten\\ue5-geojson-importer\\ue-project\\geojson_importer\\intermediate\\build\\win64\\unrealeditor\\inc\\geojson_importer\\uht\\geojson_featurecollection.generated.h",
+            "e:\\projecten\\ue5-geojson-importer\\ue-project\\geojson_importer\\source\\geojson_importer\\geojson_multipoint.h",
+            "e:\\projecten\\ue5-geojson-importer\\ue-project\\geojson_importer\\intermediate\\build\\win64\\unrealeditor\\inc\\geojson_importer\\uht\\geojson_multipoint.generated.h",
+            "e:\\projecten\\ue5-geojson-importer\\ue-project\\geojson_importer\\source\\geojson_importer\\geojson_multilinestring.h",
+            "e:\\projecten\\ue5-geojson-importer\\ue-project\\geojson_importer\\intermediate\\build\\win64\\unrealeditor\\inc\\geojson_importer\\uht\\geojson_multilinestring.generated.h",
+            "e:\\projecten\\ue5-geojson-importer\\ue-project\\geojson_importer\\source\\geojson_importer\\geojson_gridcell.h",
+            "e:\\projecten\\ue5-geojson-importer\\ue-project\\geojson_importer\\intermediate\\build\\win64\\unrealeditor\\inc\\geojson_importer\\uht\\geojson_gridcell.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

@@ -37,8 +37,6 @@ void AGeoJSON_FeatureCollection::LogData(FFeatureCollectionData d)
         {
             UE_LOG(LogTemp, Log, TEXT("Geometry: %s"), *Geometry);
         }
-
-        
     }
 }
 
@@ -161,10 +159,9 @@ void AGeoJSON_FeatureCollection::ParseData()
     if (UGeoJSON_Functions::IsValidGeoJSON(this, Data)) 
     {
         FData = ParseJSONToStructure(Data);
+
     }
 }
-
-
 
 
 

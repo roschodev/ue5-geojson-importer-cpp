@@ -5,9 +5,10 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Content/StarterContent/Props/MaterialSphere.uasset",
+				"E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset",
+				"E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Content/Project/Blueprints/GeoJSON/BP_GeoJSON_GridCell.uasset",
 				"E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Content/Project/Levels/M_Testing.umap",
-				"E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Content/Project/Blueprints/GeoJSON/Types/BP_GeoJSON_MultiPoint.uasset"
+				"E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Content/Project/Blueprints/GeoJSON/Types/BP_GeoJSON_FeatureCollection.uasset"
 			]
 		}
 	]

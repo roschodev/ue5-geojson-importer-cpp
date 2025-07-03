@@ -3,7 +3,11 @@
 
 #include "GeoJSON_Functions.h"
 #include "Json.h"
-#include "JsonUtilities.h" 
+#include "JsonUtilities.h"
+#include "GeoJSON_FeatureCollection.h"
+#include "GeoJSON_MultiPoint.h"
+#include "GeoJSON_MultiLineString.h"
+#include "GeoJSON_GridCell.h"
 #include "Data.h"
 
 
@@ -193,5 +197,156 @@ bool UGeoJSON_Functions::IsValidGeoJSON(UObject* self, TSharedPtr<FJsonObject> d
 	return true;
     
 }
+
+bool UGeoJSON_Functions::isGeoJSONGridBased(const FFeatureCollectionData& Data)
+{
+    UE_LOG(LogTemp, Warning, TEXT(">>> isGeoJSONGridBased called"));
+    FRegexPattern GridCodePattern(TEXT("E\\d{4}N\\d{4}"));
+
+    for (const FFeature& Feature : Data.Features)
+    {
+        bool bFoundGridCode = false;
+
+        for (const TPair<FString, FString>& Property : Feature.Properties)
+        {
+            const FString& Value = Property.Value;
+
+            FRegexMatcher Matcher(GridCodePattern, Value);
+            if (Matcher.FindNext())
+            {
+                UE_LOG(LogTemp, Log, TEXT("Grid code match in property '%s': %s"), *Property.Key, *Value);
+                bFoundGridCode = true;
+                break;
+            }
+        }
+
+        if (!bFoundGridCode)
+        {
+            UE_LOG(LogTemp, Warning, TEXT("Feature '%s' does not contain a valid grid code"), *Feature.Name);
+            return false;
+        }
+    }
+
+    return true; // All features had a grid code
+}
+
+
+void UGeoJSON_Functions::SpawnGrid(UObject* WorldContextObject, FFeatureCollectionData data, bool& isGrid, TArray<AActor*>& GridCells)
+{
+    UWorld* World = GEngine->GetWorldFromContextObjectChecked(WorldContextObject);
+    UClass* GridCellClass = LoadClass<AGeoJSON_GridCell>(
+        nullptr,
+        TEXT("/Game/Project/Blueprints/GeoJSON/BP_GeoJSON_GridCell.BP_GeoJSON_GridCell_C")
+    );
+
+    isGrid = false; // default to false
+
+    if (isGeoJSONGridBased(data))
+    {
+        // Match format like E2539N5310
+        const FRegexPattern GridCodePattern(TEXT("^E(\\d{4})N(\\d{4})$"));
+        UE_LOG(LogTemp, Log, TEXT("GeoJSON file is grid-based. Proceeding to spawn grid cells."));
+
+        int32 MinEasting = MAX_int32;
+        int32 MaxEasting = MIN_int32;
+        int32 MinNorthing = MAX_int32;
+        int32 MaxNorthing = MIN_int32;
+
+        // First pass: find bounds
+        for (const FFeature& Feature : data.Features)
+        {
+            for (const TPair<FString, FString>& Entry : Feature.Properties)
+            {
+                FRegexMatcher Matcher(FRegexPattern(TEXT("^E(\\d{4})N(\\d{4})$")), Entry.Value);
+                if (Matcher.FindNext())
+                {
+                    int32 Easting = FCString::Atoi(*Matcher.GetCaptureGroup(1));
+                    int32 Northing = FCString::Atoi(*Matcher.GetCaptureGroup(2));
+
+                    MinEasting = FMath::Min(MinEasting, Easting);
+                    MaxEasting = FMath::Max(MaxEasting, Easting);
+                    MinNorthing = FMath::Min(MinNorthing, Northing);
+                    MaxNorthing = FMath::Max(MaxNorthing, Northing);
+                }
+            }
+        }
+
+        FVector2D GridCenter(
+            (MinEasting + MaxEasting) / 2.0f,
+            (MinNorthing + MaxNorthing) / 2.0f
+        );
+
+        for (auto& Feature : data.Features)
+        {
+            bool bFoundGridCode = false;
+            FVector2D GridCoord;
+            FString ValueString;
+
+            for (const TPair<FString, FString>& Entry : Feature.Properties)
+            {
+                ValueString = Entry.Value;
+
+                FRegexMatcher Matcher(GridCodePattern, ValueString);
+                if (Matcher.FindNext())
+                {
+                    int32 Easting = FCString::Atoi(*Matcher.GetCaptureGroup(1));
+                    int32 Northing = FCString::Atoi(*Matcher.GetCaptureGroup(2));
+
+                    GridCoord = FVector2D(Easting, Northing);
+                    bFoundGridCode = true;
+                    isGrid = true;
+
+                    /*   UE_LOG(LogTemp, Log, TEXT("Found grid code: %s (E: %d, N: %d) in property key: %s"),
+                           *ValueString, Easting, Northing, *Entry.Key);*/
+                    break;
+                }
+            }
+
+            if (bFoundGridCode)
+            {
+                FVector SpawnLocation = FVector((GridCoord.X - GridCenter.X) * 100, (GridCoord.Y - GridCenter.Y) * 100, 0.0f); // Assuming Z = 0
+                FRotator SpawnRotation = FRotator::ZeroRotator;
+
+                AActor* SpawnedCell = World->SpawnActor<AActor>(GridCellClass, SpawnLocation, SpawnRotation);
+				UE_LOG(LogTemp, Log, TEXT("Spawned grid cell at location: %s"), *SpawnLocation.ToString());
+                if (SpawnedCell)
+                {
+                    FString NewLabel = TEXT("GridCell_") + Feature.Name + TEXT("_") + ValueString;
+                    SpawnedCell->SetActorLabel(NewLabel);
+                    //GridCells.Add(SpawnedCell);
+
+                    if (AActor* OwnerActor = Cast<AActor>(WorldContextObject))
+                    {
+                        SpawnedCell->AttachToActor(OwnerActor, FAttachmentTransformRules::KeepRelativeTransform);
+                    }
+                    else
+                    {
+                        UE_LOG(LogTemp, Warning, TEXT("WorldContextObject is not an actor. Spawned cell will not be attached."));
+                    }
+
+                    //UE_LOG(LogTemp, Log, TEXT("Spawned grid cell actor: %s at location: %s"), *NewLabel, *SpawnLocation.ToString());
+                }
+                else
+                {
+                    UE_LOG(LogTemp, Error, TEXT("Failed to spawn grid cell actor."));
+                }
+            }
+            else 
+            {
+				UE_LOG(LogTemp, Warning, TEXT("No valid grid code found in feature '%s'."), *Feature.Name);
+            }
+        }
+    }
+    else
+    {
+        UE_LOG(LogTemp, Warning, TEXT("GeoJSON file is not grid-based. No grid cells will be spawned."));
+        isGrid = false;
+    }
+}
+
+
+
+
+
 
 

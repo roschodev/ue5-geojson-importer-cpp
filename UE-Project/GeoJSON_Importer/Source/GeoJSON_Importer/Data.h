@@ -9,6 +9,20 @@
 #include "Data.generated.h"
 
 
+
+
+
+UENUM(BlueprintType)
+enum DataVisualisationType
+{
+	Bar UMETA(DisplayName = "Bar"),
+	Pie UMETA(DisplayName = "Pie"),
+	Blocks UMETA(DisplayName = "Blocks"),
+};
+
+
+
+
 // Enum for GeoJSON types
 UENUM(BlueprintType)
 enum ETypes
@@ -142,3 +156,4 @@ struct FType_MultiLineString {
 	TArray<FPolygonGroup> PolygonGroups;
 
 };
+

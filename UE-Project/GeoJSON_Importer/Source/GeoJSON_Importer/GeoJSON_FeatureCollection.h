@@ -97,6 +97,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FFeatureCollectionData FData;
 
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

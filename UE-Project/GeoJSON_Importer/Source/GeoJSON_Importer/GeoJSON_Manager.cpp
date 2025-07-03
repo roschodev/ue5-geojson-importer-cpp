@@ -58,17 +58,20 @@ void AGeoJSON_Manager::LoadGeoJSONFiles()
     SpawnParams.Instigator = GetInstigator();
     SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
 
-
+	UE_LOG(LogTemp, Log, TEXT("Loading GeoJSON files(%s)..."), *FString::FromInt(Filepaths.Num()) );
     for (const FString& FilePath : Filepaths)
     {
         FString f = UGeoJSON_Functions::LoadGeoJSON(FilePath);
         TSharedPtr<FJsonObject> g_obj = UGeoJSON_Functions::FStringToJSONObject(f);
         ETypes Type = UGeoJSON_Functions::GetType(g_obj);
-        UE_LOG(LogTemp, Log, TEXT("GeoJSON Type: %s"), *UEnum::GetValueAsString(Type));
+        //UE_LOG(LogTemp, Log, TEXT("GeoJSON Type: %s"), *UEnum::GetValueAsString(Type));
 
         switch (Type)
         {
             case Point: //this still wouldnt work, need to implement Feature
+            {
+                break;
+            }
             case MultiPoint:
             {
                 UClass* MultiPointBPClass = LoadClass<AGeoJSON_MultiPoint>(
@@ -107,6 +110,9 @@ void AGeoJSON_Manager::LoadGeoJSONFiles()
 				break;
 			}
             case LineString: //this still wouldnt work, need to implement Feature
+            {
+                break;
+            }
             case MultiLineString:
             {
                 UClass* MultiLineStringBPClass = LoadClass<AGeoJSON_MultiLineString>(
@@ -146,11 +152,17 @@ void AGeoJSON_Manager::LoadGeoJSONFiles()
                 break;
             }
             case Polygon:
+            {
+                break;
+            }
             case MultiPolygon:
             {
                 break;
             }
             case Geometry:
+            {
+                break;
+            }
             case GeometryCollection:
             {
                 break;
@@ -189,7 +201,6 @@ void AGeoJSON_Manager::LoadGeoJSONFiles()
                         {
                             FString NewLabel = TEXT("FeatureCollection");
                             FeatureCollectionActor->SetActorLabel(NewLabel);
-
                         }
                       
 

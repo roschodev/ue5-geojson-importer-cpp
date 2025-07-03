@@ -34,18 +34,6 @@
     <ClInclude Include="..\..\Source\GeoJSON_Importer\Data.h">
       <Filter>Source\GeoJSON_Importer</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\GeoJSON_Importer\Entry_LineString.cpp">
-      <Filter>Source\GeoJSON_Importer</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\GeoJSON_Importer\Entry_LineString.h">
-      <Filter>Source\GeoJSON_Importer</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\GeoJSON_Importer\Entry_Point.cpp">
-      <Filter>Source\GeoJSON_Importer</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\GeoJSON_Importer\Entry_Point.h">
-      <Filter>Source\GeoJSON_Importer</Filter>
-    </ClInclude>
     <ClCompile Include="..\..\Source\GeoJSON_Importer\GeoJSON_FeatureCollection.cpp">
       <Filter>Source\GeoJSON_Importer</Filter>
     </ClCompile>
@@ -58,6 +46,12 @@
     <ClInclude Include="..\..\Source\GeoJSON_Importer\GeoJSON_Functions.h">
       <Filter>Source\GeoJSON_Importer</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\GeoJSON_Importer\GeoJSON_GridCell.cpp">
+      <Filter>Source\GeoJSON_Importer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GeoJSON_Importer\GeoJSON_GridCell.h">
+      <Filter>Source\GeoJSON_Importer</Filter>
+    </ClInclude>
     <None Include="..\..\Source\GeoJSON_Importer\GeoJSON_Importer.Build.cs">
       <Filter>Source\GeoJSON_Importer</Filter>
     </None>
@@ -65,12 +59,6 @@
       <Filter>Source\GeoJSON_Importer</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\GeoJSON_Importer\GeoJSON_Importer.h">
-      <Filter>Source\GeoJSON_Importer</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\GeoJSON_Importer\GeoJSON_Layer_Parent.cpp">
-      <Filter>Source\GeoJSON_Importer</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\GeoJSON_Importer\GeoJSON_Layer_Parent.h">
       <Filter>Source\GeoJSON_Importer</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\GeoJSON_Importer\GeoJSON_Manager.cpp">

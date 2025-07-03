@@ -10,6 +10,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeData() {}
 // Cross Module References
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector2D();
+	GEOJSON_IMPORTER_API UEnum* Z_Construct_UEnum_GeoJSON_Importer_DataVisualisationType();
 	GEOJSON_IMPORTER_API UEnum* Z_Construct_UEnum_GeoJSON_Importer_ETypes();
 	GEOJSON_IMPORTER_API UScriptStruct* Z_Construct_UScriptStruct_FCRS();
 	GEOJSON_IMPORTER_API UScriptStruct* Z_Construct_UScriptStruct_FCRS_Properties();
@@ -21,6 +22,64 @@ void EmptyLinkFunctionForGeneratedCodeData() {}
 	GEOJSON_IMPORTER_API UScriptStruct* Z_Construct_UScriptStruct_FType_MultiPolygon();
 	UPackage* Z_Construct_UPackage__Script_GeoJSON_Importer();
 // End Cross Module References
+	static FEnumRegistrationInfo Z_Registration_Info_UEnum_DataVisualisationType;
+	static UEnum* DataVisualisationType_StaticEnum()
+	{
+		if (!Z_Registration_Info_UEnum_DataVisualisationType.OuterSingleton)
+		{
+			Z_Registration_Info_UEnum_DataVisualisationType.OuterSingleton = GetStaticEnum(Z_Construct_UEnum_GeoJSON_Importer_DataVisualisationType, (UObject*)Z_Construct_UPackage__Script_GeoJSON_Importer(), TEXT("DataVisualisationType"));
+		}
+		return Z_Registration_Info_UEnum_DataVisualisationType.OuterSingleton;
+	}
+	template<> GEOJSON_IMPORTER_API UEnum* StaticEnum<DataVisualisationType>()
+	{
+		return DataVisualisationType_StaticEnum();
+	}
+	struct Z_Construct_UEnum_GeoJSON_Importer_DataVisualisationType_Statics
+	{
+		static const UECodeGen_Private::FEnumeratorParam Enumerators[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FEnumParams EnumParams;
+	};
+	const UECodeGen_Private::FEnumeratorParam Z_Construct_UEnum_GeoJSON_Importer_DataVisualisationType_Statics::Enumerators[] = {
+		{ "Bar", (int64)Bar },
+		{ "Pie", (int64)Pie },
+		{ "Blocks", (int64)Blocks },
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UEnum_GeoJSON_Importer_DataVisualisationType_Statics::Enum_MetaDataParams[] = {
+		{ "Bar.DisplayName", "Bar" },
+		{ "Bar.Name", "Bar" },
+		{ "Blocks.DisplayName", "Blocks" },
+		{ "Blocks.Name", "Blocks" },
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "Data.h" },
+		{ "Pie.DisplayName", "Pie" },
+		{ "Pie.Name", "Pie" },
+	};
+#endif
+	const UECodeGen_Private::FEnumParams Z_Construct_UEnum_GeoJSON_Importer_DataVisualisationType_Statics::EnumParams = {
+		(UObject*(*)())Z_Construct_UPackage__Script_GeoJSON_Importer,
+		nullptr,
+		"DataVisualisationType",
+		"DataVisualisationType",
+		Z_Construct_UEnum_GeoJSON_Importer_DataVisualisationType_Statics::Enumerators,
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		UE_ARRAY_COUNT(Z_Construct_UEnum_GeoJSON_Importer_DataVisualisationType_Statics::Enumerators),
+		EEnumFlags::None,
+		(uint8)UEnum::ECppForm::Regular,
+		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UEnum_GeoJSON_Importer_DataVisualisationType_Statics::Enum_MetaDataParams), Z_Construct_UEnum_GeoJSON_Importer_DataVisualisationType_Statics::Enum_MetaDataParams)
+	};
+	UEnum* Z_Construct_UEnum_GeoJSON_Importer_DataVisualisationType()
+	{
+		if (!Z_Registration_Info_UEnum_DataVisualisationType.InnerSingleton)
+		{
+			UECodeGen_Private::ConstructUEnum(Z_Registration_Info_UEnum_DataVisualisationType.InnerSingleton, Z_Construct_UEnum_GeoJSON_Importer_DataVisualisationType_Statics::EnumParams);
+		}
+		return Z_Registration_Info_UEnum_DataVisualisationType.InnerSingleton;
+	}
 	static FEnumRegistrationInfo Z_Registration_Info_UEnum_ETypes;
 	static UEnum* ETypes_StaticEnum()
 	{
@@ -836,6 +895,7 @@ template<> GEOJSON_IMPORTER_API UScriptStruct* StaticStruct<FType_MultiLineStrin
 		static const FStructRegisterCompiledInInfo ScriptStructInfo[];
 	};
 	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_Data_h_Statics::EnumInfo[] = {
+		{ DataVisualisationType_StaticEnum, TEXT("DataVisualisationType"), &Z_Registration_Info_UEnum_DataVisualisationType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 78462405U) },
 		{ ETypes_StaticEnum, TEXT("ETypes"), &Z_Registration_Info_UEnum_ETypes, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3270796795U) },
 	};
 	const FStructRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_Data_h_Statics::ScriptStructInfo[] = {
@@ -848,7 +908,7 @@ template<> GEOJSON_IMPORTER_API UScriptStruct* StaticStruct<FType_MultiLineStrin
 		{ FType_MultiPolygon::StaticStruct, Z_Construct_UScriptStruct_FType_MultiPolygon_Statics::NewStructOps, TEXT("Type_MultiPolygon"), &Z_Registration_Info_UScriptStruct_Type_MultiPolygon, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FType_MultiPolygon), 2368420662U) },
 		{ FType_MultiLineString::StaticStruct, Z_Construct_UScriptStruct_FType_MultiLineString_Statics::NewStructOps, TEXT("Type_MultiLineString"), &Z_Registration_Info_UScriptStruct_Type_MultiLineString, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FType_MultiLineString), 3815793709U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_Data_h_1000223073(TEXT("/Script/GeoJSON_Importer"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_Data_h_2289230186(TEXT("/Script/GeoJSON_Importer"),
 		nullptr, 0,
 		Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_Data_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_Data_h_Statics::ScriptStructInfo),
 		Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_Data_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GeoJSON_Importer_Source_GeoJSON_Importer_Data_h_Statics::EnumInfo));

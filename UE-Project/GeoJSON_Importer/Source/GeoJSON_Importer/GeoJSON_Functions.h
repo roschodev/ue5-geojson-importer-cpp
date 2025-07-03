@@ -25,4 +25,12 @@ public:
 	static TSharedPtr<FJsonObject> FStringToJSONObject(const FString& JSONString);
 	static FString LoadGeoJSON(FString Path);
 	static bool IsValidGeoJSON(UObject* self, TSharedPtr<FJsonObject> Data);
+
+	static bool isGeoJSONGridBased(const FFeatureCollectionData& Data);
+
+	UFUNCTION(BlueprintCallable, meta = (WorldContext = "WorldContextObject"))
+	static void SpawnGrid(UObject* WorldContextObject, FFeatureCollectionData Data, bool& bIsGrid, TArray<AActor*>& GridCells);
+
+
+
 };

@@ -17,6 +17,9 @@ class GEOJSON_LOADER_API AGeoJSON_Manager : public AActor
 public:	
 	// Sets default values for this actor's properties
 	AGeoJSON_Manager();
+
+	UPROPERTY()
+	USceneComponent* SceneRoot;
 	
 	//Input Variables
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "GeoJSON")

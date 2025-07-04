@@ -33,6 +33,12 @@
     <ClInclude Include="..\..\Source\GeoJSON_Loader\Data.h">
       <Filter>Source\GeoJSON_Loader</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\GeoJSON_Loader\GeoJSON_GridCell.cpp">
+      <Filter>Source\GeoJSON_Loader</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GeoJSON_Loader\GeoJSON_GridCell.h">
+      <Filter>Source\GeoJSON_Loader</Filter>
+    </ClInclude>
     <None Include="..\..\Source\GeoJSON_Loader\GeoJSON_Loader.Build.cs">
       <Filter>Source\GeoJSON_Loader</Filter>
     </None>

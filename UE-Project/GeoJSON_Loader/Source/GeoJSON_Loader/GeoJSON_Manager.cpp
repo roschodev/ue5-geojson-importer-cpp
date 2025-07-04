@@ -3,6 +3,7 @@
 #include "GeoJSON_Manager.h"
 #include "Json.h"
 #include "JsonUtilities.h"
+#include "GeoJSON_GridCell.h"
 #include "Data.h"
 
 
@@ -11,6 +12,9 @@ AGeoJSON_Manager::AGeoJSON_Manager()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+
+	SceneRoot = CreateDefaultSubobject<USceneComponent>(TEXT("SceneRoot"));
+	SetRootComponent(SceneRoot); // This is the correct way
 
 }
 void AGeoJSON_Manager::BeginPlay()
@@ -38,16 +42,52 @@ void AGeoJSON_Manager::BeginPlay()
 		}
 	}
 
+	UClass* GridCellClass = LoadClass<AGeoJSON_GridCell>(
+		nullptr,
+		TEXT("/Game/Project/Blueprints/Grid/BP_GeoJSON_GridCell.BP_GeoJSON_GridCell_C")
+	);
 
-	for (const FString& Code : AllGridCodes)
+	/*for (const FString& Code : AllGridCodes)
 	{
 		UE_LOG(LogTemp, Display, TEXT("Grid Code: %s"), *Code);
+	}*/
+
+
+	FVector2D BottomLeftPoint;
+	FVector2D TopRightPoint;
+	TArray<FString> AllGridCodesArray(AllGridCodes.Array());
+	CalculateGridBounds(AllGridCodesArray, BottomLeftPoint, TopRightPoint);
+
+	const float CellSize = 100.0f;
+	TArray<AActor*> GridCells;
+
+	for (int32 X = BottomLeftPoint.X; X <= TopRightPoint.X; ++X)
+	{
+		for (int32 Y = BottomLeftPoint.Y; Y <= TopRightPoint.Y; ++Y)
+		{
+			FVector SpawnLocation(X * CellSize, Y * CellSize, 0.0f);
+			FRotator SpawnRotation = FRotator::ZeroRotator;
+
+			FActorSpawnParameters SpawnParams;
+			SpawnParams.Owner = this;
+
+			if (GridCellClass)
+			{
+				AGeoJSON_GridCell* NewCell = GetWorld()->SpawnActor<AGeoJSON_GridCell>(GridCellClass, SpawnLocation, SpawnRotation, SpawnParams);
+				if (NewCell)
+				{
+					bool bAttached = NewCell->AttachToActor(this, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
+					UE_LOG(LogTemp, Warning, TEXT("AttachToActor returned: %s"), bAttached ? TEXT("true") : TEXT("false"));
+
+					NewCell->SetActorLabel(FString::Printf(TEXT("Cell_E%04dN%04d"), X, Y));
+					NewCell->Code = FString::Printf(TEXT("E%04dN%04d"), X, Y);
+					
+
+				}
+			}
+		}
 	}
 
-
-	FVector2D coordsMin;
-	FVector2D coordsMax;
-	CalculateGridBounds(AllGridCodes, );
 
 	// Next Steps:
 	// 1. Parse Easting/Northing from each code (e.g., E1234N5678 -> 1234, 5678)

@@ -5,77 +5,29 @@
       <Configuration>Invalid</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="Invalid|Win64">
-      <Configuration>Invalid</Configuration>
-      <Platform>Win64</Platform>
-    </ProjectConfiguration>
     <ProjectConfiguration Include="DebugGame|x64">
       <Configuration>DebugGame</Configuration>
       <Platform>x64</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="DebugGame|Win64">
-      <Configuration>DebugGame</Configuration>
-      <Platform>Win64</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="DebugGame_Editor|x64">
       <Configuration>DebugGame_Editor</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="DebugGame_Editor|Win64">
-      <Configuration>DebugGame_Editor</Configuration>
-      <Platform>Win64</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Android_DebugGame|x64">
-      <Configuration>Android_DebugGame</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Android_DebugGame|Win64">
-      <Configuration>Android_DebugGame</Configuration>
-      <Platform>Win64</Platform>
-    </ProjectConfiguration>
     <ProjectConfiguration Include="Development|x64">
       <Configuration>Development</Configuration>
       <Platform>x64</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Development|Win64">
-      <Configuration>Development</Configuration>
-      <Platform>Win64</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Development_Editor|x64">
       <Configuration>Development_Editor</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="Development_Editor|Win64">
-      <Configuration>Development_Editor</Configuration>
-      <Platform>Win64</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Android_Development|x64">
-      <Configuration>Android_Development</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Android_Development|Win64">
-      <Configuration>Android_Development</Configuration>
-      <Platform>Win64</Platform>
-    </ProjectConfiguration>
     <ProjectConfiguration Include="Shipping|x64">
       <Configuration>Shipping</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="Shipping|Win64">
-      <Configuration>Shipping</Configuration>
-      <Platform>Win64</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Android_Shipping|x64">
-      <Configuration>Android_Shipping</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Android_Shipping|Win64">
-      <Configuration>Android_Shipping</Configuration>
-      <Platform>Win64</Platform>
-    </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{DAFD461C-DA3A-3AA7-B28A-B200E6410C3B}</ProjectGuid>
+    <ProjectGuid>{95BE6FC4-1152-3CEB-8D7F-4BCC96246780}</ProjectGuid>
     <RootNamespace>GeoJSON_Loader</RootNamespace>
   </PropertyGroup>
   <Import Project="UECommon.props" />
@@ -105,18 +57,6 @@
       <NMakeCompileFileCommandLine>$(BuildBatchScript) GeoJSON_LoaderEditor Win64 DebugGame -Project="$(SolutionDir)GeoJSON_Loader.uproject" -WaitMutex -FromMsBuild -WorkingDir=$(MSBuildProjectDirectory) -Files=$(SelectedFiles)</NMakeCompileFileCommandLine>
     </NMakeCompile>
   </ItemDefinitionGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_DebugGame|Win64'">
-    <NMakeBuildCommandLine>$(BuildBatchScript) GeoJSON_Loader Android DebugGame -Project="$(SolutionDir)GeoJSON_Loader.uproject" -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
-    <NMakeReBuildCommandLine>$(RebuildBatchScript) GeoJSON_Loader Android DebugGame -Project="$(SolutionDir)GeoJSON_Loader.uproject" -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
-    <NMakeCleanCommandLine>$(CleanBatchScript) GeoJSON_Loader Android DebugGame -Project="$(SolutionDir)GeoJSON_Loader.uproject" -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
-    <NMakeOutput>..\..\Binaries\Android\GeoJSON_Loader-Android-DebugGame.so</NMakeOutput>
-    <AdditionalOptions>/std:c++20  /DSAL_NO_ATTRIBUTE_DECLARATIONS=1 /permissive- /Zc:strictStrings- /Zc:__cplusplus</AdditionalOptions>
-  </PropertyGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Android_DebugGame|Win64'">
-    <NMakeCompile>
-      <NMakeCompileFileCommandLine>$(BuildBatchScript) GeoJSON_Loader Android DebugGame -Project="$(SolutionDir)GeoJSON_Loader.uproject" -WaitMutex -FromMsBuild -WorkingDir=$(MSBuildProjectDirectory) -Files=$(SelectedFiles)</NMakeCompileFileCommandLine>
-    </NMakeCompile>
-  </ItemDefinitionGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|x64'">
     <NMakeBuildCommandLine>$(BuildBatchScript) GeoJSON_Loader Win64 Development -Project="$(SolutionDir)GeoJSON_Loader.uproject" -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>$(RebuildBatchScript) GeoJSON_Loader Win64 Development -Project="$(SolutionDir)GeoJSON_Loader.uproject" -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
@@ -141,18 +81,6 @@
       <NMakeCompileFileCommandLine>$(BuildBatchScript) GeoJSON_LoaderEditor Win64 Development -Project="$(SolutionDir)GeoJSON_Loader.uproject" -WaitMutex -FromMsBuild -WorkingDir=$(MSBuildProjectDirectory) -Files=$(SelectedFiles)</NMakeCompileFileCommandLine>
     </NMakeCompile>
   </ItemDefinitionGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Development|Win64'">
-    <NMakeBuildCommandLine>$(BuildBatchScript) GeoJSON_Loader Android Development -Project="$(SolutionDir)GeoJSON_Loader.uproject" -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
-    <NMakeReBuildCommandLine>$(RebuildBatchScript) GeoJSON_Loader Android Development -Project="$(SolutionDir)GeoJSON_Loader.uproject" -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
-    <NMakeCleanCommandLine>$(CleanBatchScript) GeoJSON_Loader Android Development -Project="$(SolutionDir)GeoJSON_Loader.uproject" -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
-    <NMakeOutput>..\..\Binaries\Android\GeoJSON_Loader.so</NMakeOutput>
-    <AdditionalOptions>/std:c++20  /DSAL_NO_ATTRIBUTE_DECLARATIONS=1 /permissive- /Zc:strictStrings- /Zc:__cplusplus</AdditionalOptions>
-  </PropertyGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Android_Development|Win64'">
-    <NMakeCompile>
-      <NMakeCompileFileCommandLine>$(BuildBatchScript) GeoJSON_Loader Android Development -Project="$(SolutionDir)GeoJSON_Loader.uproject" -WaitMutex -FromMsBuild -WorkingDir=$(MSBuildProjectDirectory) -Files=$(SelectedFiles)</NMakeCompileFileCommandLine>
-    </NMakeCompile>
-  </ItemDefinitionGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|x64'">
     <NMakeBuildCommandLine>$(BuildBatchScript) GeoJSON_Loader Win64 Shipping -Project="$(SolutionDir)GeoJSON_Loader.uproject" -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>$(RebuildBatchScript) GeoJSON_Loader Win64 Shipping -Project="$(SolutionDir)GeoJSON_Loader.uproject" -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
@@ -163,18 +91,6 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|x64'">
     <NMakeCompile>
       <NMakeCompileFileCommandLine>$(BuildBatchScript) GeoJSON_Loader Win64 Shipping -Project="$(SolutionDir)GeoJSON_Loader.uproject" -WaitMutex -FromMsBuild -WorkingDir=$(MSBuildProjectDirectory) -Files=$(SelectedFiles)</NMakeCompileFileCommandLine>
-    </NMakeCompile>
-  </ItemDefinitionGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Shipping|Win64'">
-    <NMakeBuildCommandLine>$(BuildBatchScript) GeoJSON_Loader Android Shipping -Project="$(SolutionDir)GeoJSON_Loader.uproject" -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
-    <NMakeReBuildCommandLine>$(RebuildBatchScript) GeoJSON_Loader Android Shipping -Project="$(SolutionDir)GeoJSON_Loader.uproject" -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
-    <NMakeCleanCommandLine>$(CleanBatchScript) GeoJSON_Loader Android Shipping -Project="$(SolutionDir)GeoJSON_Loader.uproject" -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
-    <NMakeOutput>..\..\Binaries\Android\GeoJSON_Loader-Android-Shipping.so</NMakeOutput>
-    <AdditionalOptions>/std:c++20  /DSAL_NO_ATTRIBUTE_DECLARATIONS=1 /permissive- /Zc:strictStrings- /Zc:__cplusplus</AdditionalOptions>
-  </PropertyGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Android_Shipping|Win64'">
-    <NMakeCompile>
-      <NMakeCompileFileCommandLine>$(BuildBatchScript) GeoJSON_Loader Android Shipping -Project="$(SolutionDir)GeoJSON_Loader.uproject" -WaitMutex -FromMsBuild -WorkingDir=$(MSBuildProjectDirectory) -Files=$(SelectedFiles)</NMakeCompileFileCommandLine>
     </NMakeCompile>
   </ItemDefinitionGroup>
   <PropertyGroup>
@@ -199,6 +115,12 @@
     <None Include="..\..\Config\DefaultGame.ini"/>
     <None Include="..\..\Config\DefaultInput.ini"/>
     <ClInclude Include="..\..\Source\GeoJSON_Loader\Data.h"/>
+    <ClCompile Include="..\..\Source\GeoJSON_Loader\GeoJSON_GridCell.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GeoJSON_Loader\GeoJSON_GridCell.h"/>
     <None Include="..\..\Source\GeoJSON_Loader\GeoJSON_Loader.Build.cs"/>
     <ClCompile Include="..\..\Source\GeoJSON_Loader\GeoJSON_Loader.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>

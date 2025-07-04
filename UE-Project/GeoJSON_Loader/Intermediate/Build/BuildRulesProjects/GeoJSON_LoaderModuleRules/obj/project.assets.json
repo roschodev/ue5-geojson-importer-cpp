@@ -8064,23 +8064,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\RenderStation2\\.nuget\\packages\\": {},
+    "C:\\Users\\robsc\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Development\\ue5-geojson-importer-cpp\\UE-Project\\GeoJSON_Loader\\Intermediate\\Build\\BuildRulesProjects\\GeoJSON_LoaderModuleRules\\GeoJSON_LoaderModuleRules.csproj",
+      "projectUniqueName": "E:\\Projecten\\ue5-geojson-importer\\UE-Project\\GeoJSON_Loader\\Intermediate\\Build\\BuildRulesProjects\\GeoJSON_LoaderModuleRules\\GeoJSON_LoaderModuleRules.csproj",
       "projectName": "GeoJSON_LoaderModuleRules",
-      "projectPath": "D:\\Development\\ue5-geojson-importer-cpp\\UE-Project\\GeoJSON_Loader\\Intermediate\\Build\\BuildRulesProjects\\GeoJSON_LoaderModuleRules\\GeoJSON_LoaderModuleRules.csproj",
-      "packagesPath": "C:\\Users\\RenderStation2\\.nuget\\packages\\",
-      "outputPath": "D:\\Development\\ue5-geojson-importer-cpp\\UE-Project\\GeoJSON_Loader\\Intermediate\\Build\\BuildRulesProjects\\GeoJSON_LoaderModuleRules\\obj\\",
+      "projectPath": "E:\\Projecten\\ue5-geojson-importer\\UE-Project\\GeoJSON_Loader\\Intermediate\\Build\\BuildRulesProjects\\GeoJSON_LoaderModuleRules\\GeoJSON_LoaderModuleRules.csproj",
+      "packagesPath": "C:\\Users\\robsc\\.nuget\\packages\\",
+      "outputPath": "E:\\Projecten\\ue5-geojson-importer\\UE-Project\\GeoJSON_Loader\\Intermediate\\Build\\BuildRulesProjects\\GeoJSON_LoaderModuleRules\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\RenderStation2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\robsc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

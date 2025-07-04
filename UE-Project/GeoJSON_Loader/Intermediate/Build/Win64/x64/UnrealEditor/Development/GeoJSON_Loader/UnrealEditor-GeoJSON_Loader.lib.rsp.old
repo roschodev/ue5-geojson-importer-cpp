@@ -1,0 +1,16 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-GeoJSON_Loader.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Loader\Intermediate\Build\Win64\x64\GeoJSON_LoaderEditor\Development\Engine\SharedPCH.Engine.Cpp20.h.obj"
+"E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Loader\Intermediate\Build\Win64\x64\UnrealEditor\Development\GeoJSON_Loader\Data.gen.cpp.obj"
+"E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Loader\Intermediate\Build\Win64\x64\UnrealEditor\Development\GeoJSON_Loader\GeoJSON_Loader.init.gen.cpp.obj"
+"E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Loader\Intermediate\Build\Win64\x64\UnrealEditor\Development\GeoJSON_Loader\GeoJSON_Manager.gen.cpp.obj"
+"E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Loader\Intermediate\Build\Win64\x64\UnrealEditor\Development\GeoJSON_Loader\GeoJSON_Loader.cpp.obj"
+"E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Loader\Intermediate\Build\Win64\x64\UnrealEditor\Development\GeoJSON_Loader\GeoJSON_Manager.cpp.obj"
+"E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Loader\Intermediate\Build\Win64\x64\UnrealEditor\Development\GeoJSON_Loader\Default.rc2.res"
+/OUT:"E:\Projecten\ue5-geojson-importer\UE-Project\GeoJSON_Loader\Intermediate\Build\Win64\x64\UnrealEditor\Development\GeoJSON_Loader\UnrealEditor-GeoJSON_Loader.lib"

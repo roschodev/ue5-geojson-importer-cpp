@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"D:\\Development\\ue5-geojson-importer-cpp\\UE-Project\\old\\GeoJSON_Importer\\Source\\GeoJSON_Importer\\GeoJSON_Importer.Build.cs",
-		"D:\\Development\\ue5-geojson-importer-cpp\\UE-Project\\old\\GeoJSON_Importer\\Source\\GeoJSON_Importer.Target.cs",
-		"D:\\Development\\ue5-geojson-importer-cpp\\UE-Project\\old\\GeoJSON_Importer\\Source\\GeoJSON_ImporterEditor.Target.cs"
+		"E:\\Projecten\\ue5-geojson-importer\\UE-Project\\old\\GeoJSON_Importer\\Source\\GeoJSON_Importer\\GeoJSON_Importer.Build.cs",
+		"E:\\Projecten\\ue5-geojson-importer\\UE-Project\\old\\GeoJSON_Importer\\Source\\GeoJSON_Importer.Target.cs",
+		"E:\\Projecten\\ue5-geojson-importer\\UE-Project\\old\\GeoJSON_Importer\\Source\\GeoJSON_ImporterEditor.Target.cs"
 	],
 	"EngineVersion": "5.3.2"
 }

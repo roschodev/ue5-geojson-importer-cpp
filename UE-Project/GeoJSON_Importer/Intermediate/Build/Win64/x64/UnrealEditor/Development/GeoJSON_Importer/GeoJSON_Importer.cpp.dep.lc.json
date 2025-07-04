@@ -1,12 +1,12 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "d:\\development\\ue5-geojson-importer-cpp\\ue-project\\geojson_importer\\source\\geojson_importer\\geojson_importer.cpp",
+        "Source": "e:\\projecten\\ue5-geojson-importer\\ue-project\\geojson_importer\\source\\geojson_importer\\geojson_importer.cpp",
         "ProvidedModule": "",
-        "PCH": "d:\\development\\ue5-geojson-importer-cpp\\ue-project\\geojson_importer\\intermediate\\build\\win64\\x64\\geojson_importereditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "PCH": "e:\\projecten\\ue5-geojson-importer\\ue-project\\geojson_importer\\intermediate\\build\\win64\\x64\\geojson_importereditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
         "Includes": [
-            "d:\\development\\ue5-geojson-importer-cpp\\ue-project\\geojson_importer\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\geojson_importer\\definitions.geojson_importer.h",
-            "d:\\development\\ue5-geojson-importer-cpp\\ue-project\\geojson_importer\\source\\geojson_importer\\geojson_importer.h"
+            "e:\\projecten\\ue5-geojson-importer\\ue-project\\geojson_importer\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\geojson_importer\\definitions.geojson_importer.h",
+            "e:\\projecten\\ue5-geojson-importer\\ue-project\\geojson_importer\\source\\geojson_importer\\geojson_importer.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

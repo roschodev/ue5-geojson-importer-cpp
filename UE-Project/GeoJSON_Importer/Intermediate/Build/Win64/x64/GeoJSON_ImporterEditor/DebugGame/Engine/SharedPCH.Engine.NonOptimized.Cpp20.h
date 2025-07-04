@@ -1,3 +1,0 @@
-// PCH for Runtime/Engine/Public/EngineSharedPCH.h
-#include "E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Importer/Intermediate/Build/Win64/x64/GeoJSON_ImporterEditor/DebugGame/Engine/SharedDefinitions.Engine.NonOptimized.Cpp20.h"
-#include "Runtime/Engine/Public/EngineSharedPCH.h"

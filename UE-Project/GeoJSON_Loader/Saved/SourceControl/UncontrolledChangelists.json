@@ -1,0 +1,12 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"D:/Development/ue5-geojson-importer-cpp/UE-Project/GeoJSON_Loader/Content/Project/Levels/M_GeoJSON.umap"
+			]
+		}
+	]
+}

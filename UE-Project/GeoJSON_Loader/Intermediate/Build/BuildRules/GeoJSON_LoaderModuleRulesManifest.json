@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\Development\\ue5-geojson-importer-cpp\\UE-Project\\GeoJSON_Loader\\Source\\GeoJSON_Loader\\GeoJSON_Loader.Build.cs",
+		"D:\\Development\\ue5-geojson-importer-cpp\\UE-Project\\GeoJSON_Loader\\Source\\GeoJSON_Loader.Target.cs",
+		"D:\\Development\\ue5-geojson-importer-cpp\\UE-Project\\GeoJSON_Loader\\Source\\GeoJSON_LoaderEditor.Target.cs"
+	],
+	"EngineVersion": "5.3.2"
+}

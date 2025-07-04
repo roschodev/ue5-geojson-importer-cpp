@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\development\\ue5-geojson-importer-cpp\\ue-project\\geojson_loader\\source\\geojson_loader\\geojson_loader.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\development\\ue5-geojson-importer-cpp\\ue-project\\geojson_loader\\intermediate\\build\\win64\\x64\\geojson_loadereditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "d:\\development\\ue5-geojson-importer-cpp\\ue-project\\geojson_loader\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\geojson_loader\\definitions.geojson_loader.h",
+            "d:\\development\\ue5-geojson-importer-cpp\\ue-project\\geojson_loader\\source\\geojson_loader\\geojson_loader.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

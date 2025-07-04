@@ -5,6 +5,7 @@
 #include "Json.h"
 #include "JsonUtilities.h"
 #include "Data.h"
+#include "GeoJSON_Functions.h"
 #include "GeoJSON_MultiPoint.h"
 #include "GeoJSON_MultiLineString.h"
 #include "GeoJSON_FeatureCollection.h"
@@ -23,6 +24,12 @@ AGeoJSON_Manager::AGeoJSON_Manager()
 void AGeoJSON_Manager::BeginPlay()
 {
 	Super::BeginPlay();
+
+
+    bool bIsGrid = false;
+    TArray<AActor*> SpawnedGridCells;
+
+    UGeoJSON_Functions::SpawnGrid(this, FData, bIsGrid, SpawnedGridCells);
 	
 }
 
@@ -57,19 +64,20 @@ void AGeoJSON_Manager::LoadGeoJSONFiles()
     SpawnParams.Instigator = GetInstigator();
     SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
 
-
+	UE_LOG(LogTemp, Log, TEXT("Loading GeoJSON files(%s)..."), *FString::FromInt(Filepaths.Num()) );
     for (const FString& FilePath : Filepaths)
     {
-        FString f = LoadGeoJSONFromPath(FilePath);
-        TSharedPtr<FJsonObject> g_obj = StringToJSONObject(f);
-        ETypes Type = ExtractGeoJSONType(g_obj);
-        UE_LOG(LogTemp, Log, TEXT("GeoJSON Type: %s"), *UEnum::GetValueAsString(Type));
-
-        
+        FString f = UGeoJSON_Functions::LoadGeoJSON(FilePath);
+        TSharedPtr<FJsonObject> g_obj = UGeoJSON_Functions::FStringToJSONObject(f);
+        ETypes Type = UGeoJSON_Functions::GetType(g_obj);
+        //UE_LOG(LogTemp, Log, TEXT("GeoJSON Type: %s"), *UEnum::GetValueAsString(Type));
 
         switch (Type)
         {
-            case Point:
+            case Point: //this still wouldnt work, need to implement Feature
+            {
+                break;
+            }
             case MultiPoint:
             {
                 // Create a new MultiPoint actor and set its properties
@@ -83,11 +91,35 @@ void AGeoJSON_Manager::LoadGeoJSONFiles()
                 if (MultiPointActor)
                 {
                     MultiPointActor->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
+<<<<<<< HEAD
 					MultiPointActor->MultiPointGeoJSONData = g_obj; // Set the GeoJSON data
                 }
                 break;
+=======
+                    MultiPointActor->Data = g_obj;
+                    MultiPointActor->ParseData();
+					g_obj->TryGetStringField(TEXT("name"), MultiPointActor->FData.Name);
+                    
+            
+                    if (g_obj->TryGetStringField(TEXT("name"), MultiPointActor->FData.Name))
+                    {
+                        FString NewLabel = TEXT("MultiPoint_") + MultiPointActor->FData.Name;
+                        MultiPointActor->SetActorLabel(NewLabel);
+                    }
+                    else
+                    {
+                        FString NewLabel = TEXT("MultiPoint");
+                        MultiPointActor->SetActorLabel(NewLabel);
+
+                    }
+                }
+				break;
+>>>>>>> Rob
 			}
-            case LineString:
+            case LineString: //this still wouldnt work, need to implement Feature
+            {
+                break;
+            }
             case MultiLineString:
             {
                 // Create a new MultiPoint actor and set its properties
@@ -101,22 +133,50 @@ void AGeoJSON_Manager::LoadGeoJSONFiles()
                 if (MultiLineStringActor)
                 {
                     MultiLineStringActor->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
+<<<<<<< HEAD
                     MultiLineStringActor->MultiLineStringGeoJSONData = g_obj; // Set the GeoJSON data
+=======
+                    MultiLineStringActor->Data = g_obj;
+                    MultiLineStringActor->ParseData();
+                    g_obj->TryGetStringField(TEXT("name"), MultiLineStringActor->FData.Name);
+            
+
+                    if (g_obj->TryGetStringField(TEXT("name"), MultiLineStringActor->FData.Name))
+                    {
+                        FString NewLabel = TEXT("MultiLineString_") + MultiLineStringActor->FData.Name;
+                        MultiLineStringActor->SetActorLabel(NewLabel);
+                    }
+                    else
+                    {
+                        FString NewLabel = TEXT("MultiLineString");
+                        MultiLineStringActor->SetActorLabel(NewLabel);
+
+                    }
+>>>>>>> Rob
                 }
 
                 break;
             }
             case Polygon:
+            {
+                break;
+            }
             case MultiPolygon:
             {
                 break;
             }
             case Geometry:
+            {
+                break;
+            }
             case GeometryCollection:
             {
                 break;
             }
-            case Feature:
+            case Feature: //this still wouldnt work, need to implement Feature
+            {
+                break;
+			}
             case FeatureCollection:
             {
                 AGeoJSON_FeatureCollection* FeatureCollectionActor = GetWorld()->SpawnActor<AGeoJSON_FeatureCollection>(
@@ -128,8 +188,42 @@ void AGeoJSON_Manager::LoadGeoJSONFiles()
 
                 if (FeatureCollectionActor)
                 {
+<<<<<<< HEAD
                     FeatureCollectionActor->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
                     FeatureCollectionActor->FeatureCollectionGeoJSONData = g_obj; // Set the GeoJSON data
+=======
+                    AGeoJSON_FeatureCollection* FeatureCollectionActor = GetWorld()->SpawnActor<AGeoJSON_FeatureCollection>(
+                        FeatureCollectionBPClass,
+                        FVector(0, 0, 0),
+                        FRotator(0, 0, 0),
+                        SpawnParams
+                    );
+
+                    if (FeatureCollectionActor)
+                    {
+                        FeatureCollectionActor->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
+                        FeatureCollectionActor->Data = g_obj;
+						FeatureCollectionActor->ParseData(); // Parse the GeoJSON data
+                        if (g_obj->TryGetStringField(TEXT("name"), FeatureCollectionActor->FData.Name)) 
+                        {
+                            FString NewLabel = TEXT("FeatureCollection_") + FeatureCollectionActor->FData.Name;
+                            FeatureCollectionActor->SetActorLabel(NewLabel);
+                        }
+                        else
+                        {
+                            FString NewLabel = TEXT("FeatureCollection");
+                            FeatureCollectionActor->SetActorLabel(NewLabel);
+                        }
+                   
+
+
+                        
+                    }
+                    else
+                    {
+                        UE_LOG(LogTemp, Error, TEXT("Failed to spawn FeatureCollectionActor from Blueprint."));
+                    }
+>>>>>>> Rob
                 }
                 break;
             }
@@ -146,19 +240,9 @@ void AGeoJSON_Manager::LoadGeoJSONFiles()
     }
 
 
-// Function to load GeoJSON from a specified file path
-FString AGeoJSON_Manager::LoadGeoJSONFromPath(FString Path)
-{
-    FString GeoJSONString;
-
-    // Check if the file exists
-    if (!FPlatformFileManager::Get().GetPlatformFile().FileExists(*Path))
-    {
-        UE_LOG(LogTemp, Error, TEXT("File does not exist: %s"), *Path);
-        return TEXT("File does not exist"); // Return empty string if file does not exist
-    }
 
 
+<<<<<<< HEAD
     // Read the file contents into a string
     if (!FFileHelper::LoadFileToString(GeoJSONString, *Path))
     {
@@ -221,3 +305,5 @@ ETypes AGeoJSON_Manager::ExtractGeoJSONType(TSharedPtr<FJsonObject> JsonObject)
         return ETypes::Unsupported;
     }
 }
+=======
+>>>>>>> Rob

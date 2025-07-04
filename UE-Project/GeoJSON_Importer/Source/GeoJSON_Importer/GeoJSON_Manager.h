@@ -23,15 +23,17 @@ public:
 	UFUNCTION(CallInEditor, Category = "Execute")
 	void LoadGeoJSONFiles();
 
+<<<<<<< HEAD
 	FString LoadGeoJSONFromPath(FString Path);
 	TSharedPtr<FJsonObject> StringToJSONObject(const FString& JSONString);
 	ETypes ExtractGeoJSONType(TSharedPtr<FJsonObject> JsonObject);
 
+=======
+>>>>>>> Rob
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	virtual void OnConstruction(const FTransform& Transform) override;
-
 
 public:	
 	// Called every frame

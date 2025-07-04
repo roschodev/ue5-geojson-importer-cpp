@@ -31,36 +31,3 @@ D:\Development\ue5-geojson-importer-cpp\UE-Project\GeoJSON_Importer\Intermediate
 D:\Development\ue5-geojson-importer-cpp\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\obj\Development\GeoJSON_ImporterModuleRules.dll
 D:\Development\ue5-geojson-importer-cpp\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\obj\Development\refint\GeoJSON_ImporterModuleRules.dll
 D:\Development\ue5-geojson-importer-cpp\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\obj\Development\GeoJSON_ImporterModuleRules.pdb
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\bin\Development\GeoJSON_ImporterModuleRules.deps.json
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\bin\Development\GeoJSON_ImporterModuleRules.dll
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\bin\Development\ref\GeoJSON_ImporterModuleRules.dll
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\bin\Development\GeoJSON_ImporterModuleRules.pdb
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\bin\Development\EpicGames.Box.dll
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\bin\Development\EpicGames.Core.dll
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\bin\Development\EpicGames.Horde.dll
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\bin\Development\EpicGames.IoHash.dll
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\bin\Development\EpicGames.MsBuild.dll
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\bin\Development\EpicGames.OIDC.dll
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\bin\Development\EpicGames.Serialization.dll
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\bin\Development\EpicGames.UHT.dll
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\bin\Development\EpicGames.Box.pdb
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\bin\Development\EpicGames.Box.xml
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\bin\Development\EpicGames.Core.pdb
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\bin\Development\EpicGames.Horde.pdb
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\bin\Development\EpicGames.Horde.xml
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\bin\Development\EpicGames.IoHash.pdb
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\bin\Development\EpicGames.MsBuild.pdb
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\bin\Development\EpicGames.OIDC.pdb
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\bin\Development\EpicGames.Serialization.pdb
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\bin\Development\EpicGames.UHT.pdb
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\bin\Development\EpicGames.UHT.xml
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\obj\Development\GeoJSON_ImporterModuleRules.csproj.AssemblyReference.cache
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\obj\Development\GeoJSON_ImporterModuleRules.GeneratedMSBuildEditorConfig.editorconfig
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\obj\Development\GeoJSON_ImporterModuleRules.AssemblyInfoInputs.cache
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\obj\Development\GeoJSON_ImporterModuleRules.AssemblyInfo.cs
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\obj\Development\GeoJSON_ImporterModuleRules.csproj.CoreCompileInputs.cache
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\obj\Development\GeoJSON_ImporterModuleRules.sourcelink.json
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\obj\Development\GeoJSON_.BC703935.Up2Date
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\obj\Development\GeoJSON_ImporterModuleRules.dll
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\obj\Development\refint\GeoJSON_ImporterModuleRules.dll
-E:\Projects\Unreal Engine\ue5-geojson-importer\UE-Project\GeoJSON_Importer\Intermediate\Build\BuildRulesProjects\GeoJSON_ImporterModuleRules\obj\Development\GeoJSON_ImporterModuleRules.pdb

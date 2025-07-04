@@ -8064,23 +8064,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rob Work\\.nuget\\packages\\": {},
+    "C:\\Users\\RenderStation2\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projecten\\ue5-geojson-importer\\UE-Project\\GeoJSON_Importer\\Intermediate\\Build\\BuildRulesProjects\\GeoJSON_ImporterModuleRules\\GeoJSON_ImporterModuleRules.csproj",
+      "projectUniqueName": "D:\\Development\\ue5-geojson-importer-cpp\\UE-Project\\GeoJSON_Importer\\Intermediate\\Build\\BuildRulesProjects\\GeoJSON_ImporterModuleRules\\GeoJSON_ImporterModuleRules.csproj",
       "projectName": "GeoJSON_ImporterModuleRules",
-      "projectPath": "E:\\Projecten\\ue5-geojson-importer\\UE-Project\\GeoJSON_Importer\\Intermediate\\Build\\BuildRulesProjects\\GeoJSON_ImporterModuleRules\\GeoJSON_ImporterModuleRules.csproj",
-      "packagesPath": "C:\\Users\\Rob Work\\.nuget\\packages\\",
-      "outputPath": "E:\\Projecten\\ue5-geojson-importer\\UE-Project\\GeoJSON_Importer\\Intermediate\\Build\\BuildRulesProjects\\GeoJSON_ImporterModuleRules\\obj\\",
+      "projectPath": "D:\\Development\\ue5-geojson-importer-cpp\\UE-Project\\GeoJSON_Importer\\Intermediate\\Build\\BuildRulesProjects\\GeoJSON_ImporterModuleRules\\GeoJSON_ImporterModuleRules.csproj",
+      "packagesPath": "C:\\Users\\RenderStation2\\.nuget\\packages\\",
+      "outputPath": "D:\\Development\\ue5-geojson-importer-cpp\\UE-Project\\GeoJSON_Importer\\Intermediate\\Build\\BuildRulesProjects\\GeoJSON_ImporterModuleRules\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Rob Work\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\RenderStation2\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

@@ -5,8 +5,14 @@
 #include "Json.h"
 #include "JsonUtilities.h"
 #include "Data.h"
+<<<<<<< HEAD
 
 // Sets default values
+=======
+#include "GeoJSON_Functions.h"
+
+
+>>>>>>> Rob
 AGeoJSON_FeatureCollection::AGeoJSON_FeatureCollection()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
@@ -14,6 +20,7 @@ AGeoJSON_FeatureCollection::AGeoJSON_FeatureCollection()
 	RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 
 }
+<<<<<<< HEAD
 FCRS AGeoJSON_FeatureCollection::ExtractCRS(TSharedPtr<FJsonObject> JsonObject)
 {
     TSharedPtr<FJsonObject> CRSObject = JsonObject->GetObjectField("crs");
@@ -97,6 +104,34 @@ ETypes AGeoJSON_FeatureCollection::ExtractGeoJSONType(TSharedPtr<FJsonObject> Js
         return ETypes::Unsupported;
     }
 }
+=======
+
+void AGeoJSON_FeatureCollection::LogData(FFeatureCollectionData d)
+{
+    FString TypeString = StaticEnum<ETypes>()->GetValueAsString(d.Type);
+    UE_LOG(LogTemp, Log, TEXT("FeatureCollection Type: %s"), *TypeString);
+    UE_LOG(LogTemp, Log, TEXT("FeatureCollection Description: %s"), *d.Description);
+    UE_LOG(LogTemp, Log, TEXT("FeatureCollection Name: %s"), *d.Name);
+    UE_LOG(LogTemp, Log, TEXT("FeatureCollection CRS Type: %s"), *d.CRS.Type.ToString());
+    for (const FFeature& Feature : d.Features)
+    {
+        FString FeatureTypeString = StaticEnum<ETypes>()->GetValueAsString(Feature.Type);
+        UE_LOG(LogTemp, Log, TEXT("Feature Type: %s"), *FeatureTypeString);
+
+        for (const auto& Property : Feature.Properties)
+        {
+            UE_LOG(LogTemp, Log, TEXT("Property: %s = %s"), *Property.Key, *Property.Value);
+        }
+     
+        for (const FString& Geometry : Feature.Geometry)
+        {
+            UE_LOG(LogTemp, Log, TEXT("Geometry: %s"), *Geometry);
+        }
+    }
+}
+
+
+>>>>>>> Rob
 FFeatureCollectionData AGeoJSON_FeatureCollection::ParseJSONToStructure(TSharedPtr<FJsonObject> GeoJSONData)
 {
     
@@ -109,13 +144,13 @@ FFeatureCollectionData AGeoJSON_FeatureCollection::ParseJSONToStructure(TSharedP
     }
 
 
-    d.Type = ExtractGeoJSONType(GeoJSONData);
+    d.Type = UGeoJSON_Functions::GetType(GeoJSONData);
     //Get Name of GeoJSON File (Optional)
     GeoJSONData->TryGetStringField(TEXT("name"), d.Name);
     //Get Description of GeoJSON File (Optional)
     GeoJSONData->TryGetStringField(TEXT("description"), d.Description);
     //Get CRS of GeoJSON File (Optional)
-    d.CRS = ExtractCRS(GeoJSONData);
+	d.CRS = UGeoJSON_Functions::GetCRS(GeoJSONData);
 	//Get Type of GeoJSON File
 	
 
@@ -128,7 +163,7 @@ FFeatureCollectionData AGeoJSON_FeatureCollection::ParseJSONToStructure(TSharedP
         {
 
             FFeature Feature;
-			Feature.Type = ExtractGeoJSONType(FeatureValue->AsObject());
+			Feature.Type = UGeoJSON_Functions::GetType(FeatureValue->AsObject());
 
             if (Feature.Type == ETypes::Point && !bAllowPointType) {
                 continue;
@@ -164,7 +199,21 @@ FFeatureCollectionData AGeoJSON_FeatureCollection::ParseJSONToStructure(TSharedP
 				UE_LOG(LogTemp, Warning, TEXT("No 'geometry' field found in Feature."));
             }
 
+<<<<<<< HEAD
             
+=======
+            if (FeatureObject->HasField("properties"))
+            {
+                Feature.Properties = UGeoJSON_Functions::GetProperties(FeatureObject);
+            }
+            else
+            {
+                UE_LOG(LogTemp, Warning, TEXT("No 'properties' field found in Feature."));
+			}
+
+            FeatureObject->TryGetStringField(TEXT("name"), Feature.Name);
+
+>>>>>>> Rob
             d.Features.Add(Feature);
         }
     }
@@ -182,6 +231,7 @@ FFeatureCollectionData AGeoJSON_FeatureCollection::ParseJSONToStructure(TSharedP
 void AGeoJSON_FeatureCollection::BeginPlay()
 {
 	Super::BeginPlay();
+
     
 
 }
@@ -200,14 +250,17 @@ void AGeoJSON_FeatureCollection::OnConstruction(const FTransform& Transform)
 }
 
 
-#if WITH_EDITOR
+
 void AGeoJSON_FeatureCollection::ParseData()
 {
-    if (!FeatureCollectionGeoJSONData.IsValid())
+    if (UGeoJSON_Functions::IsValidGeoJSON(this, Data)) 
     {
-        UE_LOG(LogTemp, Warning, TEXT("FeatureCollectionGeoJSONData is null or invalid."));
-        return;
+        FData = ParseJSONToStructure(Data);
+       
+
+
     }
+<<<<<<< HEAD
 
     Data = ParseJSONToStructure(FeatureCollectionGeoJSONData);
     
@@ -237,6 +290,9 @@ void AGeoJSON_FeatureCollection::SpawnGrid()
 {
 
 }
+=======
+}
+>>>>>>> Rob
 
 
 

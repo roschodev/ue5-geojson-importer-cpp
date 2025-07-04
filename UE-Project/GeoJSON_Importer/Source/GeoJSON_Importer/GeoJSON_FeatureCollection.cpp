@@ -136,6 +136,7 @@ FFeatureCollectionData AGeoJSON_FeatureCollection::ParseJSONToStructure(TSharedP
 void AGeoJSON_FeatureCollection::BeginPlay()
 {
 	Super::BeginPlay();
+
     
 
 }
@@ -159,6 +160,8 @@ void AGeoJSON_FeatureCollection::ParseData()
     if (UGeoJSON_Functions::IsValidGeoJSON(this, Data)) 
     {
         FData = ParseJSONToStructure(Data);
+       
+
 
     }
 }

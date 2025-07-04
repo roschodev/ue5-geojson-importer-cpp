@@ -8,6 +8,7 @@
 #include "GeoJSON_MultiPoint.h"
 #include "GeoJSON_MultiLineString.h"
 #include "GeoJSON_GridCell.h"
+#include "GeoJSON_GridManager.h"
 #include "Data.h"
 
 
@@ -236,15 +237,39 @@ void UGeoJSON_Functions::SpawnGrid(UObject* WorldContextObject, FFeatureCollecti
     UWorld* World = GEngine->GetWorldFromContextObjectChecked(WorldContextObject);
     UClass* GridCellClass = LoadClass<AGeoJSON_GridCell>(
         nullptr,
-        TEXT("/Game/Project/Blueprints/GeoJSON/BP_GeoJSON_GridCell.BP_GeoJSON_GridCell_C")
+        TEXT("/Game/Project/Blueprints/GeoJSON/Grid/BP_GeoJSON_GridCell.BP_GeoJSON_GridCell_C")
     );
 
+    UClass* GridManagerClass = LoadClass<AGeoJSON_GridManager>(
+        nullptr,
+        TEXT("/Game/Project/Blueprints/GeoJSON/Grid/BP_GeoJSON_GridManager.BP_GeoJSON_GridManager_C")
+    );
+
+    const FRegexPattern GridCodePattern(TEXT("^E(\\d{4})N(\\d{4})$"));
     isGrid = false; // default to false
 
     if (isGeoJSONGridBased(data))
     {
+
+        AActor* OwnerActor = Cast<AActor>(WorldContextObject);
+
+        AActor* GridManager = World->SpawnActor<AActor>(GridManagerClass, FVector3d(0,0,0), FRotator(0,0,0));
+        if(GridManager)
+        {
+            if (OwnerActor) {
+                GridManager->AttachToActor(OwnerActor, FAttachmentTransformRules::KeepRelativeTransform);
+            }
+            UE_LOG(LogTemp, Log, TEXT("Spawned Gridmanager."));
+        } else 
+        {
+            UE_LOG(LogTemp, Log, TEXT("Failed to Spawn Gridmanager."));
+        }
+
+        
+     
+        
+
         // Match format like E2539N5310
-        const FRegexPattern GridCodePattern(TEXT("^E(\\d{4})N(\\d{4})$"));
         UE_LOG(LogTemp, Log, TEXT("GeoJSON file is grid-based. Proceeding to spawn grid cells."));
 
         int32 MinEasting = MAX_int32;
@@ -257,7 +282,7 @@ void UGeoJSON_Functions::SpawnGrid(UObject* WorldContextObject, FFeatureCollecti
         {
             for (const TPair<FString, FString>& Entry : Feature.Properties)
             {
-                FRegexMatcher Matcher(FRegexPattern(TEXT("^E(\\d{4})N(\\d{4})$")), Entry.Value);
+                FRegexMatcher Matcher(GridCodePattern, Entry.Value);
                 if (Matcher.FindNext())
                 {
                     int32 Easting = FCString::Atoi(*Matcher.GetCaptureGroup(1));
@@ -301,7 +326,7 @@ void UGeoJSON_Functions::SpawnGrid(UObject* WorldContextObject, FFeatureCollecti
                     break;
                 }
             }
-
+          
             if (bFoundGridCode)
             {
                 FVector SpawnLocation = FVector((GridCoord.X - GridCenter.X) * 100, (GridCoord.Y - GridCenter.Y) * 100, 0.0f); // Assuming Z = 0
@@ -313,11 +338,11 @@ void UGeoJSON_Functions::SpawnGrid(UObject* WorldContextObject, FFeatureCollecti
                 {
                     FString NewLabel = TEXT("GridCell_") + Feature.Name + TEXT("_") + ValueString;
                     SpawnedCell->SetActorLabel(NewLabel);
-                    //GridCells.Add(SpawnedCell);
+                    GridCells.Add(SpawnedCell);
 
-                    if (AActor* OwnerActor = Cast<AActor>(WorldContextObject))
+                    if (OwnerActor)
                     {
-                        SpawnedCell->AttachToActor(OwnerActor, FAttachmentTransformRules::KeepRelativeTransform);
+                        SpawnedCell->AttachToActor(GridManager, FAttachmentTransformRules::KeepRelativeTransform);
                     }
                     else
                     {

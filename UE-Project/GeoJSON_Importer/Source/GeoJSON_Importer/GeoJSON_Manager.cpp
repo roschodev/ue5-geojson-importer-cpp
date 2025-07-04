@@ -24,6 +24,12 @@ AGeoJSON_Manager::AGeoJSON_Manager()
 void AGeoJSON_Manager::BeginPlay()
 {
 	Super::BeginPlay();
+
+
+    bool bIsGrid = false;
+    TArray<AActor*> SpawnedGridCells;
+
+    UGeoJSON_Functions::SpawnGrid(this, FData, bIsGrid, SpawnedGridCells);
 	
 }
 
@@ -202,7 +208,8 @@ void AGeoJSON_Manager::LoadGeoJSONFiles()
                             FString NewLabel = TEXT("FeatureCollection");
                             FeatureCollectionActor->SetActorLabel(NewLabel);
                         }
-                      
+                   
+
 
                         
                     }

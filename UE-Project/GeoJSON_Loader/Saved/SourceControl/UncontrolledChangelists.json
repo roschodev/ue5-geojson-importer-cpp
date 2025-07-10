@@ -5,9 +5,7 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Loader/Content/Project/Levels/M_GeoJSON.umap",
-				"E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Loader/Content/Project/Blueprints/Grid/BP_GridCell.uasset",
-				"E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Loader/Content/Project/Blueprints/Grid/BP_GeoJSON_GridCell.uasset"
+				"E:/Projecten/ue5-geojson-importer/UE-Project/GeoJSON_Loader/Content/Project/Levels/M_GeoJSON.umap"
 			]
 		}
 	]

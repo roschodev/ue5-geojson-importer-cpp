@@ -21,6 +21,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 template<> GEOJSON_LOADER_API UScriptStruct* StaticStruct<struct FGeoJSON_Layer>();
 
+#define FID_GeoJSON_Loader_Source_GeoJSON_Loader_Data_h_55_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FLayerSettings_Statics; \
+	GEOJSON_LOADER_API static class UScriptStruct* StaticStruct(); \
+	typedef FTableRowBase Super;
+
+
+template<> GEOJSON_LOADER_API UScriptStruct* StaticStruct<struct FLayerSettings>();
+
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FID_GeoJSON_Loader_Source_GeoJSON_Loader_Data_h
 

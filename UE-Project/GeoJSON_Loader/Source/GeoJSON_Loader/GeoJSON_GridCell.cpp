@@ -10,7 +10,7 @@ AGeoJSON_GridCell::AGeoJSON_GridCell()
 	PrimaryActorTick.bCanEverTick = true;
 
 	SceneRoot = CreateDefaultSubobject<USceneComponent>(TEXT("SceneRoot"));
-	SetRootComponent(SceneRoot); // This is the correct way
+	SetRootComponent(SceneRoot);
 
 }
 

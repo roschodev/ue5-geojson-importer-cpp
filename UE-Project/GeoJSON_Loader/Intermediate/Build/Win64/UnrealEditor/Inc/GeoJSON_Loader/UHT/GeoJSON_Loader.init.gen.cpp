@@ -17,13 +17,13 @@ void EmptyLinkFunctionForGeneratedCodeGeoJSON_Loader_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x2B4315F8,
-				0x35546FD8,
+				0x999BCDE6,
+				0x5D5B8530,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_GeoJSON_Loader.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_GeoJSON_Loader.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_GeoJSON_Loader(Z_Construct_UPackage__Script_GeoJSON_Loader, TEXT("/Script/GeoJSON_Loader"), Z_Registration_Info_UPackage__Script_GeoJSON_Loader, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x2B4315F8, 0x35546FD8));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_GeoJSON_Loader(Z_Construct_UPackage__Script_GeoJSON_Loader, TEXT("/Script/GeoJSON_Loader"), Z_Registration_Info_UPackage__Script_GeoJSON_Loader, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x999BCDE6, 0x5D5B8530));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

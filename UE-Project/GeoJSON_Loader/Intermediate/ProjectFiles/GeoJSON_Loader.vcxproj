@@ -109,7 +109,6 @@
     <None Include="..\..\GeoJSON_Loader.uproject"/>
     <None Include="..\..\Source\GeoJSON_Loader.Target.cs"/>
     <None Include="..\..\Source\GeoJSON_LoaderEditor.Target.cs"/>
-    <None Include="..\..\.vsconfig"/>
     <None Include="..\..\Config\DefaultEditor.ini"/>
     <None Include="..\..\Config\DefaultEngine.ini"/>
     <None Include="..\..\Config\DefaultGame.ini"/>

@@ -10,8 +10,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeData() {}
 // Cross Module References
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FGuid();
+	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FTableRowBase();
 	GEOJSON_LOADER_API UEnum* Z_Construct_UEnum_GeoJSON_Loader_ETypes();
 	GEOJSON_LOADER_API UScriptStruct* Z_Construct_UScriptStruct_FGeoJSON_Layer();
+	GEOJSON_LOADER_API UScriptStruct* Z_Construct_UScriptStruct_FLayerSettings();
 	UPackage* Z_Construct_UPackage__Script_GeoJSON_Loader();
 // End Cross Module References
 	static FEnumRegistrationInfo Z_Registration_Info_UEnum_ETypes;
@@ -238,6 +240,123 @@ template<> GEOJSON_LOADER_API UScriptStruct* StaticStruct<FGeoJSON_Layer>()
 		}
 		return Z_Registration_Info_UScriptStruct_GeoJSON_Layer.InnerSingleton;
 	}
+
+static_assert(std::is_polymorphic<FLayerSettings>() == std::is_polymorphic<FTableRowBase>(), "USTRUCT FLayerSettings cannot be polymorphic unless super FTableRowBase is polymorphic");
+
+	static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_LayerSettings;
+class UScriptStruct* FLayerSettings::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_LayerSettings.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_LayerSettings.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FLayerSettings, (UObject*)Z_Construct_UPackage__Script_GeoJSON_Loader(), TEXT("LayerSettings"));
+	}
+	return Z_Registration_Info_UScriptStruct_LayerSettings.OuterSingleton;
+}
+template<> GEOJSON_LOADER_API UScriptStruct* StaticStruct<FLayerSettings>()
+{
+	return FLayerSettings::StaticStruct();
+}
+	struct Z_Construct_UScriptStruct_FLayerSettings_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
+#endif
+		static void* NewStructOps();
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Filepath_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_Filepath;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Name_MetaData[];
+#endif
+		static const UECodeGen_Private::FIntPropertyParams NewProp_Name;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_spawnGridIfGridBased_MetaData[];
+#endif
+		static void NewProp_spawnGridIfGridBased_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_spawnGridIfGridBased;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_spawnGeometries_MetaData[];
+#endif
+		static void NewProp_spawnGeometries_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_spawnGeometries;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UECodeGen_Private::FStructParams ReturnStructParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FLayerSettings_Statics::Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "Data.h" },
+	};
+#endif
+	void* Z_Construct_UScriptStruct_FLayerSettings_Statics::NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FLayerSettings>();
+	}
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FLayerSettings_Statics::NewProp_Filepath_MetaData[] = {
+		{ "Category", "LayerSettings" },
+		{ "ModuleRelativePath", "Data.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FLayerSettings_Statics::NewProp_Filepath = { "Filepath", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FLayerSettings, Filepath), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FLayerSettings_Statics::NewProp_Filepath_MetaData), Z_Construct_UScriptStruct_FLayerSettings_Statics::NewProp_Filepath_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FLayerSettings_Statics::NewProp_Name_MetaData[] = {
+		{ "Category", "LayerSettings" },
+		{ "ModuleRelativePath", "Data.h" },
+	};
+#endif
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FLayerSettings_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FLayerSettings, Name), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FLayerSettings_Statics::NewProp_Name_MetaData), Z_Construct_UScriptStruct_FLayerSettings_Statics::NewProp_Name_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FLayerSettings_Statics::NewProp_spawnGridIfGridBased_MetaData[] = {
+		{ "Category", "LayerSettings" },
+		{ "ModuleRelativePath", "Data.h" },
+	};
+#endif
+	void Z_Construct_UScriptStruct_FLayerSettings_Statics::NewProp_spawnGridIfGridBased_SetBit(void* Obj)
+	{
+		((FLayerSettings*)Obj)->spawnGridIfGridBased = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FLayerSettings_Statics::NewProp_spawnGridIfGridBased = { "spawnGridIfGridBased", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(FLayerSettings), &Z_Construct_UScriptStruct_FLayerSettings_Statics::NewProp_spawnGridIfGridBased_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FLayerSettings_Statics::NewProp_spawnGridIfGridBased_MetaData), Z_Construct_UScriptStruct_FLayerSettings_Statics::NewProp_spawnGridIfGridBased_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FLayerSettings_Statics::NewProp_spawnGeometries_MetaData[] = {
+		{ "Category", "LayerSettings" },
+		{ "ModuleRelativePath", "Data.h" },
+	};
+#endif
+	void Z_Construct_UScriptStruct_FLayerSettings_Statics::NewProp_spawnGeometries_SetBit(void* Obj)
+	{
+		((FLayerSettings*)Obj)->spawnGeometries = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FLayerSettings_Statics::NewProp_spawnGeometries = { "spawnGeometries", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(FLayerSettings), &Z_Construct_UScriptStruct_FLayerSettings_Statics::NewProp_spawnGeometries_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FLayerSettings_Statics::NewProp_spawnGeometries_MetaData), Z_Construct_UScriptStruct_FLayerSettings_Statics::NewProp_spawnGeometries_MetaData) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FLayerSettings_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FLayerSettings_Statics::NewProp_Filepath,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FLayerSettings_Statics::NewProp_Name,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FLayerSettings_Statics::NewProp_spawnGridIfGridBased,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FLayerSettings_Statics::NewProp_spawnGeometries,
+	};
+	const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FLayerSettings_Statics::ReturnStructParams = {
+		(UObject* (*)())Z_Construct_UPackage__Script_GeoJSON_Loader,
+		Z_Construct_UScriptStruct_FTableRowBase,
+		&NewStructOps,
+		"LayerSettings",
+		Z_Construct_UScriptStruct_FLayerSettings_Statics::PropPointers,
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FLayerSettings_Statics::PropPointers),
+		sizeof(FLayerSettings),
+		alignof(FLayerSettings),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
+		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FLayerSettings_Statics::Struct_MetaDataParams), Z_Construct_UScriptStruct_FLayerSettings_Statics::Struct_MetaDataParams)
+	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FLayerSettings_Statics::PropPointers) < 2048);
+	UScriptStruct* Z_Construct_UScriptStruct_FLayerSettings()
+	{
+		if (!Z_Registration_Info_UScriptStruct_LayerSettings.InnerSingleton)
+		{
+			UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_LayerSettings.InnerSingleton, Z_Construct_UScriptStruct_FLayerSettings_Statics::ReturnStructParams);
+		}
+		return Z_Registration_Info_UScriptStruct_LayerSettings.InnerSingleton;
+	}
 	struct Z_CompiledInDeferFile_FID_GeoJSON_Loader_Source_GeoJSON_Loader_Data_h_Statics
 	{
 		static const FEnumRegisterCompiledInInfo EnumInfo[];
@@ -248,8 +367,9 @@ template<> GEOJSON_LOADER_API UScriptStruct* StaticStruct<FGeoJSON_Layer>()
 	};
 	const FStructRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GeoJSON_Loader_Source_GeoJSON_Loader_Data_h_Statics::ScriptStructInfo[] = {
 		{ FGeoJSON_Layer::StaticStruct, Z_Construct_UScriptStruct_FGeoJSON_Layer_Statics::NewStructOps, TEXT("GeoJSON_Layer"), &Z_Registration_Info_UScriptStruct_GeoJSON_Layer, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FGeoJSON_Layer), 3836627061U) },
+		{ FLayerSettings::StaticStruct, Z_Construct_UScriptStruct_FLayerSettings_Statics::NewStructOps, TEXT("LayerSettings"), &Z_Registration_Info_UScriptStruct_LayerSettings, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FLayerSettings), 1908354214U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GeoJSON_Loader_Source_GeoJSON_Loader_Data_h_2814132642(TEXT("/Script/GeoJSON_Loader"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GeoJSON_Loader_Source_GeoJSON_Loader_Data_h_1599153160(TEXT("/Script/GeoJSON_Loader"),
 		nullptr, 0,
 		Z_CompiledInDeferFile_FID_GeoJSON_Loader_Source_GeoJSON_Loader_Data_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GeoJSON_Loader_Source_GeoJSON_Loader_Data_h_Statics::ScriptStructInfo),
 		Z_CompiledInDeferFile_FID_GeoJSON_Loader_Source_GeoJSON_Loader_Data_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GeoJSON_Loader_Source_GeoJSON_Loader_Data_h_Statics::EnumInfo));

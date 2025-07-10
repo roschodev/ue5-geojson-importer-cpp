@@ -72,7 +72,9 @@
             "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\jsonutilities\\public\\jsonobjectwrapper.h",
             "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\jsonutilities\\uht\\jsonobjectwrapper.generated.h",
             "e:\\projecten\\ue5-geojson-importer\\ue-project\\geojson_loader\\intermediate\\build\\win64\\unrealeditor\\inc\\geojson_loader\\uht\\data.generated.h",
-            "e:\\projecten\\ue5-geojson-importer\\ue-project\\geojson_loader\\intermediate\\build\\win64\\unrealeditor\\inc\\geojson_loader\\uht\\geojson_manager.generated.h"
+            "e:\\projecten\\ue5-geojson-importer\\ue-project\\geojson_loader\\intermediate\\build\\win64\\unrealeditor\\inc\\geojson_loader\\uht\\geojson_manager.generated.h",
+            "e:\\projecten\\ue5-geojson-importer\\ue-project\\geojson_loader\\source\\geojson_loader\\geojson_gridcell.h",
+            "e:\\projecten\\ue5-geojson-importer\\ue-project\\geojson_loader\\intermediate\\build\\win64\\unrealeditor\\inc\\geojson_loader\\uht\\geojson_gridcell.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

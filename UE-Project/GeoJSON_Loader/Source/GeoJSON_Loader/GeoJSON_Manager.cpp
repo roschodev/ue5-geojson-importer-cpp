@@ -4,6 +4,7 @@
 #include "Json.h"
 #include "JsonUtilities.h"
 #include "GeoJSON_GridCell.h"
+//#include "GeoJSON_GridParent.h"
 #include "Data.h"
 
 
@@ -21,11 +22,21 @@ void AGeoJSON_Manager::BeginPlay()
 {
 	Super::BeginPlay();
 
-	
+	if (!IsValid(this) || FilePaths.Num() == 0 || !GetWorld())
+	{
+		UE_LOG(LogTemp, Error, TEXT("GeoJSON_Manager: Invalid 'this', missing FilePaths, or World not valid. Skipping BeginPlay."));
+		return;
+	}
+	if(FilePaths.IsEmpty())
+	{
+		UE_LOG(LogTemp, Warning, TEXT("FilePaths array is empty. Please set the FilePaths in the GeoJSON Manager."));
+		return;
+	}
 	GeoJSON_Layers = LoadGeoJSONFiles(FilePaths);
-
 	
 	TSet<FString> AllGridCodes; 
+
+	//Check each layer for grid-based codes ----------------
 
 	for (FGeoJSON_Layer& Layer : GeoJSON_Layers)
 	{
@@ -42,78 +53,99 @@ void AGeoJSON_Manager::BeginPlay()
 		}
 	}
 
-	UClass* GridCellClass = LoadClass<AGeoJSON_GridCell>(
-		nullptr,
-		TEXT("/Game/Project/Blueprints/Grid/BP_GeoJSON_GridCell.BP_GeoJSON_GridCell_C")
-	);
+	//-------------------------------------------------------------
 
-	/*for (const FString& Code : AllGridCodes)
-	{
-		UE_LOG(LogTemp, Display, TEXT("Grid Code: %s"), *Code);
-	}*/
-
+	//calculate grid bounds from all codes ----------------	
 
 	FVector2D BottomLeftPoint;
 	FVector2D TopRightPoint;
 	TArray<FString> AllGridCodesArray(AllGridCodes.Array());
 	CalculateGridBounds(AllGridCodesArray, BottomLeftPoint, TopRightPoint);
+	int32 StartX = FMath::FloorToInt(BottomLeftPoint.X);
+	int32 StartY = FMath::FloorToInt(BottomLeftPoint.Y);
+	int32 EndX = FMath::CeilToInt(TopRightPoint.X);
+	int32 EndY = FMath::CeilToInt(TopRightPoint.Y);
+
+	//-------------------------------------------------------------
+
+	// Load the grid cell class from the blueprint ----------------
+
+	UClass* GridCellClass = LoadClass<AGeoJSON_GridCell>(
+		nullptr,
+		TEXT("/Game/Project/Blueprints/Grid/BP_GeoJSON_GridCell.BP_GeoJSON_GridCell_C")
+	);
+
+	if (!GridCellClass)
+	{
+		UE_LOG(LogTemp, Error, TEXT("GridCellClass failed to load. Ensure the path is correct."));
+		return;
+	}
+
+	//-------------------------------------------------------------
+
+
+	//Load and spawn the grid parent class from the blueprint ----------------
+
+	/*UClass* GridParentClass = LoadClass<AGeoJSON_GridParent>(
+		nullptr,
+		TEXT("/Game/Project/Blueprints/Grid/BP_GeoJSON_GridParent.BP_GeoJSON_GridParent_C")
+	);*/
+
+	//FActorSpawnParameters ParentSpawnParams;
+
+	//ParentSpawnParams.Owner = this;
+	//AGeoJSON_GridParent* GridParent = GetWorld()->SpawnActor<AGeoJSON_GridParent>(GridParentClass, FVector(0,0,0), FRotator::ZeroRotator, ParentSpawnParams);
+	//if (!GridParent)
+	//{
+	//	UE_LOG(LogTemp, Error, TEXT("GridParent failed to spawn. Ensure the class is valid."));
+	//	return;
+	//}
+	//// Attach the grid parent to the scene root
+	//GridParent->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
+	//GridParent->SetActorLabel(TEXT("Grid"));
+
+	//-------------------------------------------------------------
 
 	const float CellSize = 100.0f;
 	TArray<AActor*> GridCells;
 
-	for (int32 X = BottomLeftPoint.X; X <= TopRightPoint.X; ++X)
+	for (int32 X = StartX; X <= EndX; ++X)
 	{
-		for (int32 Y = BottomLeftPoint.Y; Y <= TopRightPoint.Y; ++Y)
+		for (int32 Y = StartY; Y <= EndY; ++Y)
 		{
-			FVector SpawnLocation(X * CellSize, Y * CellSize, 0.0f);
-			FRotator SpawnRotation = FRotator::ZeroRotator;
+			FVector GridSpawnLocation((X - StartX) * CellSize, (Y - StartY) * CellSize, 0.0f);
+			FRotator GridSpawnRotation = FRotator::ZeroRotator;
 
-			FActorSpawnParameters SpawnParams;
-			SpawnParams.Owner = this;
+			/*UE_LOG(LogTemp, Display, TEXT("Spawning cell at: E%04dN%04d"), X, Y);*/
+			UE_LOG(LogTemp, Display, TEXT("GridSpawnLocation: %s"), *GridSpawnLocation.ToString());
+
+			FActorSpawnParameters GridSpawnParams;
+			GridSpawnParams.Owner = this;
 
 			if (GridCellClass)
 			{
-				AGeoJSON_GridCell* NewCell = GetWorld()->SpawnActor<AGeoJSON_GridCell>(GridCellClass, SpawnLocation, SpawnRotation, SpawnParams);
+				AGeoJSON_GridCell* NewCell = GetWorld()->SpawnActor<AGeoJSON_GridCell>(GridCellClass, GridSpawnLocation, GridSpawnRotation, GridSpawnParams);
 				if (NewCell)
 				{
-					bool bAttached = NewCell->AttachToActor(this, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
-					UE_LOG(LogTemp, Warning, TEXT("AttachToActor returned: %s"), bAttached ? TEXT("true") : TEXT("false"));
+					bool bAttached = NewCell->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
+					//UE_LOG(LogTemp, Warning, TEXT("AttachToActor returned: %s"), bAttached ? TEXT("true") : TEXT("false"));
 
 					NewCell->SetActorLabel(FString::Printf(TEXT("Cell_E%04dN%04d"), X, Y));
 					NewCell->Code = FString::Printf(TEXT("E%04dN%04d"), X, Y);
-					
-
 				}
 			}
 		}
 	}
-
-
-	// Next Steps:
-	// 1. Parse Easting/Northing from each code (e.g., E1234N5678 -> 1234, 5678)
-	// 2. Find min/max to create bounding box
-	// 3. Spawn grid cells from min to max range
-	// 4. Populate each cell with relevant features from layers
-
-	
-	
 }
 void AGeoJSON_Manager::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
 
 //Loading Logic
 TArray<FGeoJSON_Layer> AGeoJSON_Manager::LoadGeoJSONFiles(TArray<FString> filePaths)
 {
 	TArray<FGeoJSON_Layer> layers;
-
-	if (filePaths.IsEmpty())
-	{
-		UE_LOG(LogTemp, Display, TEXT("Please Enter FilePaths on the GeoJSON Manager!"));
-		return layers;
-	}
 
 	for (FString filePath : filePaths)
 	{
@@ -126,7 +158,6 @@ TArray<FGeoJSON_Layer> AGeoJSON_Manager::LoadGeoJSONFiles(TArray<FString> filePa
 		layers.Add(Layer);
 	}
 	return layers;
-
 }
 FGeoJSON_Layer AGeoJSON_Manager::LoadGeoJSONFile(FString filePath, bool& isLoaded)
 {
@@ -327,5 +358,5 @@ void AGeoJSON_Manager::CalculateGridBounds(const TArray<FString>& GridCodes, FVe
 	BottomLeft = FVector2D(MinE, MinN);
 	TopRight = FVector2D(MaxE, MaxN);
 
-	UE_LOG(LogTemp, Display, TEXT("Grid bounds — BottomLeft: E%04dN%04d, TopRight: E%04dN%04d"), MinE, MinN, MaxE, MaxN);
+	//UE_LOG(LogTemp, Display, TEXT("Grid bounds — BottomLeft: E%04dN%04d, TopRight: E%04dN%04d"), MinE, MinN, MaxE, MaxN);
 }

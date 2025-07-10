@@ -48,3 +48,22 @@ struct FGeoJSON_Layer
 	UPROPERTY(BlueprintReadOnly, EditAnywhere)
 	TArray<FString> Codes;
 };
+
+USTRUCT(BlueprintType)
+struct FLayerSettings : public FTableRowBase
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FString Filepath;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int32 Name;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool spawnGridIfGridBased;
+
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool spawnGeometries;
+};
